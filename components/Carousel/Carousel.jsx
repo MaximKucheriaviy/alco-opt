@@ -6,6 +6,31 @@ const CarouselDiv = styled.div`
   height: 593px;
   background-color: #fff;
   padding: 46px 40px;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+
+  & h3 {
+    color: #000;
+    font-family: "Proxima Nova";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+  & p {
+    margin-top: 24px;
+    color: #000;
+    font-family: "Proxima Nova";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+  }
+  & br {
+    margin-bottom: 10px;
+  }
 `;
 
 export const Carousel = () => {
@@ -26,9 +51,10 @@ export const Carousel = () => {
             рівень обслуговування. Зазвичай нас запитують, "Як ви досягаєте
             таких низьких цін і при цьому створюєте зручний та привітний
             магазин?" Лише завдяки тривалим переговорам нам вдалося працювати у
-            цьому форматі. Пройдіть цей шлях разом з нами, і ви отримаєте
-            можливість продавати алкоголь за найнижчими цінами, заробляючи при
-            цьому. Це місце, де доступність високоякісного алкоголю поєднується
+            цьому форматі.
+            <br /> Пройдіть цей шлях разом з нами, і ви отримаєте можливість
+            продавати алкоголь за найнижчими цінами, заробляючи при цьому.
+            <br /> Це місце, де доступність високоякісного алкоголю поєднується
             з ідеальним обслуговуванням, дозволяючи спробувати будь-яку пляшку
             за ціною її покупки.
           </p>
