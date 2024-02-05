@@ -33,17 +33,21 @@ const CarouselDiv = styled.div`
   }
 `;
 
-export const Carousel = () => {
+export const Carousel = ({ refer, onChage }) => {
   const settings = {
     dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    dots: false,
+    fade: true,
+    arrows: false,
+    afterChange: onChage,
   };
   return (
     <CarouselDiv>
-      <Slider {...settings}>
+      <Slider ref={refer} {...settings}>
         <div className="item">
           <h3>КОНЦЕПЦІЯ:</h3>
           <p>

@@ -23,6 +23,20 @@ export const StyledAdvantages = styled.section`
       line-height: normal;
     }
   }
+  & .controlBox {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    position: relative;
+    & .line {
+      position: absolute;
+      top: 0;
+      left: 25px;
+      height: 100%;
+      border-left: 1px solid black;
+    }
+  }
   & .imageThumb {
     width: 50%;
     height: 100%;
@@ -41,6 +55,12 @@ export const StyledAdvantages = styled.section`
       border: none;
       padding: 40px 26px;
       background-color: #fff;
+      opacity: 0;
+      transition-duration: 500ms;
+      transition-property: opacity;
+      &:hover {
+        opacity: 1;
+      }
     }
   }
 `;
