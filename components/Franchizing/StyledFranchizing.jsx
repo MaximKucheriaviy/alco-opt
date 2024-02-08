@@ -13,7 +13,7 @@ export const StyledFrancizng = styled.section`
     line-height: normal;
   }
   & .container {
-    margin-left: 167px;
+    padding-left: 95px;
   }
   & .sub {
     margin-top: 40px;

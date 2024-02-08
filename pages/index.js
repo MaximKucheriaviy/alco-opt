@@ -8,6 +8,8 @@ import { Hero } from "@/components/Hero/Hero";
 import { About } from "@/components/About/About";
 import { Advantages } from "@/components/Advandages/Advandages";
 import { Francgizing } from "@/components/Franchizing/Franchizing";
+import { CostCount } from "@/components/CostCount/CostCount";
+import { InvestitionSum } from "@/components/InvistitionSum/InvestitionSum";
 
 export default function Home() {
   return (
@@ -18,6 +20,8 @@ export default function Home() {
         <About />
         <Advantages />
         <Francgizing />
+        <CostCount />
+        <InvestitionSum />
       </main>
     </>
   );
