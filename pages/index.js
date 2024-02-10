@@ -10,6 +10,7 @@ import { Advantages } from "@/components/Advandages/Advandages";
 import { Francgizing } from "@/components/Franchizing/Franchizing";
 import { CostCount } from "@/components/CostCount/CostCount";
 import { InvestitionSum } from "@/components/InvistitionSum/InvestitionSum";
+import { StartPath } from "@/components/StartPath/StartPath";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
         <Francgizing />
         <CostCount />
         <InvestitionSum />
+        <StartPath />
       </main>
     </>
   );

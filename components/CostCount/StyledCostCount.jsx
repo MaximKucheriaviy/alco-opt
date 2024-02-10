@@ -119,6 +119,7 @@ export const StyledCostCount = styled.section`
   & .rightContainer {
     padding-top: 88px;
     padding-left: 70px;
+    width: 50%;
 
     & .place {
       color: #171717;
@@ -132,51 +133,33 @@ export const StyledCostCount = styled.section`
     }
     & .priceses {
       margin-top: 73px;
-      color: #151414;
-
+      color: #fff;
+      width: 421px;
+      height: 75px;
       font-family: "Proxima Nova";
       font-size: 26px;
       font-style: normal;
-      font-weight: 700;
+      font-weight: 400;
       line-height: normal;
+      & .active {
+        color: #151414;
+        font-weight: 700;
+      }
       & p {
         transform: rotateZ(-90deg);
       }
 
       display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
 
-    & элемент {
-    }
-    .css-14pt78w-MuiSlider-rail {
-      display: block;
-
-      position: absolute;
-
-      border-radius: inherit;
-
-      background-color: currentColor;
-
-      opacity: 0.38;
-
-      width: 100%;
-
-      height: inherit;
-
-      top: 50%;
-
-      -webkit-transform: translateY(-50%);
-
-      -moz-transform: translateY(-50%);
-
-      -ms-transform: translateY(-50%);
-
-      transform: translateY(-50%);
-    }
     & .MuiSlider-root {
+      transform: translateX(40px);
       margin-top: 44px;
       color: transparent;
       height: 12px;
+      width: 350px;
     }
     & .MuiSlider-track {
       background: rgba(255, 255, 255, 0.719);
@@ -191,6 +174,35 @@ export const StyledCostCount = styled.section`
       border: 5px solid #fff;
       background: #000;
       box-shadow: 4px 0px 20px 0px rgba(0, 0, 0, 0.25);
+    }
+    & .need {
+      margin-top: 132px;
+      color: #000;
+      display: block;
+      font-family: "Proxima Nova";
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      text-decoration-line: underline;
+    }
+    & .iconText {
+      display: flex;
+      align-items: center;
+      &:not(:last-child) {
+        margin-top: 91px;
+      }
+      margin-top: 32px;
+      gap: 16px;
+
+      color: #000;
+
+      font-family: "Proxima Nova";
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      text-transform: uppercase;
     }
   }
 `;
