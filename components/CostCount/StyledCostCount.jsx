@@ -1,11 +1,10 @@
 import styled from "@emotion/styled";
 
 export const StyledCostCount = styled.section`
-  height: 813px;
   position: relative;
   background-color: #ff4a3a;
   background-position: center;
-  & container {
+  & .container {
     display: flex;
   }
   & .imageThumb {
@@ -19,6 +18,7 @@ export const StyledCostCount = styled.section`
   }
   & .leftContainer {
     padding-top: 160px;
+    padding-bottom: 125px;
     width: 50%;
 
     & h2 {
@@ -95,7 +95,102 @@ export const StyledCostCount = styled.section`
       }
     }
     & button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 32px;
+
       width: 100%;
+      height: 88px;
+      background: rgba(255, 255, 255, 0.24);
+
+      backdrop-filter: blur(5px);
+      border: none;
+
+      color: #fff;
+
+      font-family: "Proxima Nova";
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+  }
+  & .rightContainer {
+    padding-top: 88px;
+    padding-left: 70px;
+
+    & .place {
+      color: #171717;
+
+      font-family: "Proxima Nova";
+      font-size: 48px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 60px; /* 125% */
+      text-transform: uppercase;
+    }
+    & .priceses {
+      margin-top: 73px;
+      color: #151414;
+
+      font-family: "Proxima Nova";
+      font-size: 26px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      & p {
+        transform: rotateZ(-90deg);
+      }
+
+      display: flex;
+    }
+
+    & элемент {
+    }
+    .css-14pt78w-MuiSlider-rail {
+      display: block;
+
+      position: absolute;
+
+      border-radius: inherit;
+
+      background-color: currentColor;
+
+      opacity: 0.38;
+
+      width: 100%;
+
+      height: inherit;
+
+      top: 50%;
+
+      -webkit-transform: translateY(-50%);
+
+      -moz-transform: translateY(-50%);
+
+      -ms-transform: translateY(-50%);
+
+      transform: translateY(-50%);
+    }
+    & .MuiSlider-root {
+      margin-top: 44px;
+      color: transparent;
+      height: 12px;
+    }
+    & .MuiSlider-track {
+      background: rgba(255, 255, 255, 0.719);
+    }
+    & .MuiSlider-rail {
+      background: rgba(255, 255, 255, 0.404);
+    }
+    & .MuiSlider-thumb {
+      width: 65px;
+      height: 44px;
+      border-radius: 22px;
+      border: 5px solid #fff;
+      background: #000;
+      box-shadow: 4px 0px 20px 0px rgba(0, 0, 0, 0.25);
     }
   }
 `;

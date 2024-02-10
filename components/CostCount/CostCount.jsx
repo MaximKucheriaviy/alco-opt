@@ -1,11 +1,13 @@
 import { StyledCostCount } from "./StyledCostCount";
 import { Container } from "../Container/Container";
+import Image from "next/image";
+import { Slider } from "@mui/material";
 
 export const CostCount = () => {
   return (
     <StyledCostCount>
       <div className="imageThumb"></div>
-      <Container>
+      <Container className="container">
         <div className="leftContainer">
           <h2>розрахунок вартості франшизи</h2>
           <div className="whiteBlock">
@@ -27,9 +29,32 @@ export const CostCount = () => {
               <p className="value">95 000$</p>
             </div>
           </div>
-          <button>ЗАЛИШИТИ ЗАЯВКУ НА ФРАНШИЗУ</button>
+          <button>
+            ЗАЛИШИТИ ЗАЯВКУ НА ФРАНШИЗУ{" "}
+            <Image src={"/arrowWhite.svg"} width={90} height={20} alt="arrow" />
+          </button>
         </div>
-        <div></div>
+        <div className="rightContainer">
+          <p className="place">ПРИМІЩЕННЯ</p>
+          <div className="priceses">
+            <p>
+              400 м<sup>2</sup>
+            </p>
+            <p>
+              350 м<sup>2</sup>
+            </p>
+            <p>
+              300 м<sup>2</sup>
+            </p>
+            <p>
+              250 м<sup>2</sup>
+            </p>
+            <p>
+              200 м<sup>2</sup>
+            </p>
+          </div>
+          <Slider />
+        </div>
       </Container>
     </StyledCostCount>
   );
