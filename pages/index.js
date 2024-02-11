@@ -11,6 +11,8 @@ import { Francgizing } from "@/components/Franchizing/Franchizing";
 import { CostCount } from "@/components/CostCount/CostCount";
 import { InvestitionSum } from "@/components/InvistitionSum/InvestitionSum";
 import { StartPath } from "@/components/StartPath/StartPath";
+import { PresentationForm } from "@/components/PresentationForm/PresentationsForm";
+import { Footer } from "@/components/Footer/Footer";
 
 export default function Home() {
   return (
@@ -24,7 +26,9 @@ export default function Home() {
         <CostCount />
         <InvestitionSum />
         <StartPath />
+        <PresentationForm />
       </main>
+      <Footer />
     </>
   );
 }

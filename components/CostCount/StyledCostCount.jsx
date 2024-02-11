@@ -2,6 +2,7 @@ import styled from "@emotion/styled";
 
 export const StyledCostCount = styled.section`
   position: relative;
+  z-index: 5;
   background-color: #ff4a3a;
   background-position: center;
   & .container {

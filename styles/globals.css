@@ -11,6 +11,12 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "DIN Pro";
+  src: url("/dinPro/dinpro_bold.otf") format(opentype);
+  font-weight: bold;
+}
+
 * {
   box-sizing: border-box;
 }
