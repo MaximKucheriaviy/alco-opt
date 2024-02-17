@@ -4,6 +4,7 @@ import { Carousel } from "../Carousel/Carousel";
 import Image from "next/image";
 import { useRef, useEffect, useState } from "react";
 import { ControlDots } from "../ControlDots/ControlDots";
+import { NavigationControl } from "../NavigationControl/NavigationControl";
 
 const buttonData = [
   {
@@ -79,7 +80,7 @@ export const Advantages = () => {
   };
 
   return (
-    <StyledAdvantages>
+    <StyledAdvantages id="advantages">
       <Container>
         <h2>
           Чому обрати <br /> <span>АЛКО/ОПТ?</span>
@@ -96,6 +97,7 @@ export const Advantages = () => {
             />
           ))}
         </div>
+        <NavigationControl active={3} top={120} />
       </Container>
 
       <div className="imageThumb">

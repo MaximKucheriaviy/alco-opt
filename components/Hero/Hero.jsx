@@ -5,6 +5,7 @@ import { useRef, useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Button } from "../Button/Button";
+import { NavigationControl } from "../NavigationControl/NavigationControl";
 
 export const Hero = () => {
   const containerRef = useRef(null);
@@ -17,7 +18,7 @@ export const Hero = () => {
     setButtonPudding(block);
   }, [containerRef.current]);
   return (
-    <StyledHero buttonPadding={buttonPading}>
+    <StyledHero id="hero" buttonPadding={buttonPading}>
       <div className="videoDiv">
         <video loop autoPlay muted className="video" src="/v1.mp4"></video>
       </div>
@@ -43,6 +44,13 @@ export const Hero = () => {
         <Button className="tlephone">
           <Image src={"/Phone.svg"} width={49} height={49} alt="phone" />
         </Button>
+        <NavigationControl
+          top={-98}
+          moreText
+          height={482}
+          upArrow={false}
+          active={1}
+        />
       </Container>
     </StyledHero>
   );

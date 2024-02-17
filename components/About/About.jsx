@@ -2,10 +2,11 @@ import { Container } from "../Container/Container";
 import { StyledAbout } from "./StyledAbout";
 import { Line } from "../Line/Line";
 import Image from "next/image";
+import { NavigationControl } from "../NavigationControl/NavigationControl";
 
 export const About = () => {
   return (
-    <StyledAbout>
+    <StyledAbout id="about">
       <Container>
         <h2>
           АЛКО/ОПТ <span className="defis">-</span>
@@ -24,6 +25,7 @@ export const About = () => {
           дозволяючи вам власну франшизу з найнижчими цінами та найвищим
           сервісом на ринку
         </p>
+        <NavigationControl active={2} />
       </Container>
       <div className="imageTumb">
         <Image
