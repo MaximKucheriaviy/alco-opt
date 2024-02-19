@@ -33,10 +33,10 @@ export const CostCount = () => {
               <p className="value">95 000$</p>
             </div>
           </div>
-          <button>
+          <Link className="link" href="#presentation_form">
             ЗАЛИШИТИ ЗАЯВКУ НА ФРАНШИЗУ{" "}
             <Image src={"/arrowWhite.svg"} width={90} height={20} alt="arrow" />
-          </button>
+          </Link>
         </div>
         <div className="rightContainer">
           <p className="place">ПРИМІЩЕННЯ</p>

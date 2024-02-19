@@ -95,11 +95,12 @@ export const StyledCostCount = styled.section`
         line-height: normal;
       }
     }
-    & button {
+    & .link {
       display: flex;
       justify-content: center;
       align-items: center;
       gap: 32px;
+      text-decoration: none;
 
       width: 100%;
       height: 88px;
