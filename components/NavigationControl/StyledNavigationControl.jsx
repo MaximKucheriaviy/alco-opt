@@ -21,7 +21,9 @@ export const StyledNavigationContronl = styled.div`
       border-radius: 50%;
     }
     & .active {
-      border: 1px solid #949494;
+      /* border: 1px solid #949494; */
+      border: 1px solid ${({ black }) => (black ? "black" : "#949494")};
+
       & .point {
         background-color: #dd0000;
       }

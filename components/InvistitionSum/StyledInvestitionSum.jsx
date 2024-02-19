@@ -31,8 +31,8 @@ export const StyledInvastition = styled.section`
   & .grid1 {
     margin-top: 56px;
     display: grid;
-    justify-content: space-between;
-    grid-template-columns: repeat(4, 1fr);
+    column-gap: 40px;
+    grid-template-columns: repeat(4, 282px);
     row-gap: 56px;
   }
 

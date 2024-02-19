@@ -1,10 +1,11 @@
 import { StyledStartPath } from "./StyledStartPath";
 import { Container } from "../Container/Container";
 import Image from "next/image";
+import { NavigationControl } from "../NavigationControl/NavigationControl";
 
 export const StartPath = () => {
   return (
-    <StyledStartPath>
+    <StyledStartPath id="start_path">
       <Container>
         <h2>Етапи запуску магазину</h2>
         <div className="pathTopLine">
@@ -137,6 +138,7 @@ export const StartPath = () => {
             </p>
           </div>
         </div>
+        <NavigationControl active={7} top={63} />
       </Container>
     </StyledStartPath>
   );

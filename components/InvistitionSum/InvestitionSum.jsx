@@ -2,10 +2,11 @@ import { StyledInvastition } from "./StyledInvestitionSum";
 import { Container } from "../Container/Container";
 import { Line } from "../Line/Line";
 import { ItemPrice } from "../ItemPrice/ItemPrice";
+import { NavigationControl } from "../NavigationControl/NavigationControl";
 
 export const InvestitionSum = () => {
   return (
-    <StyledInvastition>
+    <StyledInvastition id="investition_sum">
       <Container>
         <p className="description">ДО СУМИ ІНВЕСТИЦІЙ ВХОДИТЬ:</p>
         <h2>Послуги</h2>
@@ -80,6 +81,7 @@ export const InvestitionSum = () => {
             Індивідуальні стелажі для розміщення товару
           </ItemPrice>
         </div>
+        <NavigationControl active={6} black height={525} top={72} />
       </Container>
     </StyledInvastition>
   );

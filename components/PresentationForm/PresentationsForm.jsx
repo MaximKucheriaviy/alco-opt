@@ -2,10 +2,11 @@ import { StyledPresentationForm } from "./StyledPresentationsForm";
 import Image from "next/image";
 import { Container } from "../Container/Container";
 import { Button } from "../Button/Button";
+import { NavigationControl } from "../NavigationControl/NavigationControl";
 
 export const PresentationForm = () => {
   return (
-    <StyledPresentationForm>
+    <StyledPresentationForm id="presentation_form">
       <Container className="container">
         <div className="imageThumb">
           <Image
@@ -35,6 +36,13 @@ export const PresentationForm = () => {
           </div>
           <Button className={"submitButton"}>отримати презентацію</Button>
         </form>
+        <NavigationControl
+          black
+          active={8}
+          downArrow={false}
+          height={525}
+          top={63}
+        />
       </Container>
     </StyledPresentationForm>
   );

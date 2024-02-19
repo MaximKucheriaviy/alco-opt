@@ -29,7 +29,22 @@ export const NavigationControl = ({
         <div className="arrows">
           {upArrow && (
             <Link href={links[active - 2]} className="upArrowButton">
-              <Image src="/upArrow.svg" alt="upArrow" width={19} height={35} />
+              {!black && (
+                <Image
+                  src="/upArrow.svg"
+                  alt="upArrow"
+                  width={19}
+                  height={35}
+                />
+              )}
+              {black && (
+                <Image
+                  src="/upArrowBlack.svg"
+                  alt="upArrowBlack"
+                  width={19}
+                  height={35}
+                />
+              )}
             </Link>
           )}
           {moreText && <p className="moreText">БІЛЬШЕ</p>}
@@ -40,12 +55,22 @@ export const NavigationControl = ({
           )}
           {downArrow && (
             <Link href={links[active]} className="upArrowButton">
-              <Image
-                src="/downArrow.svg"
-                alt="upArrow"
-                width={19}
-                height={35}
-              />
+              {!black && (
+                <Image
+                  src="/downArrow.svg"
+                  alt="upArrow"
+                  width={19}
+                  height={35}
+                />
+              )}
+              {black && (
+                <Image
+                  src="/downArrowBlack.svg"
+                  alt="upArrow"
+                  width={19}
+                  height={35}
+                />
+              )}
             </Link>
           )}
         </div>

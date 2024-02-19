@@ -4,11 +4,12 @@ import Image from "next/image";
 import { Slider } from "@mui/material";
 import { useState } from "react";
 import Link from "next/link";
+import { NavigationControl } from "../NavigationControl/NavigationControl";
 
 export const CostCount = () => {
   const [space, setSpace] = useState(1);
   return (
-    <StyledCostCount>
+    <StyledCostCount id="cost_count">
       <div className="imageThumb"></div>
       <Container className="container">
         <div className="leftContainer">
@@ -83,6 +84,7 @@ export const CostCount = () => {
             <p>прибуток з першого місяця роботи</p>
           </div>
         </div>
+        <NavigationControl active={5} black top={275} />
       </Container>
     </StyledCostCount>
   );
