@@ -33,9 +33,14 @@ const StyledButton = styled.button`
   padding: 16px 46px;
 `;
 
-export const Button = ({ type = "default", children, className }) => {
+export const Button = ({
+  type = "default",
+  children,
+  className,
+  onClick = () => {},
+}) => {
   return (
-    <StyledButton className={className} type={type}>
+    <StyledButton onClick={onClick} className={className} type={type}>
       {children}
     </StyledButton>
   );

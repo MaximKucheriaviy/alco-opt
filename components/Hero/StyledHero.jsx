@@ -145,4 +145,70 @@ export const StyledHero = styled.section`
     bottom: -130px;
     left: 161px;
   }
+  & .modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2000;
+    width: 100%;
+    height: 100%;
+    background: rgba(11, 11, 11, 0.78);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    & form {
+      padding: 24px 16px;
+      width: 841px;
+      border-radius: 20px;
+      background: rgba(255, 255, 255, 0.44);
+
+      box-shadow: 3px 6px 10px 0px rgba(32, 32, 32, 0.11);
+      backdrop-filter: blur(20px);
+      & .title {
+        color: #000;
+
+        text-align: center;
+        font-family: "Proxima Nova";
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 120%; /* 43.2px */
+      }
+      & .inputContainer {
+        width: 551px;
+        margin-left: auto;
+        margin-right: auto;
+        &:not(:last-child) {
+          margin-bottom: 8px;
+        }
+        & input {
+          width: 100%;
+          height: 51px;
+          padding: 12px;
+          margin-top: 8px;
+          border: none;
+          &:focus {
+            outline: none;
+          }
+        }
+        & label {
+          color: #5f5e5e;
+
+          text-align: center;
+          font-family: "Proxima Nova";
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 150%; /* 24px */
+        }
+      }
+      & .submitButton {
+        margin-top: 25px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
 `;

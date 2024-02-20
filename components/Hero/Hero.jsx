@@ -11,6 +11,7 @@ import { Lines } from "../Lines/Lines";
 export const Hero = () => {
   const containerRef = useRef(null);
   const [buttonPading, setButtonPudding] = useState(0);
+  const [modalOpened, setModalOpened] = useState(false);
   useEffect(() => {
     if (containerRef.current === null) {
       return;
@@ -21,7 +22,14 @@ export const Hero = () => {
   return (
     <StyledHero id="hero" buttonPadding={buttonPading}>
       <div className="videoDiv">
-        <video loop autoPlay muted className="video" src="/v1.mp4"></video>
+        <video
+          loop
+          autoPlay
+          muted
+          className="video"
+          preload="auto"
+          src="/v1.mp4"
+        ></video>
       </div>
       <Lines></Lines>
       <Container ref={containerRef}>
@@ -47,7 +55,12 @@ export const Hero = () => {
           <Link href="/">МАГАЗИН</Link>
         </div>
         <button className="gradientButton">Стати партнером</button>
-        <Button className="tlephone">
+        <Button
+          onClick={() => {
+            setModalOpened(true);
+          }}
+          className="tlephone"
+        >
           <Image src={"/Phone.svg"} width={49} height={49} alt="phone" />
         </Button>
         <NavigationControl
@@ -58,6 +71,40 @@ export const Hero = () => {
           active={1}
         />
       </Container>
+      {modalOpened && (
+        <div
+          onClick={(event) => {
+            if (!event.target.classList.contains("modal")) {
+              return;
+            }
+            setModalOpened(false);
+          }}
+          className="modal"
+        >
+          <form>
+            <p className="title">
+              Залишіть свій номер телефону і ми зв’яжемось з Вами
+            </p>
+            <div className="inputContainer">
+              <label htmlFor="nameInput">Ім’я</label>
+              <input type="text" id="nameInput" />
+            </div>
+            <div className="inputContainer">
+              <label htmlFor="phoneInput">Номер телефону</label>
+              <input type="text" id="phoneInput" />
+              <Button
+                onClick={(event) => {
+                  event.preventDefault();
+                  setModalOpened(false);
+                }}
+                className="submitButton"
+              >
+                ЗАМОВИТИ ВИКЛИК
+              </Button>
+            </div>
+          </form>
+        </div>
+      )}
     </StyledHero>
   );
 };
