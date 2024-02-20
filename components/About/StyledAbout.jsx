@@ -28,16 +28,41 @@ export const StyledAbout = styled.section`
   .line {
     margin-top: 20px;
   }
+  & .textList {
+    width: 530px;
+  }
   .text {
     margin-top: 24px;
-    width: 580px;
+    /* width: 580px; */
     color: #fff;
+    display: flex;
+    /* align-items: baseline; */
+
+    & span {
+      color: #f71b07;
+
+      font-family: "Proxima Nova";
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 145%; /* 26.1px */
+    }
 
     font-family: "Proxima Nova";
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: 145%;
+    & .redPoint {
+      margin-top: 10px;
+      margin-right: 10px;
+      display: block;
+      height: 100%;
+      width: 20px;
+      height: 5px;
+      border-radius: 50%;
+      background-color: #da2919;
+    }
   }
 
   .imageTumb {
@@ -51,6 +76,17 @@ export const StyledAbout = styled.section`
     background-image: url("/imageAbout.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    & .logoText {
+      color: #fff;
+
+      font-family: "DIN Pro";
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 32px; /* 100% */
+      text-transform: uppercase;
+      width: 180px;
+    }
     & .image {
       width: 100%;
       height: auto;
@@ -60,6 +96,9 @@ export const StyledAbout = styled.section`
       top: 0;
       left: -25px;
       top: -20px;
+      display: flex;
+      align-items: center;
+      gap: 24px;
     }
   }
   & .numberAir {

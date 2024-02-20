@@ -33,9 +33,10 @@ export const Hero = () => {
         <div className="line"></div>
         <p className="subtitle">ФРАНШИЗА</p>
         <p className="discription">
-          Нова революційна концепція з найнижчими цінами та найвищим сервісом в
-          Україні!
+          Нова революційна концепція алкогольного магазину з найнижчими цінами
+          та найвищим сервісом в Україні!
         </p>
+        <p className="slogan">“Дешевше Ваших Інтернетів”</p>
 
         <div className="buttons">
           <div className="line"></div>

@@ -38,7 +38,7 @@ export const StyledCostCount = styled.section`
       display: flex;
       justify-content: space-between;
       &:not(:first-child) {
-        margin-top: 32px;
+        margin-top: 14px;
       }
     }
 
@@ -143,7 +143,13 @@ export const StyledCostCount = styled.section`
       font-size: 26px;
       font-style: normal;
       font-weight: 400;
-      line-height: normal;
+      line-height: 20px;
+      & br {
+        /* margin-top: 0px; */
+      }
+      & span {
+        font-size: 12px;
+      }
       & .active {
         color: #151414;
         font-weight: 700;

@@ -37,6 +37,10 @@ export const CostCount = () => {
               <p className="price">Ремонт:</p>
               <p className="value">95 000$</p>
             </div>
+            <div className="priceItem">
+              <p className="price">Товар:</p>
+              <p className="value">100 000$</p>
+            </div>
           </div>
           <Link className="link" href="#presentation_form">
             ЗАЛИШИТИ ЗАЯВКУ НА ФРАНШИЗУ{" "}
@@ -47,19 +51,23 @@ export const CostCount = () => {
           <p className="place">ПРИМІЩЕННЯ</p>
           <div className="priceses">
             <p className={space === 1 ? "active" : ""}>
-              400 м<sup>2</sup>
+              60 м<sup>2</sup>
+              <br />
+              <span>(формат міні)</span>
             </p>
             <p className={space === 2 ? "active" : ""}>
-              350 м<sup>2</sup>
+              100 м<sup>2</sup>
+              <br />
+              <span>(формат міні)</span>
             </p>
             <p className={space === 3 ? "active" : ""}>
-              300 м<sup>2</sup>
+              200 м<sup>2</sup>
             </p>
             <p className={space === 4 ? "active" : ""}>
-              250 м<sup>2</sup>
+              300 м<sup>2</sup>
             </p>
             <p className={space === 5 ? "active" : ""}>
-              200 м<sup>2</sup>
+              400 м<sup>2</sup>
             </p>
           </div>
           <Slider

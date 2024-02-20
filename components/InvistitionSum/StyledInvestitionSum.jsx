@@ -61,4 +61,28 @@ export const StyledInvastition = styled.section`
     top: 50px;
     left: 200px;
   }
+  & .logoText {
+    /* color: #f04130; */
+    color: #fff;
+    font-family: "DIN Pro";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px; /* 100% */
+    text-transform: uppercase;
+    width: 180px;
+  }
+  & .image {
+    width: 100%;
+    height: auto;
+  }
+  & .logo {
+    position: absolute;
+    /* top: -20px; */
+    right: 0px;
+    top: -100px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
 `;

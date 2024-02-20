@@ -55,6 +55,18 @@ export const StyledHero = styled.section`
     line-height: normal;
     width: 664px;
   }
+
+  & .slogan {
+    color: #fff;
+
+    font-family: "Proxima Nova";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 16px;
+  }
+
   .buttons {
     height: 71px;
     display: flex;

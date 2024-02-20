@@ -140,6 +140,10 @@ export const StartPath = () => {
             </p>
           </div>
         </div>
+        <div className="logo">
+          <Image src="/logo.png" width={127} height={93} alt="logo" />
+          <p className="logoText">дешевше ваших інтернетів</p>
+        </div>
         <NavigationControl active={7} top={63} />
       </Container>
     </StyledStartPath>

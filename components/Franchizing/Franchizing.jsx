@@ -17,11 +17,11 @@ export const Francgizing = () => {
           </li>
           <li>
             <Image src="/lether.svg" width={61} height={49} alt="calender" />
-            <p>реалізація проєкту через 2-3 місяці</p>
+            <p>прибуток з першого місяця роботи</p>
           </li>
           <li>
             <Image src="/rotDolar.svg" width={50} height={49} alt="calender" />
-            <p>реалізація проєкту через 2-3 місяці</p>
+            <p>повернення інвестицій від 12 місяців</p>
           </li>
         </ul>
         <NavigationControl active={4} top={-60} />

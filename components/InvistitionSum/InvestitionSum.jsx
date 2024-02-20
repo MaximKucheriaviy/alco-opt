@@ -3,6 +3,7 @@ import { Container } from "../Container/Container";
 import { Line } from "../Line/Line";
 import { ItemPrice } from "../ItemPrice/ItemPrice";
 import { NavigationControl } from "../NavigationControl/NavigationControl";
+import Image from "next/image";
 
 export const InvestitionSum = () => {
   return (
@@ -83,6 +84,10 @@ export const InvestitionSum = () => {
           <ItemPrice path={"/Icons/Icon23.svg"}>
             Індивідуальні стелажі для розміщення товару
           </ItemPrice>
+        </div>
+        <div className="logo">
+          <Image src="/logoRed.png" width={127} height={93} alt="logo" />
+          <p className="logoText">дешевше ваших інтернетів</p>
         </div>
         <NavigationControl active={6} black height={525} top={72} />
       </Container>
