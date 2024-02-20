@@ -4,6 +4,7 @@ export const StyledAbout = styled.section`
   padding-top: 175px;
   padding-bottom: 64px;
   position: relative;
+  z-index: 850;
   h2 {
     color: var(--Button-color, #da2919);
     font-family: "Proxima Nova";
@@ -60,5 +61,19 @@ export const StyledAbout = styled.section`
       left: -25px;
       top: -20px;
     }
+  }
+  & .numberAir {
+    position: absolute;
+    font-size: 130px;
+    top: -100px;
+    left: 0px;
+  }
+
+  & .opt {
+    position: absolute;
+    /* font-size: 130px; */
+    top: -20px;
+    left: 199px;
+    transform: rotateZ(-90deg);
   }
 `;

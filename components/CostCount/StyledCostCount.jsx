@@ -5,6 +5,7 @@ export const StyledCostCount = styled.section`
   z-index: 5;
   background-color: #ff4a3a;
   background-position: center;
+  overflow: hidden;
   & .container {
     display: flex;
   }
@@ -206,5 +207,18 @@ export const StyledCostCount = styled.section`
       line-height: normal;
       text-transform: uppercase;
     }
+  }
+  & .numberAir {
+    position: absolute;
+    font-size: 130px;
+    top: 50px;
+    left: 0px;
+  }
+  & .opt {
+    position: absolute;
+    font-size: 140px;
+    top: 400px;
+    right: -250px;
+    transform: rotateZ(-90deg);
   }
 `;

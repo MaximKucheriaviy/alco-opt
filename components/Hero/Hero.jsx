@@ -6,6 +6,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Button } from "../Button/Button";
 import { NavigationControl } from "../NavigationControl/NavigationControl";
+import { Lines } from "../Lines/Lines";
 
 export const Hero = () => {
   const containerRef = useRef(null);
@@ -22,7 +23,11 @@ export const Hero = () => {
       <div className="videoDiv">
         <video loop autoPlay muted className="video" src="/v1.mp4"></video>
       </div>
+      <Lines></Lines>
       <Container ref={containerRef}>
+        <p className="airBackText alcoopt">АЛКО/ОПТ</p>
+        <p className="airBackText number">№1</p>
+        <p className="airBackText fran">ФРАНШИЗА</p>
         <h1>АЛКО/ОПТ</h1>
         <Line></Line>
         <div className="line"></div>

@@ -8,6 +8,9 @@ export const InvestitionSum = () => {
   return (
     <StyledInvastition id="investition_sum">
       <Container>
+        <p className="airBackText numberAir">№6</p>
+        <p className="airBackText opt">ФРАНШИЗА</p>
+
         <p className="description">ДО СУМИ ІНВЕСТИЦІЙ ВХОДИТЬ:</p>
         <h2>Послуги</h2>
         <Line className="line" />

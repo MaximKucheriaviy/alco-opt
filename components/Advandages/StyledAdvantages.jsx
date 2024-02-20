@@ -5,6 +5,7 @@ export const StyledAdvantages = styled.section`
   padding-top: 149px;
   height: 813px;
   position: relative;
+  overflow: hidden;
   h2 {
     color: var(--Button-color, #0c0c0c);
     font-family: "Proxima Nova";
@@ -13,6 +14,7 @@ export const StyledAdvantages = styled.section`
     font-weight: 800;
     line-height: normal;
     text-transform: uppercase;
+
     & span {
       color: var(--Button-color, #0c0c0c);
 
@@ -62,5 +64,20 @@ export const StyledAdvantages = styled.section`
         opacity: 1;
       }
     }
+  }
+  & .numberAir {
+    position: absolute;
+    font-size: 130px;
+    top: -100px;
+    left: 0px;
+  }
+
+  & .opt {
+    /* z-index: 1; */
+    position: absolute;
+    /* font-size: 130px; */
+    top: -20px;
+    left: 149px;
+    transform: rotateZ(-90deg);
   }
 `;

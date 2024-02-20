@@ -7,6 +7,8 @@ export const StartPath = () => {
   return (
     <StyledStartPath id="start_path">
       <Container>
+        <p className="airBackText numberAir">№7</p>
+        <p className="airBackText opt">АЛКО/ОПТ</p>
         <h2>Етапи запуску магазину</h2>
         <div className="pathTopLine">
           <Image

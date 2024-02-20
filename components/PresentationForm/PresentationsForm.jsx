@@ -7,6 +7,13 @@ import { NavigationControl } from "../NavigationControl/NavigationControl";
 export const PresentationForm = () => {
   return (
     <StyledPresentationForm id="presentation_form">
+      <div className="lines">
+        <div className="line"></div>
+        <div className="line"></div>
+        <div className="line"></div>
+        <div className="line"></div>
+        <div className="line"></div>
+      </div>
       <Container className="container">
         <div className="imageThumb">
           <Image

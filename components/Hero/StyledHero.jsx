@@ -6,6 +6,7 @@ export const StyledHero = styled.section`
   position: relative;
   padding-top: 236px;
   padding-bottom: 81px;
+  z-index: 900;
 
   .line {
     border-radius: 50px;
@@ -23,6 +24,7 @@ export const StyledHero = styled.section`
       object-fit: cover;
     }
   }
+
   h1 {
     color: var(--Button-color, #da2919);
     font-family: "Proxima Nova";
@@ -113,5 +115,22 @@ export const StyledHero = styled.section`
     justify-content: center;
     align-items: center;
     border-radius: 50%;
+  }
+  & .alcoopt {
+    position: absolute;
+    top: -70px;
+    left: 0;
+  }
+  & .number {
+    position: absolute;
+    font-size: 130px;
+    top: 336px;
+    left: 577px;
+  }
+  & .fran {
+    position: absolute;
+    /* font-size: 130px; */
+    bottom: -130px;
+    left: 161px;
   }
 `;

@@ -3,11 +3,16 @@ import { StyledAbout } from "./StyledAbout";
 import { Line } from "../Line/Line";
 import Image from "next/image";
 import { NavigationControl } from "../NavigationControl/NavigationControl";
+import { Lines } from "../Lines/Lines";
 
 export const About = () => {
   return (
     <StyledAbout id="about">
+      <Lines />
       <Container>
+        <p className="airBackText numberAir">№2</p>
+        <p className="airBackText opt">АЛКО/ОПТ</p>
+
         <h2>
           АЛКО/ОПТ <span className="defis">-</span>
         </h2>

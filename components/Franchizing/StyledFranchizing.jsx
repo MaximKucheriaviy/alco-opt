@@ -63,8 +63,8 @@ export const StyledFrancizng = styled.section`
   }
   & .image {
     position: absolute;
-    top: 25px;
-    right: 176px;
+    top: -120px;
+    right: 116px;
     width: 524px;
     height: 524px;
 
@@ -115,5 +115,11 @@ export const StyledFrancizng = styled.section`
 
       filter: blur(50px);
     }
+  }
+  & .numberAir {
+    position: absolute;
+    font-size: 130px;
+    top: -100px;
+    left: 50px;
   }
 `;

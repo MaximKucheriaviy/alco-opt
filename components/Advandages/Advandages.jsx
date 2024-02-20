@@ -5,6 +5,7 @@ import Image from "next/image";
 import { useRef, useEffect, useState } from "react";
 import { ControlDots } from "../ControlDots/ControlDots";
 import { NavigationControl } from "../NavigationControl/NavigationControl";
+import { Lines } from "../Lines/Lines";
 
 const buttonData = [
   {
@@ -81,7 +82,10 @@ export const Advantages = () => {
 
   return (
     <StyledAdvantages id="advantages">
+      <Lines />
       <Container>
+        <p className="airBackText numberAir">№3</p>
+        <p className="airBackText opt">ФРАНШИЗА</p>
         <h2>
           Чому обрати <br /> <span>АЛКО/ОПТ?</span>
         </h2>

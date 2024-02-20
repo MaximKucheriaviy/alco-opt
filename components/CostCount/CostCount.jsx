@@ -5,13 +5,18 @@ import { Slider } from "@mui/material";
 import { useState } from "react";
 import Link from "next/link";
 import { NavigationControl } from "../NavigationControl/NavigationControl";
+import { Lines } from "../Lines/Lines";
 
 export const CostCount = () => {
   const [space, setSpace] = useState(1);
   return (
     <StyledCostCount id="cost_count">
       <div className="imageThumb"></div>
+      <Lines no1 no2 />
       <Container className="container">
+        <p className="airBackText numberAir">№5</p>
+        <p className="airBackText opt">ІНВЕСТИЦІЇ</p>
+
         <div className="leftContainer">
           <h2>розрахунок вартості франшизи</h2>
           <div className="whiteBlock">

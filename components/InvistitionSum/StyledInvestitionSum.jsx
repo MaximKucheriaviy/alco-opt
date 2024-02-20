@@ -46,4 +46,19 @@ export const StyledInvastition = styled.section`
     font-weight: 700;
     line-height: normal;
   }
+  & .numberAir {
+    position: absolute;
+    font-size: 130px;
+    top: -100px;
+    left: -30px;
+    -webkit-text-stroke-color: #ffc0bc71;
+  }
+  & .opt {
+    -webkit-text-stroke-color: #ffc0bc6e;
+
+    position: absolute;
+    /* font-size: 140px; */
+    top: 50px;
+    left: 200px;
+  }
 `;

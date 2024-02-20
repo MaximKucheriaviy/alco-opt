@@ -97,4 +97,17 @@ export const StyledStartPath = styled.section`
     top: 0px;
     left: 894px;
   }
+  & .numberAir {
+    position: absolute;
+    font-size: 130px;
+    top: -110px;
+    left: -20px;
+  }
+  & .opt {
+    position: absolute;
+    /* font-size: 140px; */
+    top: 100px;
+    right: -320px;
+    transform: rotateZ(-90deg);
+  }
 `;
