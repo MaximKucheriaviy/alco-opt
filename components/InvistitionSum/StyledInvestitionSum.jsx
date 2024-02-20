@@ -62,8 +62,8 @@ export const StyledInvastition = styled.section`
     left: 200px;
   }
   & .logoText {
-    /* color: #f04130; */
-    color: #fff;
+    color: #f04130;
+
     font-family: "DIN Pro";
     font-size: 32px;
     font-style: normal;
@@ -80,7 +80,7 @@ export const StyledInvastition = styled.section`
     position: absolute;
     /* top: -20px; */
     right: 0px;
-    top: -100px;
+    top: -0px;
     display: flex;
     align-items: center;
     gap: 24px;
