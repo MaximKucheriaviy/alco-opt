@@ -12,6 +12,7 @@ export const Hero = () => {
   const containerRef = useRef(null);
   const [buttonPading, setButtonPudding] = useState(0);
   const [modalOpened, setModalOpened] = useState(false);
+  const [videoPath, setVideoPath] = useState("/v2.mp4");
   useEffect(() => {
     if (containerRef.current === null) {
       return;
@@ -28,7 +29,7 @@ export const Hero = () => {
           muted
           className="video"
           preload="auto"
-          src="/v1.mp4"
+          src={videoPath}
         ></video>
       </div>
       <Lines></Lines>
@@ -48,11 +49,32 @@ export const Hero = () => {
 
         <div className="buttons">
           <div className="line"></div>
-          <Link href="/">МАГАЗИН</Link>
+          <button
+            onClick={() => {
+              setVideoPath("/v2.mp4");
+            }}
+            href="/"
+          >
+            МАГАЗИН
+          </button>
           <div className="line"></div>
-          <Link href="/">МАГАЗИН</Link>
+          <button
+            onClick={() => {
+              setVideoPath("/v4.mp4");
+            }}
+            href="/"
+          >
+            СКЛАД
+          </button>
           <div className="line"></div>
-          <Link href="/">МАГАЗИН</Link>
+          <button
+            onClick={() => {
+              setVideoPath("/v3.mp4");
+            }}
+            href="/"
+          >
+            БАР
+          </button>
         </div>
         <button className="gradientButton">Стати партнером</button>
         <Button

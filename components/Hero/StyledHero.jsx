@@ -77,10 +77,11 @@ export const StyledHero = styled.section`
       height: 41px;
       background-color: #da2919;
     }
-    a {
+    button {
       margin-left: 32px;
       margin-right: 32px;
-
+      background-color: transparent;
+      border: none;
       color: #fff;
 
       font-family: "Proxima Nova";
