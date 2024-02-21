@@ -9,6 +9,7 @@ import { Lines } from "../Lines/Lines";
 
 export const CostCount = () => {
   const [space, setSpace] = useState(1);
+  const [modalOpen, setModalOpen] = useState(false);
   return (
     <StyledCostCount id="cost_count">
       <div className="imageThumb"></div>
@@ -75,9 +76,14 @@ export const CostCount = () => {
             max={5}
             onChange={(event) => setSpace(event.target.value)}
           />
-          <Link className="need" href="/">
+          <button
+            className="need"
+            onClick={() => {
+              setModalOpen(true);
+            }}
+          >
             Які вимоги до приміщення?
-          </Link>
+          </button>
           <div className="iconText">
             <Image
               src={"/iconInvest.svg"}
@@ -99,6 +105,64 @@ export const CostCount = () => {
         </div>
         <NavigationControl active={5} black top={275} />
       </Container>
+      {modalOpen && (
+        <div className="overlay">
+          <div className="modal">
+            <div className="textDiv">
+              <ul>
+                <li className="text">
+                  <div className="blackPoint"></div>
+                  <div>Торгове приміщення знаходиться на першому поверсі;</div>
+                </li>
+                <li className="text">
+                  <div className="blackPoint"></div>
+                  <div>
+                    Присутні всі комунікації (електричні потужності 30-40 кВт, з
+                    можливістю збільшення потужностей до 70 кВт);
+                  </div>
+                </li>
+                <li className="text">
+                  <div className="blackPoint"></div>
+                  <div>Фасад з вітринними вікнами;</div>
+                </li>
+                <li className="text">
+                  <div className="blackPoint"></div>
+                  <div>Місце під літній майданчик (за бажанням);</div>
+                </li>
+                <li className="text">
+                  <div className="blackPoint"></div>
+                  <div>МРозміщення в житловому районі;</div>
+                </li>
+                <li className="text">
+                  <div className="blackPoint"></div>
+                  <div>
+                    Можливість встановлення рампи, або наявність чорного входу;
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div className="modalImageThumb">
+              <Image
+                src="/modalImage.png"
+                alt="hall"
+                width={618}
+                height={533}
+              />
+            </div>
+            <button
+              className="crostButton"
+              onClick={() => [setModalOpen(false)]}
+            >
+              <Image
+                src="/crostButton.svg"
+                alt="crost"
+                width={46}
+                height={46}
+              />
+            </button>
+          </div>
+        </div>
+      )}
     </StyledCostCount>
   );
 };

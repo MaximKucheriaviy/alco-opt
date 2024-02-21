@@ -31,7 +31,7 @@ export const StyledAbout = styled.section`
   & .textList {
     width: 530px;
   }
-  .text {
+  & .text {
     margin-top: 24px;
     /* width: 580px; */
     color: #fff;

@@ -185,6 +185,8 @@ export const StyledCostCount = styled.section`
       box-shadow: 4px 0px 20px 0px rgba(0, 0, 0, 0.25);
     }
     & .need {
+      background-color: transparent;
+      border: none;
       margin-top: 132px;
       color: #000;
       display: block;
@@ -226,5 +228,63 @@ export const StyledCostCount = styled.section`
     top: 400px;
     right: -250px;
     transform: rotateZ(-90deg);
+  }
+  & .overlay {
+    z-index: 2000;
+    fill: rgba(0, 0, 0, 0.62);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    & .modal {
+      position: relative;
+      display: flex;
+      background-color: #fff;
+      /* width: 1200px; */
+      & .textDiv {
+        width: 519px;
+      }
+      & ul {
+        padding: 40px 46px;
+      }
+      & .text {
+        margin-top: 24px;
+        display: flex;
+
+        font-family: "Proxima Nova";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 145%;
+        & .blackPoint {
+          margin-top: 10px;
+          margin-right: 10px;
+          display: block;
+          height: 100%;
+          width: 5px;
+          height: 5px;
+          border-radius: 50%;
+          background-color: #000;
+        }
+      }
+      & .modalImageThumb {
+        width: 618px;
+      }
+      & .crostButton {
+        position: absolute;
+        padding: 0;
+        background-color: transparent;
+        border: none;
+        top: 20px;
+        right: 20px;
+      }
+    }
   }
 `;
