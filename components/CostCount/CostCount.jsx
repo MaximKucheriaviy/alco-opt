@@ -131,7 +131,7 @@ export const CostCount = () => {
                 </li>
                 <li className="text">
                   <div className="blackPoint"></div>
-                  <div>МРозміщення в житловому районі;</div>
+                  <div>Розміщення в житловому районі;</div>
                 </li>
                 <li className="text">
                   <div className="blackPoint"></div>

@@ -13,9 +13,7 @@ export const About = () => {
         <p className="airBackText numberAir">№2</p>
         <p className="airBackText opt">АЛКО/ОПТ</p>
 
-        <h2>
-          АЛКО/ОПТ <span className="defis">-</span>
-        </h2>
+        <h2>АЛКО/ОПТ</h2>
         <p className="subtitle">РЕВОЛЮЦІЙНА КОНЦЕПЦІЯ: </p>
         <Line className="line" />
         <ul className="textList">

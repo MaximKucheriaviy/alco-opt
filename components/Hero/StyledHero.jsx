@@ -26,6 +26,8 @@ export const StyledHero = styled.section`
   }
 
   h1 {
+    position: relative;
+    z-index: 1000;
     color: var(--Button-color, #da2919);
     font-family: "Proxima Nova";
     font-size: 96px;
@@ -93,6 +95,9 @@ export const StyledHero = styled.section`
     }
   }
   .gradientButton {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
     width: ${({ buttonPadding }) => parseInt(buttonPadding) + 461}px;
     height: 77px;
     position: relative;
@@ -131,7 +136,7 @@ export const StyledHero = styled.section`
   }
   & .alcoopt {
     position: absolute;
-    top: -70px;
+    top: -130px;
     left: 0;
   }
   & .number {

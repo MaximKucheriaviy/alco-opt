@@ -76,7 +76,9 @@ export const Hero = () => {
             БАР
           </button>
         </div>
-        <button className="gradientButton">Стати партнером</button>
+        <Link href="#presentation_form" className="gradientButton">
+          Стати партнером
+        </Link>
         <Button
           onClick={() => {
             setModalOpened(true);

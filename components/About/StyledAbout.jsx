@@ -6,6 +6,8 @@ export const StyledAbout = styled.section`
   position: relative;
   z-index: 850;
   h2 {
+    position: relative;
+    z-index: 1000;
     color: var(--Button-color, #da2919);
     font-family: "Proxima Nova";
     font-size: 64px;

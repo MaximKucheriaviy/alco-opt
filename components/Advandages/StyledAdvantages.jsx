@@ -7,6 +7,8 @@ export const StyledAdvantages = styled.section`
   position: relative;
   overflow: hidden;
   h2 {
+    position: relative;
+    z-index: 1000;
     color: var(--Button-color, #0c0c0c);
     font-family: "Proxima Nova";
     font-size: 48px;
@@ -57,7 +59,7 @@ export const StyledAdvantages = styled.section`
       border: none;
       padding: 40px 26px;
       background-color: #fff;
-      opacity: 0;
+      opacity: 0.2;
       transition-duration: 500ms;
       transition-property: opacity;
       &:hover {

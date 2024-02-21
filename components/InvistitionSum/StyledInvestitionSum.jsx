@@ -7,6 +7,8 @@ export const StyledInvastition = styled.section`
   display: grid;
 
   & .description {
+    position: relative;
+    z-index: 1000;
     color: var(--Text-color, #0b0b0b);
     font-family: "Proxima Nova";
     font-size: 52px;
@@ -15,6 +17,8 @@ export const StyledInvastition = styled.section`
     line-height: normal;
   }
   & h2 {
+    position: relative;
+    z-index: 1000;
     margin-top: 64px;
     color: #000;
 
@@ -80,7 +84,7 @@ export const StyledInvastition = styled.section`
     position: absolute;
     /* top: -20px; */
     right: 0px;
-    top: -0px;
+    top: -90px;
     display: flex;
     align-items: center;
     gap: 24px;
