@@ -36,7 +36,7 @@ export const StyledHeader = styled.header`
     align-items: center;
     & .mainNavigation {
       display: flex;
-      margin-left: 480px;
+      margin-left: 288px;
       gap: 54px;
 
       a {

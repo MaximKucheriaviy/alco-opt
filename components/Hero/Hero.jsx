@@ -76,21 +76,23 @@ export const Hero = () => {
             БАР
           </button>
         </div>
-        <Link href="#presentation_form" className="gradientButton">
-          Стати партнером
-        </Link>
-        <Button
-          onClick={() => {
-            setModalOpened(true);
-          }}
-          className="tlephone"
-        >
-          <Image src={"/Phone.svg"} width={49} height={49} alt="phone" />
-        </Button>
+        <div className="buttonDiv">
+          <Link href="#presentation_form" className="gradientButton">
+            Стати партнером
+          </Link>
+          <Button
+            onClick={() => {
+              setModalOpened(true);
+            }}
+            className="tlephone"
+          >
+            <Image src={"/Phone.svg"} width={49} height={49} alt="phone" />
+          </Button>
+        </div>
         <NavigationControl
-          top={-98}
+          top={0}
           moreText
-          height={482}
+          // height={482}
           upArrow={false}
           active={1}
         />

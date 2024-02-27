@@ -4,8 +4,8 @@ export const StyledHero = styled.section`
   overflow: hidden;
   background-color: white;
   position: relative;
-  padding-top: 236px;
-  padding-bottom: 81px;
+  padding-top: 200px;
+  padding-bottom: 71px;
   z-index: 900;
 
   .line {
@@ -30,7 +30,7 @@ export const StyledHero = styled.section`
     z-index: 1000;
     color: var(--Button-color, #da2919);
     font-family: "Proxima Nova";
-    font-size: 96px;
+    font-size: 80px;
     font-style: normal;
     font-weight: 800;
     line-height: normal;
@@ -40,7 +40,7 @@ export const StyledHero = styled.section`
 
     color: #fff;
     font-family: "Proxima Nova";
-    font-size: 64px;
+    font-size: 56px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -51,18 +51,18 @@ export const StyledHero = styled.section`
     color: #fff;
 
     font-family: "Proxima Nova";
-    font-size: 32px;
+    font-size: 24px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    width: 664px;
+    width: 552px;
   }
 
   & .slogan {
     color: #fff;
 
     font-family: "Proxima Nova";
-    font-size: 32px;
+    font-size: 24px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -93,6 +93,9 @@ export const StyledHero = styled.section`
       line-height: normal;
       text-decoration: none;
     }
+  }
+  & .buttonDiv {
+    display: flex;
   }
   .gradientButton {
     display: inline-flex;
@@ -136,19 +139,19 @@ export const StyledHero = styled.section`
   }
   & .alcoopt {
     position: absolute;
-    top: -130px;
+    top: -100px;
     left: 0;
   }
   & .number {
     position: absolute;
     font-size: 130px;
-    top: 336px;
-    left: 577px;
+    top: 240px;
+    left: 447px;
   }
   & .fran {
     position: absolute;
     /* font-size: 130px; */
-    bottom: -130px;
+    bottom: -120px;
     left: 161px;
   }
   & .modal {

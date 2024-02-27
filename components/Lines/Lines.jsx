@@ -8,7 +8,7 @@ const StyledLines = styled.div`
   height: 100%;
   display: flex;
   justify-content: center;
-  gap: 312px;
+  gap: 194px;
   & .line {
     height: 100%;
     width: 1px;
