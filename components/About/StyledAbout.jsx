@@ -21,7 +21,7 @@ export const StyledAbout = styled.section`
   .subtitle {
     color: var(--Button-color, #fff);
     font-family: "Proxima Nova";
-    font-size: 40px;
+    font-size: 38px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
