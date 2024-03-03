@@ -57,7 +57,7 @@ export const StyledAdvantages = styled.section`
     position: absolute;
     & button {
       border: none;
-      padding: 40px 26px;
+      padding: 32px 28px;
       background-color: #fff;
       opacity: 0.2;
       transition-duration: 500ms;

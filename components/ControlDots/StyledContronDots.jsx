@@ -4,7 +4,7 @@ export const StyledControlDots = styled.div`
   display: flex;
   align-items: center;
   width: 500px;
-  justify-content: space-between;
+  gap: 40px;
   position: relative;
   z-index: 2;
   & button {
