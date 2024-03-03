@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 
 export const StyledAbout = styled.section`
-  padding-top: 175px;
+  padding-top: 117px;
   padding-bottom: 64px;
   position: relative;
   z-index: 850;
@@ -21,17 +21,17 @@ export const StyledAbout = styled.section`
   .subtitle {
     color: var(--Button-color, #fff);
     font-family: "Proxima Nova";
-    font-size: 38px;
+    font-size: 36px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     text-transform: uppercase;
   }
-  .line {
+  .lineRed {
     margin-top: 20px;
   }
   & .textList {
-    width: 530px;
+    width: 552px;
   }
   & .text {
     margin-top: 24px;
@@ -51,7 +51,7 @@ export const StyledAbout = styled.section`
     }
 
     font-family: "Proxima Nova";
-    font-size: 20px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: 145%;
@@ -70,7 +70,7 @@ export const StyledAbout = styled.section`
   .imageTumb {
     height: ${() => (601 * 100) / 718}%;
     /* overflow: hidden; */
-    width: 50%;
+    width: 44%;
     position: absolute;
     bottom: 0px;
     right: 0px;
@@ -106,15 +106,15 @@ export const StyledAbout = styled.section`
   & .numberAir {
     position: absolute;
     font-size: 130px;
-    top: -100px;
+    top: -110px;
     left: 0px;
   }
 
   & .opt {
     position: absolute;
     /* font-size: 130px; */
-    top: -20px;
-    left: 199px;
+    top: 180px;
+    left: 255px;
     transform: rotateZ(-90deg);
   }
 `;

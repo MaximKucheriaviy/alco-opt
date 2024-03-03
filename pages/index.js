@@ -17,18 +17,18 @@ import { Footer } from "@/components/Footer/Footer";
 export default function Home() {
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <main>
         <Hero />
         <About />
-        <Advantages />
-        <Francgizing />
-        <CostCount />
-        <InvestitionSum />
-        <StartPath />
-        <PresentationForm />
+        {/* <Advantages /> */}
+        {/* <Francgizing /> */}
+        {/* <CostCount /> */}
+        {/* <InvestitionSum /> */}
+        {/* <StartPath /> */}
+        {/* <PresentationForm /> */}
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }

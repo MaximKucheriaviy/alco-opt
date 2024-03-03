@@ -8,14 +8,14 @@ import { Lines } from "../Lines/Lines";
 export const About = () => {
   return (
     <StyledAbout id="about">
-      <Lines />
+      <Lines no3 />
       <Container>
         <p className="airBackText numberAir">№2</p>
         <p className="airBackText opt">АЛКО/ОПТ</p>
 
         <h2>АЛКО/ОПТ</h2>
         <p className="subtitle">РЕВОЛЮЦІЙНА КОНЦЕПЦІЯ: </p>
-        <Line className="line" />
+        <Line className="lineRed" />
         <ul className="textList">
           <li className="text">
             <div className="redPoint"></div>
@@ -47,7 +47,7 @@ export const About = () => {
             </div>
           </li>
         </ul>
-        <NavigationControl active={2} top={150} />
+        <NavigationControl active={2} top={40} height={328} />
       </Container>
       <div className="imageTumb">
         <div className="logo">
