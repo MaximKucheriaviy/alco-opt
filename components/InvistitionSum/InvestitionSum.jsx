@@ -89,7 +89,7 @@ export const InvestitionSum = () => {
           <Image src="/logoRed.png" width={127} height={93} alt="logo" />
           <p className="logoText">дешевше ваших інтернетів</p>
         </div>
-        <NavigationControl active={6} black height={525} top={72} />
+        <NavigationControl active={6} black height={525} top={200} />
       </Container>
     </StyledInvastition>
   );

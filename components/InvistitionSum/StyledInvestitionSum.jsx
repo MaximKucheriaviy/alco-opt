@@ -2,8 +2,8 @@ import styled from "@emotion/styled";
 
 export const StyledInvastition = styled.section`
   background-color: #fff;
-  padding-top: 177px;
-  padding-bottom: 117px;
+  padding-top: 152px;
+  padding-bottom: 82px;
   display: grid;
 
   & .description {
@@ -36,7 +36,7 @@ export const StyledInvastition = styled.section`
     margin-top: 56px;
     display: grid;
     column-gap: 40px;
-    grid-template-columns: repeat(4, 282px);
+    grid-template-columns: repeat(3, 282px);
     row-gap: 56px;
   }
 

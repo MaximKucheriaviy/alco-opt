@@ -3,7 +3,7 @@ import styled from "@emotion/styled";
 export const StyledStartPath = styled.section`
   background-color: #131313;
   padding-top: 174px;
-  padding-bottom: 71px;
+  padding-bottom: 119px;
   & h2 {
     color: #fff;
 
@@ -16,11 +16,11 @@ export const StyledStartPath = styled.section`
   }
   & .pathTopLine {
     position: relative;
-    padding-left: 67px;
     margin-top: 81px;
-    display: flex;
-    padding-top: 9px;
-    padding-bottom: 27px;
+    display: grid;
+    grid-template-columns: repeat(4, 161px);
+    grid-column-gap: 129px;
+    grid-row-gap: 64px;
   }
 
   & .bottomLine {
@@ -53,10 +53,12 @@ export const StyledStartPath = styled.section`
   }
   & .discription {
     color: #fff;
-
+    width: 159px;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
     font-family: "Proxima Nova";
-    font-size: 16px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -69,33 +71,33 @@ export const StyledStartPath = styled.section`
   & .arrowBow1 {
     position: absolute;
     top: 9px;
-    left: 231px;
+    left: 150px;
   }
   & .arrowBow2 {
     position: absolute;
-    bottom: 0px;
-    left: 553px;
+    top: 170px;
+    left: 440px;
   }
   & .arrowBow3 {
     position: absolute;
     top: 0px;
-    left: 886px;
+    left: 740px;
   }
   & .arrowBow4 {
     position: absolute;
-    top: 0px;
-    left: 229px;
+    top: 250px;
+    left: 150px;
   }
   & .arrowBow5 {
     position: absolute;
-    bottom: 0px;
-    left: 552px;
+    bottom: 20px;
+    left: 432px;
     transform: rotateZ(6.002deg);
   }
   & .arrowBow6 {
     position: absolute;
-    top: 0px;
-    left: 894px;
+    top: 250px;
+    left: 740px;
   }
   & .numberAir {
     position: absolute;
@@ -128,8 +130,8 @@ export const StyledStartPath = styled.section`
   & .logo {
     position: absolute;
     /* top: -20px; */
-    right: 0px;
-    top: -100px;
+    right: -100px;
+    top: -250px;
     display: flex;
     align-items: center;
     gap: 24px;

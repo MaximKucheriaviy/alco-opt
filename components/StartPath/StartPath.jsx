@@ -8,7 +8,7 @@ export const StartPath = () => {
     <StyledStartPath id="start_path">
       <Container>
         <p className="airBackText numberAir">№7</p>
-        <p className="airBackText opt">АЛКО/ОПТ</p>
+        {/* <p className="airBackText opt">АЛКО/ОПТ</p> */}
         <h2>Етапи запуску магазину</h2>
         <div className="pathTopLine">
           <Image
@@ -33,49 +33,6 @@ export const StartPath = () => {
             alt="arrow"
           />
 
-          <div style={{ width: "149px" }} className="item">
-            <p className="number filled">01</p>
-            <p className="discription">Знайомство в офісі</p>
-          </div>
-          <div
-            style={{
-              width: "158px",
-              marginLeft: "175px",
-            }}
-            className="item"
-          >
-            <p className="number outlined">02</p>
-            <p className="discription">
-              Підписання пакету договорів та оплата вступного внеску
-            </p>
-          </div>
-          <div
-            style={{
-              width: "187px",
-              marginLeft: "145px",
-            }}
-            className="item"
-          >
-            <p className="number outlined">03</p>
-            <p className="discription">
-              Проходження навчання в офісі, обговорення умов співробітництва і
-              затвердження локації
-            </p>
-          </div>
-          <div
-            style={{
-              width: "190px",
-              marginLeft: "120px",
-            }}
-            className="item"
-          >
-            <p className="number outlined">04</p>
-            <p className="discription">
-              Передача стандартів ведення бізнесу і макетів рекламних матеріалів
-            </p>
-          </div>
-        </div>
-        <div className="bottomLine">
           <Image
             className="arrowBow4"
             src={"/arrowBow.svg"}
@@ -97,52 +54,59 @@ export const StartPath = () => {
             height={18}
             alt="arrow"
           />
-          <div style={{ width: "191px" }} className="item">
+
+          <div className="item">
+            <p className="number filled">01</p>
+            <p className="discription">Знайомство в офісі</p>
+          </div>
+          <div className="item">
+            <p className="number outlined">02</p>
+            <p className="discription">
+              Підписання пакету договорів та оплата вступного внеску
+            </p>
+          </div>
+          <div className="item">
+            <p className="number outlined">03</p>
+            <p className="discription">
+              Проходження навчання в офісі, обговорення умов співробітництва і
+              затвердження локації
+            </p>
+          </div>
+          <div className="item">
+            <p className="number outlined">04</p>
+            <p className="discription">
+              Передача стандартів ведення бізнесу і макетів рекламних матеріалів
+            </p>
+          </div>
+
+          <div className="item">
             <p className="number outlined">05</p>
             <p className="discription">
               Підготовка проєкту приміщення, супровід під час ремонтних робіт і
               подготовки приміщення
             </p>
           </div>
-          <div
-            style={{
-              width: "159px",
-              marginLeft: "159px",
-            }}
-            className="item"
-          >
+          <div className="item">
             <p className="number outlined">06</p>
             <p className="discription">Навчання персоналу</p>
           </div>
-          <div
-            style={{
-              width: "180px",
-              marginLeft: "154px",
-            }}
-            className="item"
-          >
+          <div className="item">
             <p className="number outlined">07</p>
             <p className="discription">
               Налаштування всіх стандартів і автоматизація процесів
             </p>
           </div>
-          <div
-            style={{
-              width: "190px",
-              marginLeft: "120px",
-            }}
-            className="item"
-          >
+          <div className="item">
             <p className="number filled">08</p>
             <p className="discription">
               ПУрочисте відкриття магазинку{" "}
               <span className="name">АЛКООПТ</span>
             </p>
           </div>
-        </div>
-        <div className="logo">
-          <Image src="/logo.png" width={127} height={93} alt="logo" />
-          <p className="logoText">дешевше ваших інтернетів</p>
+          <div className="logo">
+            <Image src="/logo.png" width={108} height={80} alt="logo" />
+            <p className="logoText">Вистачить не всім</p>
+          </div>
         </div>
         <NavigationControl active={7} top={63} />
       </Container>

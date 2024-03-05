@@ -24,8 +24,8 @@ export default function Home() {
         <Advantages />
         <Francgizing />
         <CostCount />
-        {/* <InvestitionSum /> */}
-        {/* <StartPath /> */}
+        <InvestitionSum />
+        <StartPath />
         {/* <PresentationForm /> */}
       </main>
       {/* <Footer /> */}
