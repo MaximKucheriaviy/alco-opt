@@ -41,10 +41,13 @@ export const StyledFrancizng = styled.section`
     line-height: 20px; /* 41.667% */
   }
   & ul {
-    display: flex;
+    display: grid;
     margin-top: 72px;
-    gap: 32px;
+
     padding-bottom: 73px;
+    grid-column-gap: 56px;
+    grid-row-gap: 40px;
+    grid-template-columns: repeat(2, 230px);
     & li {
       color: #fff;
       font-family: "Proxima Nova";
@@ -63,7 +66,7 @@ export const StyledFrancizng = styled.section`
   }
   & .image {
     position: absolute;
-    top: -120px;
+    top: 20px;
     right: 116px;
     width: 469px;
     height: 469px;
@@ -121,5 +124,31 @@ export const StyledFrancizng = styled.section`
     font-size: 130px;
     top: -100px;
     left: 80px;
+  }
+  & .logoText {
+    color: #ffffff;
+
+    font-family: "DIN Pro";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px; /* 100% */
+    text-transform: uppercase;
+    width: 180px;
+  }
+
+  & .logo {
+    position: absolute;
+    /* top: -20px; */
+    right: 100px;
+    top: -90px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+
+    & .image {
+      width: 100%;
+      height: auto;
+    }
   }
 `;

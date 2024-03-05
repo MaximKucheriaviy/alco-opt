@@ -26,7 +26,7 @@ export const PresentationForm = () => {
         </div>
         <form>
           <h2>
-            Отримайте презентацію франшизи з детальним прорахунком вартості і
+            Отримайте інформацію франшизи з детальним прорахунком вартості і
             окупності вкалдень
           </h2>
           <div className="inputContainer">
@@ -41,7 +41,7 @@ export const PresentationForm = () => {
             <label htmlFor="phoneInput">E-mail</label>
             <input type="text" id="phoneInput" />
           </div>
-          <Button className={"submitButton"}>отримати презентацію</Button>
+          <Button className={"submitButton"}>отримати прорахунок</Button>
         </form>
         <NavigationControl
           black

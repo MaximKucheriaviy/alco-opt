@@ -17,7 +17,7 @@ export const InvestitionSum = () => {
         <Line className="line" />
         <div className="grid1">
           <ItemPrice path={"/Icons/Icon1.svg"}>
-            Права На ведення діяльності під ТМ АЛКООПТ
+            Права На ведення діяльності під ТМ АЛКО/ОПТ
           </ItemPrice>
           <ItemPrice path={"/Icons/Icon2.svg"}>
             Допомога в пошуку локації і приміщення

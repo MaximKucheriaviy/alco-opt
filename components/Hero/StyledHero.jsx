@@ -68,7 +68,9 @@ export const StyledHero = styled.section`
     line-height: normal;
     margin-top: 16px;
   }
-
+  & .slogan1 {
+    margin-top: 0;
+  }
   .buttons {
     height: 71px;
     display: flex;

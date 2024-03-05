@@ -9,11 +9,15 @@ export const Francgizing = () => {
         <p className="airBackText numberAir">№4</p>
         <h2>ФРАНЧАЙЗИНГ</h2>
         <p className="sub">Орієнтовні інвестиції</p>
-        <p className="price">ВІД 70 000$</p>
+        <p className="price">ВІД 48 000$</p>
         <ul>
           <li>
             <Image src="/calendar.svg" width={50} height={49} alt="calender" />
             <p>реалізація проєкту через 2-3 місяці</p>
+          </li>
+          <li>
+            <Image src="/Royalty.svg" width={61} height={49} alt="calender" />
+            <p>роялті від обороту товару - 1%</p>
           </li>
           <li>
             <Image src="/lether.svg" width={61} height={49} alt="calender" />
@@ -30,6 +34,10 @@ export const Francgizing = () => {
           <div className="effect2"></div>
           <div className="effect3"></div>
           <Image src="/wineBox.png" width={469} height={469} alt="wine box" />
+        </div>
+        <div className="logo">
+          <Image src="/logo.png" width={108} height={80} alt="logo" />
+          <p className="logoText">Вистачить не всім</p>
         </div>
       </Container>
     </StyledFrancizng>
