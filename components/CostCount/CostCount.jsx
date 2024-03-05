@@ -2,16 +2,18 @@ import { StyledCostCount } from "./StyledCostCount";
 import { Container } from "../Container/Container";
 import Image from "next/image";
 import { Slider } from "@mui/material";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import { NavigationControl } from "../NavigationControl/NavigationControl";
 import { Lines } from "../Lines/Lines";
+import { spaceTable } from "@/service/spaceTable";
 
 export const CostCount = () => {
   const [space, setSpace] = useState(1);
   const [modalOpen, setModalOpen] = useState(false);
   const [timer, setTimer] = useState(null);
   const [dialog, setDialog] = useState(false);
+  const [table, setTable] = useState(spaceTable[0]);
   const setTimerCallback = () => {
     if (timer) {
       clearTimeout(timer);
@@ -22,6 +24,9 @@ export const CostCount = () => {
     }, 3000);
     setTimer(t);
   };
+  useEffect(() => {
+    setTable(spaceTable[space - 1]);
+  }, [space]);
   return (
     <StyledCostCount id="cost_count">
       <div className="imageThumb"></div>
@@ -45,7 +50,7 @@ export const CostCount = () => {
                   />
                 </button>
               </p>
-              <p className="redValue">250 000$</p>
+              <p className="redValue">{table.total} 000$</p>
             </div>
             {dialog && (
               <div className="dialog">
@@ -64,19 +69,19 @@ export const CostCount = () => {
             <p className="from">з них: </p>
             <div className="priceItem">
               <p className="price">Обладнання:</p>
-              <p className="value">27 000$</p>
+              <p className="value">{table.stuf} 000$</p>
             </div>
             <div className="priceItem">
               <p className="price">Ліцензійний внесок:</p>
-              <p className="value">50 000$</p>
+              <p className="value">{table.license} 000$</p>
             </div>
             <div className="priceItem">
               <p className="price">Ремонт:</p>
-              <p className="value">95 000$</p>
+              <p className="value">{table.fix} 000$</p>
             </div>
             <div className="priceItem">
               <p className="price">Товар:</p>
-              <p className="value">100 000$</p>
+              <p className="value">{table.goods} 000$</p>
             </div>
           </div>
           <Link className="link" href="#presentation_form">
@@ -139,7 +144,7 @@ export const CostCount = () => {
               height={48}
             />
             <p>
-              прибуток з першого місяця від - <span>2500$</span>
+              прибуток з першого місяця від - <span>{table.income}$</span>
             </p>
           </div>
         </div>
