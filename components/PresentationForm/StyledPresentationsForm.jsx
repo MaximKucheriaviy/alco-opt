@@ -31,7 +31,7 @@ export const StyledPresentationForm = styled.section`
         color: #0b0b0b;
         text-align: center;
         font-family: "Proxima Nova";
-        font-size: 36px;
+        font-size: 32px;
         font-style: normal;
         font-weight: 400;
         line-height: 120%;

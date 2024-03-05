@@ -130,7 +130,7 @@ export const StyledStartPath = styled.section`
   & .logo {
     position: absolute;
     /* top: -20px; */
-    right: -100px;
+    right: 00px;
     top: -250px;
     display: flex;
     align-items: center;

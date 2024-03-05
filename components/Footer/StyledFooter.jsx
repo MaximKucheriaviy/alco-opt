@@ -17,11 +17,11 @@ export const StyledFooter = styled.footer`
     text-transform: uppercase;
     width: 180px;
     margin-left: 24px;
-    margin-right: 225px;
+    margin-right: 142px;
   }
   & .addresBlock {
     &:not(:last-child) {
-      margin-right: 120px;
+      margin-right: 108px;
     }
     & .title {
       color: #fff;
@@ -45,9 +45,13 @@ export const StyledFooter = styled.footer`
       line-height: normal;
       text-decoration: none;
     }
+    & .addres {
+      width: 174px;
+    }
     & .socialLiks {
       display: flex;
       gap: 12px;
+      width: 150px;
       & a {
         transform: scale(1);
         transition-duration: 100ms;

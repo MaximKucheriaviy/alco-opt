@@ -11,7 +11,7 @@ export const Footer = () => {
         <p className="notAll">Вистачить не всім</p>
         <div className="addresBlock">
           <p className="title">Адреса</p>
-          <Link className="item" href={"/"}>
+          <Link className="item addres" href={"/"}>
             Київ, вул. О Мишуги, 3А
           </Link>
           <p className="item">Пн.-Нд. 11:00-23:00</p>
@@ -25,7 +25,7 @@ export const Footer = () => {
             info@alcoopt.com.ua
           </Link>
         </div>
-        <div className="addresBlock">
+        <div className="links addresBlock">
           <p className="title">Соціальні мережі</p>
           <div className="socialLiks">
             <Link href={"/"}>
