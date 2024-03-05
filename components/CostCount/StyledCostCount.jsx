@@ -20,14 +20,14 @@ export const StyledCostCount = styled.section`
   }
   & .leftContainer {
     padding-top: 160px;
-    padding-bottom: 125px;
+    padding-bottom: 76px;
     width: 50%;
 
     & h2 {
       width: 624px;
       color: #fff;
       font-family: "Proxima Nova";
-      font-size: 52px;
+      font-size: 44px;
       font-style: normal;
       font-weight: 700;
       line-height: 60px; /* 115.385% */
@@ -49,7 +49,7 @@ export const StyledCostCount = styled.section`
       & .priceBig {
         color: #000;
         font-family: "Proxima Nova";
-        font-size: 32px;
+        font-size: 28px;
         font-style: normal;
         font-weight: 700;
         line-height: normal;
@@ -58,7 +58,7 @@ export const StyledCostCount = styled.section`
       & .redValue {
         color: var(--Button-color, #da2919);
         font-family: "Proxima Nova";
-        font-size: 32px;
+        font-size: 28px;
         font-style: normal;
         font-weight: 700;
         line-height: normal;
@@ -69,7 +69,7 @@ export const StyledCostCount = styled.section`
         color: var(--Button-color, #9e9e9e);
 
         font-family: "Proxima Nova";
-        font-size: 16px;
+        font-size: 14px;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
@@ -80,7 +80,7 @@ export const StyledCostCount = styled.section`
         color: #000;
 
         font-family: "Proxima Nova";
-        font-size: 32px;
+        font-size: 24px;
         font-style: normal;
         font-weight: 700;
         line-height: normal;
@@ -90,7 +90,7 @@ export const StyledCostCount = styled.section`
         color: #353535;
 
         font-family: "Proxima Nova";
-        font-size: 32px;
+        font-size: 24px;
         font-style: normal;
         font-weight: 300;
         line-height: normal;
@@ -104,7 +104,7 @@ export const StyledCostCount = styled.section`
       text-decoration: none;
 
       width: 100%;
-      height: 88px;
+      height: 70px;
       background: rgba(255, 255, 255, 0.24);
 
       backdrop-filter: blur(5px);
@@ -113,7 +113,7 @@ export const StyledCostCount = styled.section`
       color: #fff;
 
       font-family: "Proxima Nova";
-      font-size: 24px;
+      font-size: 20px;
       font-style: normal;
       font-weight: 700;
       line-height: normal;
@@ -128,7 +128,7 @@ export const StyledCostCount = styled.section`
       color: #171717;
 
       font-family: "Proxima Nova";
-      font-size: 48px;
+      font-size: 42px;
       font-style: normal;
       font-weight: 700;
       line-height: 60px; /* 125% */
@@ -187,7 +187,7 @@ export const StyledCostCount = styled.section`
     & .need {
       background-color: transparent;
       border: none;
-      margin-top: 132px;
+      margin-top: 80px;
       color: #000;
       display: block;
       font-family: "Proxima Nova";
@@ -201,7 +201,7 @@ export const StyledCostCount = styled.section`
       display: flex;
       align-items: center;
       &:not(:last-child) {
-        margin-top: 91px;
+        margin-top: 70px;
       }
       margin-top: 32px;
       gap: 16px;
@@ -219,14 +219,14 @@ export const StyledCostCount = styled.section`
   & .numberAir {
     position: absolute;
     font-size: 130px;
-    top: 50px;
-    left: 0px;
+    top: 60px;
+    left: -20px;
   }
   & .opt {
     position: absolute;
     font-size: 140px;
-    top: 400px;
-    right: -250px;
+    top: 300px;
+    right: -350px;
     transform: rotateZ(-90deg);
   }
   & .overlay {

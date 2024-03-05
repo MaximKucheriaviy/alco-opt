@@ -29,7 +29,7 @@ export const Francgizing = () => {
           <div className="effect1"></div>
           <div className="effect2"></div>
           <div className="effect3"></div>
-          <Image src="/wineBox.png" width={524} height={524} alt="wine box" />
+          <Image src="/wineBox.png" width={469} height={469} alt="wine box" />
         </div>
       </Container>
     </StyledFrancizng>

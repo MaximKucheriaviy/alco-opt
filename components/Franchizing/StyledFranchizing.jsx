@@ -7,7 +7,7 @@ export const StyledFrancizng = styled.section`
     color: #fff;
 
     font-family: "Proxima Nova";
-    font-size: 52px;
+    font-size: 64px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -20,7 +20,7 @@ export const StyledFrancizng = styled.section`
     color: #fff;
 
     font-family: "Proxima Nova";
-    font-size: 20px;
+    font-size: 24px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -65,8 +65,8 @@ export const StyledFrancizng = styled.section`
     position: absolute;
     top: -120px;
     right: 116px;
-    width: 524px;
-    height: 524px;
+    width: 469px;
+    height: 469px;
 
     & img {
       position: relative;
@@ -75,10 +75,10 @@ export const StyledFrancizng = styled.section`
     /* background-color: green; */
     & .effect1 {
       position: absolute;
-      top: 223px;
-      left: 27px;
-      width: 464.257px;
-      height: 176.515px;
+      top: 200px;
+      left: 24px;
+      width: 415.528px;
+      height: 157.988px;
       transform: rotate(-5.137deg);
       flex-shrink: 0;
 
@@ -89,10 +89,10 @@ export const StyledFrancizng = styled.section`
     }
     & .effect2 {
       position: absolute;
-      top: 321px;
-      left: 62px;
-      width: 249.328px;
-      height: 107.939px;
+      top: 287px;
+      left: 55px;
+      width: 223.159px;
+      height: 96.609px;
       transform: rotate(6.54deg);
       flex-shrink: 0;
 
@@ -103,10 +103,10 @@ export const StyledFrancizng = styled.section`
     }
     & .effect3 {
       position: absolute;
-      top: 304px;
-      left: 253px;
-      width: 237.089px;
-      height: 107.939px;
+      top: 272px;
+      left: 228px;
+      width: 212.204px;
+      height: 96.609px;
       transform: rotate(-4.76deg);
       flex-shrink: 0;
 
@@ -120,6 +120,6 @@ export const StyledFrancizng = styled.section`
     position: absolute;
     font-size: 130px;
     top: -100px;
-    left: 50px;
+    left: 80px;
   }
 `;

@@ -22,8 +22,8 @@ export default function Home() {
         <Hero />
         <About />
         <Advantages />
-        {/* <Francgizing /> */}
-        {/* <CostCount /> */}
+        <Francgizing />
+        <CostCount />
         {/* <InvestitionSum /> */}
         {/* <StartPath /> */}
         {/* <PresentationForm /> */}

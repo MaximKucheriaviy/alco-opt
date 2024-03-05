@@ -84,7 +84,7 @@ export const CostCount = () => {
           >
             Які вимоги до приміщення?
           </button>
-          <div className="iconText">
+          <div className="iconText first">
             <Image
               src={"/iconInvest.svg"}
               alt={"icon"}
