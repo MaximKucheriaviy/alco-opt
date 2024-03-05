@@ -6,6 +6,7 @@ export const StyledCostCount = styled.section`
   background-color: #ff4a3a;
   background-position: center;
   overflow: hidden;
+
   & .container {
     display: flex;
   }
@@ -46,6 +47,30 @@ export const StyledCostCount = styled.section`
       background-color: white;
       padding: 48px 40px;
       margin-top: 42px;
+      position: relative;
+      & .dialog {
+        position: absolute;
+        top: -80px;
+        left: 246px;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
+          drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        & .text {
+          position: absolute;
+          color: #000;
+
+          text-align: center;
+          font-family: sans-serif;
+          width: 162px;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+
+          left: 50%;
+          top: 50%;
+          transform: translateX(-50%) translateY(-60%);
+        }
+      }
       & .priceBig {
         color: #000;
         font-family: "Proxima Nova";
@@ -54,6 +79,12 @@ export const StyledCostCount = styled.section`
         font-weight: 700;
         line-height: normal;
         text-transform: uppercase;
+        & button {
+          border: none;
+          background-color: transparent;
+          position: relative;
+          top: -10px;
+        }
       }
       & .redValue {
         color: var(--Button-color, #da2919);

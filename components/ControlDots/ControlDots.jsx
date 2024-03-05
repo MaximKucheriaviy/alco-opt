@@ -8,9 +8,6 @@ export const ControlDots = ({ number, keyword, active, onClick }) => {
         <div className="number">{number}</div>
         {keyword}
       </button>
-      {active && (
-        <Image src={"/arrowControl.svg"} width={87} height={21} alt="arrow" />
-      )}
     </StyledControlDots>
   );
 };

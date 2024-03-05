@@ -10,6 +10,18 @@ import { Lines } from "../Lines/Lines";
 export const CostCount = () => {
   const [space, setSpace] = useState(1);
   const [modalOpen, setModalOpen] = useState(false);
+  const [timer, setTimer] = useState(null);
+  const [dialog, setDialog] = useState(false);
+  const setTimerCallback = () => {
+    if (timer) {
+      clearTimeout(timer);
+    }
+    setDialog(true);
+    const t = setTimeout(() => {
+      setDialog(false);
+    }, 3000);
+    setTimer(t);
+  };
   return (
     <StyledCostCount id="cost_count">
       <div className="imageThumb"></div>
@@ -22,9 +34,33 @@ export const CostCount = () => {
           <h2>розрахунок вартості франшизи</h2>
           <div className="whiteBlock">
             <div className="priceItem">
-              <p className="priceBig">всього інвестицій:</p>
+              <p className="priceBig">
+                всього інвестицій:
+                <button>
+                  <Image
+                    onClick={setTimerCallback}
+                    src={"quesionMark.svg"}
+                    width={19}
+                    height={19}
+                  />
+                </button>
+              </p>
               <p className="redValue">250 000$</p>
             </div>
+            {dialog && (
+              <div className="dialog">
+                <Image
+                  className="image"
+                  src={"dialogSVG.svg"}
+                  width={207}
+                  height={131}
+                  alt="dialog"
+                />
+                <p className="text">
+                  Розраховується індивідуально для кожного магазину
+                </p>
+              </div>
+            )}
             <p className="from">з них: </p>
             <div className="priceItem">
               <p className="price">Обладнання:</p>
