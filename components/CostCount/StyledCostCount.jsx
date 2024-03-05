@@ -241,11 +241,16 @@ export const StyledCostCount = styled.section`
       color: #000;
 
       font-family: "Proxima Nova";
-      font-size: 16px;
+      font-size: 24px;
       font-style: normal;
       font-weight: 400;
       line-height: normal;
       text-transform: uppercase;
+      width: 400px;
+      & span {
+        font-size: 28px;
+        font-weight: 700;
+      }
     }
   }
   & .numberAir {

@@ -17,6 +17,12 @@ export const Header = () => {
             <Image src={"/instagram.svg"} width={26} height={26} alt="icon" />
             <Image src={"/facebook.svg"} width={26} height={26} alt="icon" />
             <Image src={"/telegram.svg"} width={26} height={26} alt="icon" />
+            <Image
+              src={"/footerIcons/tiktok.svg"}
+              width={26}
+              height={26}
+              alt="icon"
+            />
           </div>
         </div>
         <div className="absoluteDiv">

@@ -52,9 +52,19 @@ export const Footer = () => {
                 alt="icon"
               />
             </Link>
+            <Link href={"/"}>
+              <Image
+                src={"/footerIcons/tiktok.svg"}
+                width={24}
+                height={24}
+                alt="icon"
+              />
+            </Link>
           </div>
         </div>
       </Container>
     </StyledFooter>
   );
 };
+
+//tiktok.svg

@@ -127,7 +127,9 @@ export const CostCount = () => {
               width={50}
               height={50}
             />
-            <p>повернення інвестицій від 12 місяців</p>
+            <p>
+              повернення інвестицій від <span>18 місяців</span>
+            </p>
           </div>
           <div className="iconText">
             <Image
@@ -136,7 +138,9 @@ export const CostCount = () => {
               width={61}
               height={48}
             />
-            <p>прибуток з першого місяця роботи</p>
+            <p>
+              прибуток з першого місяця від - <span>2500$</span>
+            </p>
           </div>
         </div>
         <NavigationControl active={5} black top={275} />
@@ -167,12 +171,13 @@ export const CostCount = () => {
                 </li>
                 <li className="text">
                   <div className="blackPoint"></div>
-                  <div>Розміщення в житловому районі;</div>
+                  <div>Розміщення в зонах активного трафіку;</div>
                 </li>
                 <li className="text">
                   <div className="blackPoint"></div>
                   <div>
-                    Можливість встановлення рампи, або наявність чорного входу;
+                    Обов’язковість встановлення рампи та наявність чорного
+                    входу.
                   </div>
                 </li>
               </ul>
