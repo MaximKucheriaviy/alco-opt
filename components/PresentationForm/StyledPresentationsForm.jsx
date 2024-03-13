@@ -9,7 +9,7 @@ export const StyledPresentationForm = styled.section`
     & .imageThumb {
       position: absolute;
       top: 0;
-      left: -156px;
+      left: -256px;
       height: 100%;
       overflow: hidden;
     }
@@ -56,7 +56,7 @@ export const StyledPresentationForm = styled.section`
           }
         }
         & label {
-          color: #5f5e5e;
+          color: #000000;
 
           text-align: center;
           font-family: "Proxima Nova";

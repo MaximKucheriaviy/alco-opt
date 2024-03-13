@@ -144,11 +144,11 @@ export const CostCount = () => {
               height={48}
             />
             <p>
-              прибуток з першого місяця від - <span>{table.income}$</span>
+              дохід з першого місяця від - <span>{table.income}$</span>
             </p>
           </div>
         </div>
-        <NavigationControl active={5} black top={275} />
+        <NavigationControl active={5} black top={150} />
       </Container>
       {modalOpen && (
         <div className="overlay">

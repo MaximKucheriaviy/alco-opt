@@ -62,12 +62,16 @@ export const StyledFrancizng = styled.section`
       & p {
         width: 127px;
       }
+      & .big {
+        flex-shrink: 0;
+        width: 180px;
+      }
     }
   }
   & .image {
     position: absolute;
     top: 20px;
-    right: 116px;
+    right: 70px;
     width: 469px;
     height: 469px;
 

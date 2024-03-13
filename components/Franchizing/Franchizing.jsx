@@ -17,15 +17,18 @@ export const Francgizing = () => {
           </li>
           <li>
             <Image src="/Royalty.svg" width={61} height={49} alt="calender" />
-            <p>роялті від обороту товару - 1%</p>
+            <p className="big">
+              роялті: <br /> ФОРМАТ МІНІ - 2%;
+              <br /> ІНШИЙ ФОРМАТ - 3%
+            </p>
           </li>
           <li>
             <Image src="/lether.svg" width={61} height={49} alt="calender" />
-            <p>прибуток з першого місяця роботи</p>
+            <p>дохід з першого місяця роботи</p>
           </li>
           <li>
             <Image src="/rotDolar.svg" width={50} height={49} alt="calender" />
-            <p>повернення інвестицій від 12 місяців</p>
+            <p>повернення інвестицій від 18 місяців</p>
           </li>
         </ul>
         <NavigationControl active={4} top={-60} />
@@ -36,8 +39,8 @@ export const Francgizing = () => {
           <Image src="/wineBox.png" width={469} height={469} alt="wine box" />
         </div>
         <div className="logo">
-          <Image src="/logo.png" width={108} height={80} alt="logo" />
-          <p className="logoText">Вистачить не всім</p>
+          <Image src="/logo.png" width={124} height={91} alt="logo" />
+          <p className="logoText">Дешевше ваших інтернетів</p>
         </div>
       </Container>
     </StyledFrancizng>

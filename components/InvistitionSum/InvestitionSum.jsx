@@ -20,25 +20,26 @@ export const InvestitionSum = () => {
             Права На ведення діяльності під ТМ АЛКО/ОПТ
           </ItemPrice>
           <ItemPrice path={"/Icons/Icon2.svg"}>
-            Допомога в пошуку локації і приміщення
+            Консультація в пошуку локації і приміщення
           </ItemPrice>
           <ItemPrice path={"/Icons/Icon3.svg"}>
-            Розробка дизайн-проєкту майбутнього магазину
+            Допомога в розробці дизайн-проекту майбутнього магазину
           </ItemPrice>
           <ItemPrice path={"/Icons/Icon4.svg"}>
             Налаштування доступу до професійного програмного забезпечення
           </ItemPrice>
           <ItemPrice path={"/Icons/Icon5.svg"}>
-            Ексклюзивні умови з постачальниками
+            Ексклюзивні ціни на товар
           </ItemPrice>
           <ItemPrice path={"/Icons/Icon6.svg"}>
-            Передача всіх стандартів роботи, посадових інструкцій і
-            бізнес-процесів
+            Надаємо всі стандарти роботи, посадові інструкції і бізнес-процеси
           </ItemPrice>
           <ItemPrice path={"/Icons/Icon7.svg"}>
             Щомісячне оцінювання знань продавців
           </ItemPrice>
-          <ItemPrice path={"/Icons/Icon8.svg"}>Пошук персоналу</ItemPrice>
+          <ItemPrice path={"/Icons/Icon8.svg"}>
+            Консультація з пошуку персоналу
+          </ItemPrice>
           <ItemPrice path={"/Icons/Icon9.svg"}>
             Доступ до торгівельної і товарної аналітики
           </ItemPrice>
@@ -46,7 +47,7 @@ export const InvestitionSum = () => {
             Доступ до мережевої дисконтної програми
           </ItemPrice>
           <ItemPrice path={"/Icons/Icon11.svg"}>
-            Доступ до користування програмою електронного сомельє
+            Доступ до користування програмою “Віртуальний сомельє”
           </ItemPrice>
           <ItemPrice path={"/Icons/Icon12.svg"}>
             Підключення до телеграм-боту компанії
@@ -58,10 +59,10 @@ export const InvestitionSum = () => {
             Повна юридична і товарна консультація протягом всього періоду
           </ItemPrice>
           <ItemPrice path={"/Icons/Icon15.svg"}>
-            Щоденна аналітика в реальному часі всіх показників магазину
+            Підключення до Dashboard з ключовими показниками магазину
           </ItemPrice>
           <ItemPrice path={"/Icons/Icon16.svg"}>
-            Щоденний зріз цін та корегуння під формат
+            Підключення до щоденної аналітики цін згідно вашого регіону
           </ItemPrice>
         </div>
         <p className="values">Матеріальні цінності</p>
@@ -82,7 +83,7 @@ export const InvestitionSum = () => {
           </ItemPrice>
           <ItemPrice path={"/Icons/Icon22.svg"}>Навігація</ItemPrice>
           <ItemPrice path={"/Icons/Icon23.svg"}>
-            Індивідуальні стелажі для розміщення товару
+            Допомога в розробці стелажів для розміщення товару
           </ItemPrice>
         </div>
         <div className="logo">

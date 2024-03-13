@@ -50,7 +50,7 @@ export const NavigationControl = ({
           {moreText && <p className="moreText">БІЛЬШЕ</p>}
           {!moreText && (
             <p className="number">
-              <span>{active}</span>/8
+              <span className="fromNumber">{active}</span>/8
             </p>
           )}
           {downArrow && (

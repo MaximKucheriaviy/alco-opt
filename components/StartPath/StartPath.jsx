@@ -99,8 +99,8 @@ export const StartPath = () => {
           <div className="item">
             <p className="number filled">08</p>
             <p className="discription">
-              ПУрочисте відкриття магазинку{" "}
-              <span className="name">АЛКООПТ</span>
+              Урочисте відкриття магазинку{" "}
+              <span className="name">АЛКО/ОПТ</span>
             </p>
           </div>
           <div className="logo">

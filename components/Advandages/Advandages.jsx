@@ -101,7 +101,7 @@ export const Advantages = () => {
             />
           ))}
         </div>
-        <NavigationControl active={3} top={120} />
+        <NavigationControl active={3} top={60} />
       </Container>
 
       <div className="imageThumb">

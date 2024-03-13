@@ -62,7 +62,7 @@ export const StyledHero = styled.section`
     color: #fff;
 
     font-family: "Proxima Nova";
-    font-size: 24px;
+    font-size: 26px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;

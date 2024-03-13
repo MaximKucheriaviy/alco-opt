@@ -246,7 +246,7 @@ export const StyledCostCount = styled.section`
       font-weight: 400;
       line-height: normal;
       text-transform: uppercase;
-      width: 400px;
+      width: 380px;
       & span {
         font-size: 28px;
         font-weight: 700;
@@ -323,5 +323,8 @@ export const StyledCostCount = styled.section`
         right: 20px;
       }
     }
+  }
+  & .fromNumber {
+    color: white;
   }
 `;
