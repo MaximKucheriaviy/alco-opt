@@ -60,11 +60,11 @@ export const StyledCostCount = styled.section`
           color: #000;
 
           text-align: center;
-          font-family: sans-serif;
+          font-family: "Proxima Nova";
           width: 162px;
           font-size: 16px;
           font-style: normal;
-          font-weight: 500;
+          font-weight: 700;
           line-height: normal;
 
           left: 50%;
