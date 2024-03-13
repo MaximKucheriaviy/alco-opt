@@ -31,7 +31,7 @@ export const Francgizing = () => {
             <p>повернення інвестицій від 18 місяців</p>
           </li>
         </ul>
-        <NavigationControl active={4} top={-60} />
+        <NavigationControl active={4} top={-20} />
         <div className="image">
           <div className="effect1"></div>
           <div className="effect2"></div>
