@@ -79,6 +79,12 @@ export const Hero = () => {
         <div className="buttonDiv">
           <Link href="#presentation_form" className="gradientButton">
             Стати партнером
+            <Image
+              src="/diagonalArrow.svg"
+              width={13}
+              height={13}
+              alt="arrow"
+            />
           </Link>
           <Button
             onClick={() => {

@@ -102,12 +102,11 @@ export const StyledHero = styled.section`
   .gradientButton {
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     text-decoration: none;
-    width: ${({ buttonPadding }) => parseInt(buttonPadding) + 461}px;
+    width: 336px;
     height: 77px;
-    position: relative;
-    left: ${({ buttonPadding }) => parseFloat(buttonPadding) * -1 - 3}px;
-    padding-left: ${({ buttonPadding }) => buttonPadding};
+
     margin-top: 48px;
 
     color: #fff;
@@ -118,14 +117,10 @@ export const StyledHero = styled.section`
     line-height: normal;
     text-align: left;
     border: none;
-    background: linear-gradient(
-      90deg,
-      rgba(255, 255, 255, 0.24) 0%,
-      rgba(255, 255, 255, 0.15) 65.01%,
-      rgba(255, 255, 255, 0) 99.33%
-    );
+    z-index: 1000;
 
-    backdrop-filter: blur(5px);
+    gap: 32px;
+    background-color: #da2919;
   }
 
   .tlephone {
