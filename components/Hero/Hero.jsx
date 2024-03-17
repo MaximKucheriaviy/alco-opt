@@ -12,7 +12,7 @@ export const Hero = () => {
   const containerRef = useRef(null);
   const [buttonPading, setButtonPudding] = useState(0);
   const [modalOpened, setModalOpened] = useState(false);
-  const [videoPath, setVideoPath] = useState("/v2.mp4");
+  const [videoPath, setVideoPath] = useState("./v2.mp4");
   useEffect(() => {
     if (containerRef.current === null) {
       return;
@@ -51,7 +51,7 @@ export const Hero = () => {
           <div className="line"></div>
           <button
             onClick={() => {
-              setVideoPath("/v2.mp4");
+              setVideoPath("./v2.mp4");
             }}
             href="/"
           >
@@ -60,7 +60,7 @@ export const Hero = () => {
           <div className="line"></div>
           <button
             onClick={() => {
-              setVideoPath("/v4.mp4");
+              setVideoPath("./v4.mp4");
             }}
             href="/"
           >
@@ -69,7 +69,7 @@ export const Hero = () => {
           <div className="line"></div>
           <button
             onClick={() => {
-              setVideoPath("/v3.mp4");
+              setVideoPath("./v3.mp4");
             }}
             href="/"
           >
