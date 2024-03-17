@@ -75,7 +75,7 @@ export const StyledAbout = styled.section`
     bottom: 0px;
     right: 0px;
 
-    background-image: url("/imageAbout.jpg");
+    background-image: url("/carouselImages/1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     & .logoText {
