@@ -47,6 +47,7 @@ export const CostCount = () => {
                     src={"quesionMark.svg"}
                     width={19}
                     height={19}
+                    alt="mark"
                   />
                 </button>
               </p>

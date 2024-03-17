@@ -19,7 +19,7 @@ export const Hero = () => {
     }
     const block = getComputedStyle(containerRef.current).marginLeft;
     setButtonPudding(block);
-  }, [containerRef.current]);
+  }, []);
   return (
     <StyledHero id="hero" buttonPadding={buttonPading}>
       <div className="videoDiv">

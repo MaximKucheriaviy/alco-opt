@@ -7,7 +7,7 @@ export const Footer = () => {
   return (
     <StyledFooter>
       <Container className="container">
-        <Image src="/logo.png" width={108} height={80} />
+        <Image src="/logo.png" width={108} height={80} alt="logo" />
         <p className="notAll">Вистачить не всім</p>
         <div className="addresBlock">
           <p className="title">Адреса</p>
