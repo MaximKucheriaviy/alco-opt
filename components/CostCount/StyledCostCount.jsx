@@ -188,6 +188,7 @@ export const StyledCostCount = styled.section`
       }
       & p {
         transform: rotateZ(-90deg);
+        cursor: pointer;
       }
 
       display: flex;

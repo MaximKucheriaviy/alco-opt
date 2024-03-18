@@ -4,6 +4,7 @@ import { Line } from "../Line/Line";
 import Image from "next/image";
 import { NavigationControl } from "../NavigationControl/NavigationControl";
 import { Lines } from "../Lines/Lines";
+import { ImageCarousel } from "../ImageCaruosel/ImageCarousel";
 
 export const About = () => {
   return (
@@ -49,10 +50,11 @@ export const About = () => {
         <NavigationControl active={2} top={40} height={328} />
       </Container>
       <div className="imageTumb">
-        <div className="logo">
+        <ImageCarousel />
+        {/* <div className="logo">
           <Image src={"/logo.png"} width={100} height={74} alt="logo" />
           <p className="logoText">Вистачить не всім</p>
-        </div>
+        </div> */}
       </div>
     </StyledAbout>
   );

@@ -69,15 +69,41 @@ export const StyledAbout = styled.section`
 
   .imageTumb {
     height: ${() => (601 * 100) / 718}%;
-    /* overflow: hidden; */
+    overflow: hidden;
     width: 44%;
     position: absolute;
     bottom: 0px;
     right: 0px;
 
-    background-image: url("/imageAbout.jpg");
-    background-repeat: no-repeat;
+    /* background-image: url("/carouselImages/1.jpg");
     background-size: cover;
+    transition-property: background-image;
+    transition-duration: 500ms; */
+    & .slider {
+      width: 100%;
+      height: 100%;
+      // background-color: red;
+
+      & .item {
+        width: 100%;
+        height: 700px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+    & .i1 {
+      background-image: url("/carouselImages/1.jpg");
+    }
+    & .i2 {
+      background-image: url("/carouselImages/2.jpg");
+    }
+    & .i3 {
+      background-image: url("/carouselImages/3.jpg");
+    }
+    & .i4 {
+      background-image: url("/carouselImages/4.jpg");
+    }
     & .logoText {
       color: #fff;
 

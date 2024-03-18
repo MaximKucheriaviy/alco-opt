@@ -19,7 +19,7 @@ export const Hero = () => {
     }
     const block = getComputedStyle(containerRef.current).marginLeft;
     setButtonPudding(block);
-  }, [containerRef.current]);
+  }, []);
   return (
     <StyledHero id="hero" buttonPadding={buttonPading}>
       <div className="videoDiv">
@@ -45,7 +45,7 @@ export const Hero = () => {
           Нова революційна концепція алкогольного магазину з найнижчими цінами
           та найвищим сервісом в Україні!
         </p>
-        <p className="slogan"> Станьте магазином алкоголя №1 у своєму місті!</p>
+        <p className="slogan"> Станьте магазином алкоголю №1 у своєму місті!</p>
 
         <div className="buttons">
           <div className="line"></div>

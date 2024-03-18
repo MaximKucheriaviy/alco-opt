@@ -9,7 +9,7 @@ import { Lines } from "../Lines/Lines";
 import { spaceTable } from "@/service/spaceTable";
 
 export const CostCount = () => {
-  const [space, setSpace] = useState(1);
+  const [space, setSpace] = useState(3);
   const [modalOpen, setModalOpen] = useState(false);
   const [timer, setTimer] = useState(null);
   const [dialog, setDialog] = useState(false);
@@ -47,6 +47,7 @@ export const CostCount = () => {
                     src={"quesionMark.svg"}
                     width={19}
                     height={19}
+                    alt="mark"
                   />
                 </button>
               </p>
@@ -92,23 +93,38 @@ export const CostCount = () => {
         <div className="rightContainer">
           <p className="place">ПРИМІЩЕННЯ</p>
           <div className="priceses">
-            <p className={space === 1 ? "active" : ""}>
+            <p
+              onClick={() => setSpace(1)}
+              className={space === 1 ? "active" : ""}
+            >
               60 м<sup>2</sup>
               <br />
               <span>(формат міні)</span>
             </p>
-            <p className={space === 2 ? "active" : ""}>
+            <p
+              onClick={() => setSpace(2)}
+              className={space === 2 ? "active" : ""}
+            >
               100 м<sup>2</sup>
               <br />
               <span>(формат міні)</span>
             </p>
-            <p className={space === 3 ? "active" : ""}>
+            <p
+              onClick={() => setSpace(3)}
+              className={space === 3 ? "active" : ""}
+            >
               200 м<sup>2</sup>
             </p>
-            <p className={space === 4 ? "active" : ""}>
+            <p
+              onClick={() => setSpace(4)}
+              className={space === 4 ? "active" : ""}
+            >
               300 м<sup>2</sup>
             </p>
-            <p className={space === 5 ? "active" : ""}>
+            <p
+              onClick={() => setSpace(5)}
+              className={space === 5 ? "active" : ""}
+            >
               400 м<sup>2</sup>
             </p>
           </div>
@@ -116,6 +132,7 @@ export const CostCount = () => {
             min={1}
             max={5}
             onChange={(event) => setSpace(event.target.value)}
+            value={space}
           />
           <button
             className="need"

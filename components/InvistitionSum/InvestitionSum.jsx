@@ -17,13 +17,13 @@ export const InvestitionSum = () => {
         <Line className="line" />
         <div className="grid1">
           <ItemPrice path={"/Icons/Icon1.svg"}>
-            Права На ведення діяльності під ТМ АЛКО/ОПТ
+            Права на ведення діяльності під ТМ АЛКО/ОПТ
           </ItemPrice>
           <ItemPrice path={"/Icons/Icon2.svg"}>
             Консультація в пошуку локації і приміщення
           </ItemPrice>
           <ItemPrice path={"/Icons/Icon3.svg"}>
-            Допомога в розробці дизайн-проекту майбутнього магазину
+            Допомога в розробці дизайн-проєкту майбутнього магазину
           </ItemPrice>
           <ItemPrice path={"/Icons/Icon4.svg"}>
             Налаштування доступу до професійного програмного забезпечення
@@ -72,7 +72,7 @@ export const InvestitionSum = () => {
             Повний перелік всіх меблів
           </ItemPrice>
           <ItemPrice path={"/Icons/Icon18.svg"}>
-            увесь перелік POS матеріалів
+            Увесь перелік POS матеріалів
           </ItemPrice>
           <ItemPrice path={"/Icons/Icon19.svg"}>
             Повний перелік всього необхідного обладнання
