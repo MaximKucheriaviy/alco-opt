@@ -13,6 +13,10 @@ export const Header = () => {
             <Image src={"/pinSVG.svg"} width={13} height={16} alt="icon" />
             Київ, вул. О. Мишуги, 3А
           </Link>
+          <button className="leftLinkMobile">
+            <Image src={"/pinSVG.svg"} width={20} height={24} alt="icon" />
+            {/* Київ, вул. О. Мишуги, 3А */}
+          </button>
           <div className="rightLinks">
             <Image src={"/instagram.svg"} width={26} height={26} alt="icon" />
             <Image src={"/facebook.svg"} width={26} height={26} alt="icon" />

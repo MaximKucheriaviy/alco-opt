@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+import { mediaScreen } from "@/service/mediaRules";
 
 export const StyledHeader = styled.header`
   .blackDiv {
@@ -8,9 +9,12 @@ export const StyledHeader = styled.header`
     justify-content: space-between;
   }
   .leftLink {
-    display: flex;
-    align-items: center;
-    gap: 6px;
+    display: none;
+    ${mediaScreen(1280)} {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
 
     color: #fff;
     font-family: "Proxima Nova";
@@ -19,6 +23,13 @@ export const StyledHeader = styled.header`
     font-weight: 400;
     line-height: normal;
     text-decoration: none;
+  }
+  .leftLinkMobile {
+    ${mediaScreen(1280)} {
+      display: none;
+    }
+    border: none;
+    background-color: transparent;
   }
 
   .rightLinks {
