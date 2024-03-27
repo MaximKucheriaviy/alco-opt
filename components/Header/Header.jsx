@@ -3,8 +3,10 @@ import Link from "next/link";
 import Image from "next/image";
 import { Container } from "../Container/Container";
 import { Button } from "../Button/Button";
+import { useWidth } from "@/service/useDimentions";
 
 export const Header = () => {
+  const width = useWidth();
   return (
     <StyledHeader>
       <Container>
