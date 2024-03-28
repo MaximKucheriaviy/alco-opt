@@ -57,16 +57,20 @@ li {
 }
 
 .airBackText {
-  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #ffffff31;
   -webkit-text-fill-color: transparent;
   font-family: "Proxima Nova";
-  font-size: 140px;
   font-style: normal;
   font-weight: 800;
   line-height: normal;
   letter-spacing: -3.6px;
   position: absolute;
+  font-size: 56px;
+  @media screen and (min-width: 1280px) {
+    font-size: 140px;
+    -webkit-text-stroke-width: 2px;
+  }
 }
 
 .visuallyHidden {

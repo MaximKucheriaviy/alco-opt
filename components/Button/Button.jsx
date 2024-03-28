@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+import { mediaScreen } from "@/service/mediaRules";
 
 const checkColor = (type) => {
   switch (type) {
@@ -29,8 +30,11 @@ const StyledButton = styled.button`
   font-weight: 700;
   line-height: normal;
   text-transform: uppercase;
+  padding: 24px 16px;
 
-  padding: 16px 46px;
+  ${mediaScreen(1280)} {
+    padding: 16px 46px;
+  }
 `;
 
 export const Button = ({
