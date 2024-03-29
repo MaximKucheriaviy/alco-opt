@@ -1,16 +1,20 @@
 import { Container } from "../Container/Container";
 import { StyledAbout } from "./StyledAbout";
 import { Line } from "../Line/Line";
-import Image from "next/image";
 import { NavigationControl } from "../NavigationControl/NavigationControl";
 import { Lines } from "../Lines/Lines";
 import { ImageCarousel } from "../ImageCaruosel/ImageCarousel";
+import { useState } from "react";
 
 export const About = () => {
+  const [activeDot, setActiveDot] = useState(0);
+  const onChage = (event) => {
+    setActiveDot(event);
+  };
   return (
     <StyledAbout id="about">
       <Lines no3 />
-      <Container>
+      <Container className="container">
         <p className="airBackText numberAir">№2</p>
         <p className="airBackText opt">АЛКО/ОПТ</p>
 
@@ -48,6 +52,19 @@ export const About = () => {
           </li>
         </ul>
         <NavigationControl active={2} top={40} height={328} />
+        <div className="imageTumbMobile">
+          <ImageCarousel onChage={onChage} />
+          {/* <div className="logo">
+            <Image src={"/logo.png"} width={100} height={74} alt="logo" />
+            <p className="logoText">Вистачить не всім</p>
+          </div> */}
+        </div>
+        <div className="corouselDots">
+          <div className={activeDot === 0 ? "active" : ""}></div>
+          <div className={activeDot === 1 ? "active" : ""}></div>
+          <div className={activeDot === 2 ? "active" : ""}></div>
+          <div className={activeDot === 3 ? "active" : ""}></div>
+        </div>
       </Container>
       <div className="imageTumb">
         <ImageCarousel />
