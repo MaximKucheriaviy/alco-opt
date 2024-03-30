@@ -6,6 +6,7 @@ import { useRef, useEffect, useState } from "react";
 import { ControlDots } from "../ControlDots/ControlDots";
 import { NavigationControl } from "../NavigationControl/NavigationControl";
 import { Lines } from "../Lines/Lines";
+import { MobileAccordeon } from "../MobileAcurdeon/MobileAcordeon";
 
 const buttonData = [
   {
@@ -101,8 +102,19 @@ export const Advantages = () => {
             />
           ))}
         </div>
+
         <NavigationControl active={3} top={60} />
       </Container>
+
+      <div className="mobieData">
+        <MobileAccordeon number={1} summaryText={"концепція"}>
+          Магазин-Склад-Бар АЛКО/ОПТ успішно поєднує найнижчі ціни та високий
+          рівень обслуговування.
+        </MobileAccordeon>
+        <MobileAccordeon number={2} line summaryText={"концепція"}>
+          Textqwewqewesad sadasasd asd sad sad sadsadsad sadasd Textqwewqewesad
+        </MobileAccordeon>
+      </div>
 
       <div className="imageThumb">
         <div className="buttonDiv">

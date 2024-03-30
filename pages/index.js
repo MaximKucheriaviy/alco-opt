@@ -21,7 +21,7 @@ export default function Home() {
       <main>
         <Hero />
         <About />
-        {/* <Advantages /> */}
+        <Advantages />
         {/* <Francgizing /> */}
         {/* <CostCount /> */}
         {/* <InvestitionSum /> */}
