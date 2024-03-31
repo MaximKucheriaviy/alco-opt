@@ -99,4 +99,10 @@ export const StyledAdvantages = styled.section`
     left: 149px;
     transform: rotateZ(-90deg);
   }
+
+  & .mobieData {
+    ${mediaScreen(1280)} {
+      display: none;
+    }
+  }
 `;
