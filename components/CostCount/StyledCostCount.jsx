@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+import { mediaScreen } from "@/service/mediaRules";
 
 export const StyledCostCount = styled.section`
   position: relative;
@@ -9,8 +10,10 @@ export const StyledCostCount = styled.section`
 
   & .container {
     display: flex;
+    flex-direction: column-reverse;
   }
   & .imageThumb {
+    display: none;
     width: 50%;
     height: 100%;
     position: absolute;
@@ -18,6 +21,9 @@ export const StyledCostCount = styled.section`
     left: 0;
     background-image: url("/imageCostCount.png");
     background-size: cover;
+    ${mediaScreen(1280)} {
+      display: block;
+    }
   }
   & .leftContainer {
     padding-top: 160px;
@@ -25,6 +31,10 @@ export const StyledCostCount = styled.section`
     width: 50%;
 
     & h2 {
+      display: none;
+      ${mediaScreen(1280)} {
+        display: block;
+      }
       width: 624px;
       color: #fff;
       font-family: "Proxima Nova";
@@ -152,9 +162,26 @@ export const StyledCostCount = styled.section`
     }
   }
   & .rightContainer {
-    padding-top: 88px;
-    padding-left: 70px;
-    width: 50%;
+    ${mediaScreen(1280)} {
+      padding-top: 88px;
+      padding-left: 70px;
+      width: 50%;
+    }
+
+    & h2 {
+      display: block;
+      ${mediaScreen(1280)} {
+        display: none;
+      }
+      width: 624px;
+      color: #fff;
+      font-family: "Proxima Nova";
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 60px; /* 115.385% */
+      text-transform: uppercase;
+    }
 
     & .place {
       color: #171717;

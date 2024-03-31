@@ -91,6 +91,7 @@ export const CostCount = () => {
           </Link>
         </div>
         <div className="rightContainer">
+          <h2>розрахунок вартості франшизи</h2>
           <p className="place">ПРИМІЩЕННЯ</p>
           <div className="priceses">
             <p

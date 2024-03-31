@@ -112,7 +112,9 @@ export const StyledFrancizng = styled.section`
       }
       & .big {
         flex-shrink: 0;
-        width: 180px;
+        ${mediaScreen(1280)} {
+          width: 180px;
+        }
       }
     }
   }
