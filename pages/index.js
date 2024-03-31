@@ -22,7 +22,7 @@ export default function Home() {
         <Hero />
         <About />
         <Advantages />
-        {/* <Francgizing /> */}
+        <Francgizing />
         {/* <CostCount /> */}
         {/* <InvestitionSum /> */}
         {/* <StartPath /> */}
