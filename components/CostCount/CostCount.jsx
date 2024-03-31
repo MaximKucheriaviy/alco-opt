@@ -89,46 +89,60 @@ export const CostCount = () => {
             ЗАЛИШИТИ ЗАЯВКУ НА ФРАНШИЗУ{" "}
             <Image src={"/arrowWhite.svg"} width={90} height={20} alt="arrow" />
           </Link>
+          <Link className="linkMobile" href="#presentation_form">
+            ЗАЛИШИТИ ЗАЯВКУ
+            <Image src={"/arrowWhite.svg"} width={39} height={20} alt="arrow" />
+          </Link>
         </div>
         <div className="rightContainer">
           <h2>розрахунок вартості франшизи</h2>
           <p className="place">ПРИМІЩЕННЯ</p>
-          <div className="priceses">
-            <p
-              onClick={() => setSpace(1)}
-              className={space === 1 ? "active" : ""}
-            >
-              60 м<sup>2</sup>
-              <br />
-              <span>(формат міні)</span>
-            </p>
-            <p
-              onClick={() => setSpace(2)}
-              className={space === 2 ? "active" : ""}
-            >
-              100 м<sup>2</sup>
-              <br />
-              <span>(формат міні)</span>
-            </p>
-            <p
-              onClick={() => setSpace(3)}
-              className={space === 3 ? "active" : ""}
-            >
-              200 м<sup>2</sup>
-            </p>
-            <p
-              onClick={() => setSpace(4)}
-              className={space === 4 ? "active" : ""}
-            >
-              300 м<sup>2</sup>
-            </p>
-            <p
-              onClick={() => setSpace(5)}
-              className={space === 5 ? "active" : ""}
-            >
-              400 м<sup>2</sup>
-            </p>
-          </div>
+          <ul className="priceses">
+            <li>
+              <p
+                onClick={() => setSpace(1)}
+                className={space === 1 ? "active" : ""}
+              >
+                60 м<sup>2</sup>
+                <br />
+                <span>(формат міні)</span>
+              </p>
+            </li>
+            <li>
+              <p
+                onClick={() => setSpace(2)}
+                className={space === 2 ? "active" : ""}
+              >
+                100 м<sup>2</sup>
+                <br />
+                <span>(формат міні)</span>
+              </p>
+            </li>
+            <li>
+              <p
+                onClick={() => setSpace(3)}
+                className={space === 3 ? "active" : ""}
+              >
+                200 м<sup>2</sup>
+              </p>
+            </li>
+            <li>
+              <p
+                onClick={() => setSpace(4)}
+                className={space === 4 ? "active" : ""}
+              >
+                300 м<sup>2</sup>
+              </p>
+            </li>
+            <li>
+              <p
+                onClick={() => setSpace(5)}
+                className={space === 5 ? "active" : ""}
+              >
+                400 м<sup>2</sup>
+              </p>
+            </li>
+          </ul>
           <Slider
             min={1}
             max={5}
