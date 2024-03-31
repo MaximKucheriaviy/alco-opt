@@ -4,13 +4,42 @@ import { Line } from "../Line/Line";
 import { ItemPrice } from "../ItemPrice/ItemPrice";
 import { NavigationControl } from "../NavigationControl/NavigationControl";
 import Image from "next/image";
+import { useEffect, useState } from "react";
 
 export const InvestitionSum = () => {
+  const [hidden, setHidden] = useState(true);
+  const [width, setWidth] = useState(1280);
+  useEffect(() => {
+    if (window === undefined) {
+      return;
+    }
+    setWidth(window.innerWidth);
+    const onChage = () => {
+      setWidth(window.innerWidth);
+      setHidden(true);
+    };
+    window.addEventListener("resize", onChage);
+    return () => {
+      window.removeEventListener("resize", onChage);
+    };
+  }, []);
+  useEffect(() => {
+    if (width < 1280) {
+      setHidden(true);
+    } else {
+      setHidden(false);
+    }
+  }, [width]);
+
+  const onMoreClick = () => {
+    setHidden((prev) => !prev);
+  };
   return (
     <StyledInvastition id="investition_sum">
       <Container>
         <p className="airBackText numberAir">№6</p>
         <p className="airBackText opt">ФРАНШИЗА</p>
+        <p className="airBackText optAlco">АЛКО/ОПТ</p>
 
         <p className="description">ДО СУМИ ІНВЕСТИЦІЙ ВХОДИТЬ:</p>
         <h2>Послуги</h2>
@@ -40,31 +69,58 @@ export const InvestitionSum = () => {
           <ItemPrice path={"/Icons/Icon8.svg"}>
             Консультація з пошуку персоналу
           </ItemPrice>
-          <ItemPrice path={"/Icons/Icon9.svg"}>
+          <ItemPrice
+            className={hidden ? "visuallyHidden" : ""}
+            path={"/Icons/Icon9.svg"}
+          >
             Доступ до торгівельної і товарної аналітики
           </ItemPrice>
-          <ItemPrice path={"/Icons/Icon10.svg"}>
+          <ItemPrice
+            className={hidden ? "visuallyHidden" : ""}
+            path={"/Icons/Icon10.svg"}
+          >
             Доступ до мережевої дисконтної програми
           </ItemPrice>
-          <ItemPrice path={"/Icons/Icon11.svg"}>
+          <ItemPrice
+            className={hidden ? "visuallyHidden" : ""}
+            path={"/Icons/Icon11.svg"}
+          >
             Доступ до користування програмою “Віртуальний сомельє”
           </ItemPrice>
-          <ItemPrice path={"/Icons/Icon12.svg"}>
+          <ItemPrice
+            className={hidden ? "visuallyHidden" : ""}
+            path={"/Icons/Icon12.svg"}
+          >
             Підключення до телеграм-боту компанії
           </ItemPrice>
-          <ItemPrice path={"/Icons/Icon13.svg"}>
+          <ItemPrice
+            className={hidden ? "visuallyHidden" : ""}
+            path={"/Icons/Icon13.svg"}
+          >
             Учать власників в освітніх заходах
           </ItemPrice>
-          <ItemPrice path={"/Icons/Icon14.svg"}>
+          <ItemPrice
+            className={hidden ? "visuallyHidden" : ""}
+            path={"/Icons/Icon14.svg"}
+          >
             Повна юридична і товарна консультація протягом всього періоду
           </ItemPrice>
-          <ItemPrice path={"/Icons/Icon15.svg"}>
+          <ItemPrice
+            className={hidden ? "visuallyHidden" : ""}
+            path={"/Icons/Icon15.svg"}
+          >
             Підключення до Dashboard з ключовими показниками магазину
           </ItemPrice>
-          <ItemPrice path={"/Icons/Icon16.svg"}>
+          <ItemPrice
+            className={hidden ? "visuallyHidden" : ""}
+            path={"/Icons/Icon16.svg"}
+          >
             Підключення до щоденної аналітики цін згідно вашого регіону
           </ItemPrice>
         </div>
+        <button onClick={onMoreClick} className="moreButton">
+          ДІЗНАТИСЬ БІЛЬШЕ
+        </button>
         <p className="values">Матеріальні цінності</p>
         <Line className="line" />
         <div className="grid1">
@@ -87,7 +143,13 @@ export const InvestitionSum = () => {
           </ItemPrice>
         </div>
         <div className="logo">
-          <Image src="/logoRed.png" width={127} height={93} alt="logo" />
+          <Image
+            className="image"
+            src="/logoRed.png"
+            width={127}
+            height={93}
+            alt="logo"
+          />
           <p className="logoText">дешевше ваших інтернетів</p>
         </div>
         <NavigationControl active={6} black height={525} top={200} />

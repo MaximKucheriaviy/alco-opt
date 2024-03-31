@@ -16,9 +16,9 @@ const StyledItem = styled.div`
   }
 `;
 
-export const ItemPrice = ({ path, children }) => {
+export const ItemPrice = ({ className, path, children }) => {
   return (
-    <StyledItem>
+    <StyledItem className={className}>
       <Image src={path} width={40} height={40} alt="logo" />
       <p>{children}</p>
     </StyledItem>
