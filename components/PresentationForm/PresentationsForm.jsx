@@ -15,6 +15,7 @@ export const PresentationForm = () => {
         <div className="line"></div>
       </div>
       <Container className="container">
+        <div className="imageThumbMobile"></div>
         <div className="imageThumb">
           <Image
             className="cardLogo"
@@ -24,6 +25,7 @@ export const PresentationForm = () => {
             alt="card logo"
           />
         </div>
+
         <form>
           <h2>
             Отримайте інформацію франшизи з детальним прорахунком вартості і

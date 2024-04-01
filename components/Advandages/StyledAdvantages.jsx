@@ -1,38 +1,51 @@
 import styled from "@emotion/styled";
+import { mediaScreen } from "@/service/mediaRules";
 
 export const StyledAdvantages = styled.section`
   background-color: #ff4a3a;
-  padding-top: 149px;
-  height: 813px;
+  padding-top: 116px;
+  padding-bottom: 64px;
   position: relative;
   overflow: hidden;
+  ${mediaScreen(1280)} {
+    padding-top: 149px;
+    height: 813px;
+  }
   h2 {
     position: relative;
     z-index: 1000;
     color: var(--Button-color, #0c0c0c);
     font-family: "Proxima Nova";
-    font-size: 48px;
+    font-size: 40px;
     font-style: normal;
     font-weight: 800;
     line-height: normal;
     text-transform: uppercase;
-
+    ${mediaScreen(1280)} {
+      font-size: 48px;
+    }
     & span {
       color: var(--Button-color, #0c0c0c);
 
       font-family: "Proxima Nova";
-      font-size: 40px;
+      font-size: 36px;
       font-style: normal;
       font-weight: 700;
       line-height: normal;
+      ${mediaScreen(1280)} {
+        font-size: 40px;
+      }
     }
   }
   & .controlBox {
     margin-top: 40px;
-    display: flex;
+    display: none;
     flex-direction: column;
     gap: 25px;
     position: relative;
+    ${mediaScreen(1280)} {
+      display: flex;
+    }
     & .line {
       position: absolute;
       top: 0;
@@ -49,6 +62,10 @@ export const StyledAdvantages = styled.section`
     bottom: 0px;
     background-image: url("/imgeAdvantages.jpg");
     background-size: cover;
+    display: none;
+    ${mediaScreen(1280)} {
+      display: block;
+    }
   }
   & .buttonDiv {
     left: 0px;
@@ -81,5 +98,11 @@ export const StyledAdvantages = styled.section`
     top: -20px;
     left: 149px;
     transform: rotateZ(-90deg);
+  }
+
+  & .mobieData {
+    ${mediaScreen(1280)} {
+      display: none;
+    }
   }
 `;

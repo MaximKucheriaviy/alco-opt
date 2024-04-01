@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+import { mediaScreen } from "@/service/mediaRules";
 
 export const StyledCostCount = styled.section`
   position: relative;
@@ -6,25 +7,51 @@ export const StyledCostCount = styled.section`
   background-color: #ff4a3a;
   background-position: center;
   overflow: hidden;
-
+  padding-top: 116px;
+  ${mediaScreen(1280)} {
+    padding-top: 0;
+  }
   & .container {
     display: flex;
+    flex-direction: column-reverse;
+    ${mediaScreen(1280)} {
+      flex-direction: row;
+    }
   }
   & .imageThumb {
-    width: 50%;
-    height: 100%;
+    /* display: none; */
+    width: 100%;
+    height: 562px;
     position: absolute;
-    top: 0;
+    bottom: 0px;
     left: 0;
     background-image: url("/imageCostCount.png");
     background-size: cover;
+    ${mediaScreen(1280)} {
+      display: block;
+      width: 50%;
+      top: 0;
+      left: 0;
+      height: 100%;
+    }
   }
   & .leftContainer {
-    padding-top: 160px;
-    padding-bottom: 76px;
-    width: 50%;
+    /* padding-top: 160px; */
+    padding-bottom: 116px;
+    /* width: 50%; */
+    /* background-image: url("/imageCostCount.png"); */
+    ${mediaScreen(1280)} {
+      background-image: none;
+      width: 50%;
+      padding-top: 160px;
+      padding-bottom: 76px;
+    }
 
     & h2 {
+      display: none;
+      ${mediaScreen(1280)} {
+        display: block;
+      }
       width: 624px;
       color: #fff;
       font-family: "Proxima Nova";
@@ -38,6 +65,7 @@ export const StyledCostCount = styled.section`
     & .priceItem {
       display: flex;
       justify-content: space-between;
+      align-items: flex-end;
       &:not(:first-child) {
         margin-top: 14px;
       }
@@ -45,13 +73,20 @@ export const StyledCostCount = styled.section`
 
     & .whiteBlock {
       background-color: white;
-      padding: 48px 40px;
+      padding: 40px 24px;
       margin-top: 42px;
       position: relative;
+      ${mediaScreen(1280)} {
+        padding: 48px 40px;
+      }
       & .dialog {
         position: absolute;
-        top: -80px;
-        left: 246px;
+        top: -100px;
+        left: 35px;
+        ${mediaScreen(1280)} {
+          top: -80px;
+          left: 246px;
+        }
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
           drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
         fill: rgba(255, 255, 255, 0.28);
@@ -73,49 +108,72 @@ export const StyledCostCount = styled.section`
         }
       }
       & .priceBig {
+        position: relative;
         color: #000;
         font-family: "Proxima Nova";
-        font-size: 28px;
+        font-size: 20px;
         font-style: normal;
         font-weight: 700;
         line-height: normal;
         text-transform: uppercase;
+        ${mediaScreen(1280)} {
+          font-size: 28px;
+        }
         & button {
           border: none;
           background-color: transparent;
-          position: relative;
+          position: absolute;
           top: -10px;
+          left: 100px;
+          ${mediaScreen(1280)} {
+            top: -10px;
+            left: 0px;
+            position: relative;
+          }
         }
       }
       & .redValue {
         color: var(--Button-color, #da2919);
         font-family: "Proxima Nova";
-        font-size: 28px;
+        font-size: 20px;
         font-style: normal;
         font-weight: 700;
         line-height: normal;
         text-transform: uppercase;
+        flex-shrink: 0;
+        ${mediaScreen(1280)} {
+          font-size: 28px;
+        }
       }
       & .from {
-        margin-top: 16px;
+        margin-top: 6px;
         color: var(--Button-color, #9e9e9e);
 
         font-family: "Proxima Nova";
-        font-size: 14px;
+        font-size: 12px;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
         text-transform: uppercase;
         text-align: right;
+        ${mediaScreen(1280)} {
+          margin-top: 16px;
+          font-size: 14px;
+        }
       }
       & .price {
         color: #000;
 
         font-family: "Proxima Nova";
-        font-size: 24px;
+        font-size: 20px;
         font-style: normal;
-        font-weight: 700;
+        font-weight: 400;
         line-height: normal;
+
+        ${mediaScreen(1280)} {
+          font-weight: 700;
+          font-size: 24px;
+        }
       }
 
       .value {
@@ -126,10 +184,15 @@ export const StyledCostCount = styled.section`
         font-style: normal;
         font-weight: 300;
         line-height: normal;
+        flex-shrink: 0;
       }
     }
-    & .link {
-      display: flex;
+    & .link,
+    & .linkMobile {
+      ${mediaScreen(1280)} {
+        display: flex;
+      }
+      display: none;
       justify-content: center;
       align-items: center;
       gap: 32px;
@@ -150,32 +213,86 @@ export const StyledCostCount = styled.section`
       font-weight: 700;
       line-height: normal;
     }
+    & .linkMobile {
+      ${mediaScreen(1280)} {
+        display: none;
+      }
+      font-size: 16px;
+      display: flex;
+      height: 51px;
+    }
   }
   & .rightContainer {
-    padding-top: 88px;
-    padding-left: 70px;
-    width: 50%;
+    padding-bottom: 64px;
+    ${mediaScreen(1280)} {
+      padding-top: 88px;
+      padding-left: 70px;
+      padding-bottom: 0px;
+      width: 50%;
+    }
+
+    & h2 {
+      display: block;
+      ${mediaScreen(1280)} {
+        display: none;
+      }
+
+      color: #fff;
+      font-family: "Proxima Nova";
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 60px; /* 115.385% */
+      text-transform: uppercase;
+    }
 
     & .place {
       color: #171717;
 
       font-family: "Proxima Nova";
-      font-size: 42px;
+      font-size: 36px;
       font-style: normal;
       font-weight: 700;
       line-height: 60px; /* 125% */
       text-transform: uppercase;
+      margin-top: 56px;
+      ${mediaScreen(1280)} {
+        font-size: 42px;
+        margin-top: 0;
+      }
     }
     & .priceses {
       margin-top: 73px;
       color: #fff;
-      width: 421px;
-      height: 75px;
+      /* width: 421px; */
+      /* height: 75px; */
       font-family: "Proxima Nova";
       font-size: 26px;
       font-style: normal;
       font-weight: 400;
-      line-height: 20px;
+      line-height: 15px;
+      transform: rotateZ(-90deg) translateY(-35px);
+      width: 90px;
+      height: 0px;
+      ${mediaScreen(1280)} {
+        /* width: 421px; */
+        transform: rotateZ(-90deg) translateY(-20px) translateX(20px);
+
+        line-height: 20px;
+      }
+
+      li {
+        &:not(:last-child) {
+          margin-bottom: 30px;
+        }
+        ${mediaScreen(1280)} {
+          &:not(:last-child) {
+            margin-bottom: 43px;
+          }
+        }
+        flex-shrink: 0;
+        /* width: 80px; */
+      }
       & br {
         /* margin-top: 0px; */
       }
@@ -187,21 +304,25 @@ export const StyledCostCount = styled.section`
         font-weight: 700;
       }
       & p {
-        transform: rotateZ(-90deg);
         cursor: pointer;
+        flex-shrink: 0;
+        /* width: 0px; */
+        /* height: 10px; */
       }
-
-      display: flex;
-      justify-content: space-between;
+      /* gap: -20px; */
       align-items: center;
     }
 
     & .MuiSlider-root {
       transform: translateX(40px);
-      margin-top: 44px;
+      margin-top: 64px;
       color: transparent;
       height: 12px;
-      width: 350px;
+      width: 200px;
+      ${mediaScreen(1280)} {
+        width: 350px;
+        margin-top: 44px;
+      }
     }
     & .MuiSlider-track {
       background: rgba(255, 255, 255, 0.719);
@@ -220,15 +341,20 @@ export const StyledCostCount = styled.section`
     & .need {
       background-color: transparent;
       border: none;
-      margin-top: 80px;
+      margin-top: 48px;
       color: #000;
       display: block;
       font-family: "Proxima Nova";
-      font-size: 32px;
+      font-size: 20px;
       font-style: normal;
       font-weight: 700;
       line-height: normal;
       text-decoration-line: underline;
+
+      ${mediaScreen(1280)} {
+        font-size: 32px;
+        margin-top: 80px;
+      }
     }
     & .iconText {
       display: flex;
@@ -242,23 +368,45 @@ export const StyledCostCount = styled.section`
       color: #000;
 
       font-family: "Proxima Nova";
-      font-size: 24px;
+      font-size: 20px;
       font-style: normal;
       font-weight: 400;
       line-height: normal;
       text-transform: uppercase;
-      width: 380px;
+      width: 280px;
+
+      ${mediaScreen(1280)} {
+        font-size: 20px;
+        width: 380px;
+      }
       & span {
-        font-size: 28px;
+        font-size: 20px;
+        ${mediaScreen(1280)} {
+          font-size: 20px;
+        }
         font-weight: 700;
       }
     }
+    & .first {
+      width: 230px;
+
+      ${mediaScreen(1280)} {
+        width: 380px;
+      }
+    }
   }
+
   & .numberAir {
     position: absolute;
-    font-size: 130px;
-    top: 60px;
+    font-size: 80px;
+    top: -60px;
     left: -20px;
+    ${mediaScreen(1280)} {
+      width: 380px;
+      font-size: 130px;
+      top: 60px;
+      left: -20px;
+    }
   }
   & .opt {
     position: absolute;

@@ -19,7 +19,7 @@ export const Francgizing = () => {
             <Image src="/Royalty.svg" width={61} height={49} alt="calender" />
             <p className="big">
               роялті: <br /> ФОРМАТ МІНІ - 2%;
-              <br /> ІНШИЙ ФОРМАТ - 3%
+              <br /> ІНШИЙ <span className="noMobile">ФОРМАТ</span> - 3%
             </p>
           </li>
           <li>
@@ -39,10 +39,18 @@ export const Francgizing = () => {
           <Image src="/wineBox.png" width={469} height={469} alt="wine box" />
         </div>
         <div className="logo">
-          <Image src="/logo.png" width={124} height={91} alt="logo" />
+          <div className="logoThumb">
+            <Image src="/logo.png" width={124} height={91} alt="logo" />
+          </div>
           <p className="logoText">Дешевше ваших інтернетів</p>
         </div>
       </Container>
+      <div className="imageMobile">
+        <div className="effect1"></div>
+        <div className="effect2"></div>
+        <div className="effect3"></div>
+        <Image src="/wineBox.png" width={469} height={469} alt="wine box" />
+      </div>
     </StyledFrancizng>
   );
 };

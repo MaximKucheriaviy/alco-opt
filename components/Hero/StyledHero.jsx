@@ -1,13 +1,17 @@
 import styled from "@emotion/styled";
+import { mediaScreen } from "@/service/mediaRules";
 
 export const StyledHero = styled.section`
   overflow: hidden;
   background-color: white;
   position: relative;
-  padding-top: 200px;
-  padding-bottom: 71px;
+  padding-bottom: 34px;
   z-index: 900;
-
+  padding-top: 99px;
+  ${mediaScreen(1280)} {
+    padding-top: 200px;
+    padding-bottom: 71px;
+  }
   .line {
     border-radius: 50px;
   }
@@ -30,70 +34,100 @@ export const StyledHero = styled.section`
     z-index: 1000;
     color: var(--Button-color, #da2919);
     font-family: "Proxima Nova";
-    font-size: 80px;
     font-style: normal;
     font-weight: 800;
     line-height: normal;
+    font-size: 48px;
+    ${mediaScreen(1280)} {
+      font-size: 80px;
+    }
   }
   .subtitle {
-    margin-top: 24px;
+    margin-top: 20px;
 
     color: #fff;
     font-family: "Proxima Nova";
-    font-size: 56px;
+    font-size: 36px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    ${mediaScreen(1280)} {
+      font-size: 56px;
+      margin-top: 24px;
+    }
   }
   .discription {
-    margin-top: 32px;
+    margin-top: 24px;
 
     color: #fff;
 
     font-family: "Proxima Nova";
-    font-size: 24px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    width: 552px;
+    width: 250px;
+    ${mediaScreen(1280)} {
+      width: 552px;
+      font-size: 24px;
+      margin-top: 32px;
+    }
   }
 
   & .slogan {
     color: #fff;
 
     font-family: "Proxima Nova";
-    font-size: 26px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    margin-top: 16px;
+    margin-top: 12px;
+    ${mediaScreen(1280)} {
+      width: 552px;
+      font-size: 26px;
+      margin-top: 16px;
+    }
   }
   & .slogan1 {
     margin-top: 0;
   }
   .buttons {
-    height: 71px;
+    height: 54px;
     display: flex;
-    margin-top: 48px;
+    margin-top: 24px;
     align-items: center;
+    ${mediaScreen(1280)} {
+      height: 71px;
+      margin-top: 48px;
+    }
     & .line {
-      width: 3px;
+      width: 2px;
       height: 41px;
       background-color: #da2919;
+      flex-shrink: 0;
+      ${mediaScreen(1280)} {
+        width: 3px;
+      }
     }
     button {
-      margin-left: 32px;
-      margin-right: 32px;
+      margin-left: 16px;
+      margin-right: 16px;
       background-color: transparent;
       border: none;
       color: #fff;
 
       font-family: "Proxima Nova";
-      font-size: 24px;
+      font-size: 16px;
       font-style: normal;
       font-weight: 700;
       line-height: normal;
       text-decoration: none;
+      ${mediaScreen(1280)} {
+        font-size: 24px;
+        margin-left: 32px;
+        margin-right: 32px;
+      }
     }
   }
   & .buttonDiv {
@@ -104,14 +138,14 @@ export const StyledHero = styled.section`
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    width: 336px;
-    height: 77px;
+    width: 246px;
+    height: 51px;
 
     margin-top: 48px;
 
     color: #fff;
     font-family: "Proxima Nova";
-    font-size: 24px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -121,6 +155,11 @@ export const StyledHero = styled.section`
 
     gap: 32px;
     background-color: #da2919;
+    ${mediaScreen(1280)} {
+      width: 336px;
+      height: 77px;
+      font-size: 24px;
+    }
   }
 
   .tlephone {
@@ -129,15 +168,22 @@ export const StyledHero = styled.section`
     width: 85px;
     height: 85px;
     padding: 0;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
+    ${mediaScreen(1280)} {
+      display: flex;
+    }
   }
   & .alcoopt {
     position: absolute;
-    top: -100px;
-    left: 0;
+    top: -20px;
+    left: -3px;
+    ${mediaScreen(1280)} {
+      top: -100px;
+      left: 0;
+    }
   }
   & .number {
     position: absolute;
@@ -148,8 +194,12 @@ export const StyledHero = styled.section`
   & .fran {
     position: absolute;
     /* font-size: 130px; */
-    bottom: -120px;
-    left: 161px;
+    bottom: -53px;
+    left: 0px;
+    ${mediaScreen(1280)} {
+      bottom: -120px;
+      left: 161px;
+    }
   }
   & .modal {
     position: fixed;
