@@ -22,10 +22,12 @@ export const StyledHero = styled.section`
     left: 0px;
     width: 100%;
     height: 100%;
+    background-color: black;
     & video {
       width: 100%;
       height: 100%;
       object-fit: cover;
+      background-color: black;
     }
   }
 

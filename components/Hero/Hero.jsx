@@ -39,6 +39,12 @@ export const Hero = ({ addLoader, removeLoader }) => {
       removeLoader();
     };
 
+    setTimeout(() => {
+      if (!video.paused) {
+        removeLoader();
+      }
+    }, 3000);
+
     video.addEventListener("loadstart", onLoadStart);
     video.addEventListener("play", onVideoLoad);
     return () => {
