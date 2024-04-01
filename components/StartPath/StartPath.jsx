@@ -12,21 +12,42 @@ export const StartPath = () => {
         <h2>Етапи запуску магазину</h2>
         <div className="pathTopLine">
           <Image
-            className="arrowBow1"
+            className="arrowBow1 noMobile"
             src={"/arrowBow.svg"}
             width={146}
             height={18}
             alt="arrow"
           />
           <Image
-            className="arrowBow2"
+            className="arrowBow2 m1"
             src={"/arrowBowReverce.svg"}
             width={146}
             height={18}
             alt="arrow"
           />
           <Image
-            className="arrowBow3"
+            className="arrowBow2 m2"
+            src={"/arrowBowReverce.svg"}
+            width={146}
+            height={18}
+            alt="arrow"
+          />
+          <Image
+            className="arrowBow2 m3"
+            src={"/arrowBowReverce.svg"}
+            width={146}
+            height={18}
+            alt="arrow"
+          />
+          <Image
+            className="arrowBow2 m4"
+            src={"/arrowBowReverce.svg"}
+            width={146}
+            height={18}
+            alt="arrow"
+          />
+          <Image
+            className="arrowBow3 noMobile"
             src={"/arrowBow.svg"}
             width={146}
             height={18}
@@ -34,21 +55,21 @@ export const StartPath = () => {
           />
 
           <Image
-            className="arrowBow4"
+            className="arrowBow4 noMobile"
             src={"/arrowBow.svg"}
             width={146}
             height={18}
             alt="arrow"
           />
           <Image
-            className="arrowBow5"
+            className="arrowBow5 noMobile"
             src={"/arrowBowReverce.svg"}
             width={146}
             height={22}
             alt="arrow"
           />
           <Image
-            className="arrowBow6"
+            className="arrowBow6 noMobile"
             src={"/arrowBow.svg"}
             width={146}
             height={18}
@@ -104,7 +125,13 @@ export const StartPath = () => {
             </p>
           </div>
           <div className="logo">
-            <Image src="/logo.png" width={108} height={80} alt="logo" />
+            <Image
+              className="image"
+              src="/logo.png"
+              width={108}
+              height={80}
+              alt="logo"
+            />
             <p className="logoText">Вистачить не всім</p>
           </div>
         </div>
