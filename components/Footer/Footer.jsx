@@ -7,8 +7,16 @@ export const Footer = () => {
   return (
     <StyledFooter>
       <Container className="container">
-        <Image src="/logo.png" width={108} height={80} alt="logo" />
-        <p className="notAll">Вистачить не всім</p>
+        <div className="logo">
+          <Image
+            className="image"
+            src="/logo.png"
+            width={108}
+            height={80}
+            alt="logo"
+          />
+          <p className="notAll">Вистачить не всім</p>
+        </div>
         <div className="addresBlock">
           <p className="title">Адреса</p>
           <Link className="item addres" href={"/"}>
@@ -62,6 +70,7 @@ export const Footer = () => {
             </Link>
           </div>
         </div>
+        <div className="copyright">© 2023-2024 All rights Reserved</div>
       </Container>
     </StyledFooter>
   );

@@ -93,25 +93,33 @@ export const StyledInvastition = styled.section`
   }
   & .numberAir {
     position: absolute;
-    font-size: 130px;
-    top: -100px;
-    left: -30px;
+    font-size: 56px;
+    top: -65px;
+    left: -5px;
+
     -webkit-text-stroke-color: #ffc0bc71;
+    ${mediaScreen(1280)} {
+      font-size: 130px;
+      top: -100px;
+      left: -30px;
+    }
   }
   & .opt,
   & .optAlco {
     -webkit-text-stroke-color: #ffc0bc6e;
     line-height: 100%;
     position: absolute;
-    font-size: 110px;
+    font-size: 56px;
+
     top: 430px;
-    right: -275px;
+    right: -140px;
     transform: rotateZ(-90deg);
     ${mediaScreen(1280)} {
-      top: 50px;
+      top: 121px;
       left: 200px;
-      font-size: 56px;
+      font-size: 110px;
       right: initial;
+      transform: none;
     }
   }
   & .optAlco {
@@ -141,9 +149,9 @@ export const StyledInvastition = styled.section`
   & .image {
     width: 63px;
     height: 46px;
-    flex-shrink: 0;
+    /* flex-shrink: 0; */
     ${mediaScreen(1280)} {
-      width: 100%;
+      width: auto;
       height: auto;
     }
   }

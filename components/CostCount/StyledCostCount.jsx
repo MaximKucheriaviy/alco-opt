@@ -81,8 +81,12 @@ export const StyledCostCount = styled.section`
       }
       & .dialog {
         position: absolute;
-        top: -80px;
-        left: 246px;
+        top: -100px;
+        left: 35px;
+        ${mediaScreen(1280)} {
+          top: -80px;
+          left: 246px;
+        }
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
           drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
         fill: rgba(255, 255, 255, 0.28);

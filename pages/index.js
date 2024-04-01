@@ -28,7 +28,7 @@ export default function Home() {
         <StartPath />
         <PresentationForm />
       </main>
-      {/* <Footer />  */}
+      <Footer />
     </>
   );
 }
