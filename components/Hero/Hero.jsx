@@ -8,11 +8,13 @@ import { Button } from "../Button/Button";
 import { NavigationControl } from "../NavigationControl/NavigationControl";
 import { Lines } from "../Lines/Lines";
 
-export const Hero = () => {
+export const Hero = ({ addLoader, removeLoader }) => {
   const containerRef = useRef(null);
   const [buttonPading, setButtonPudding] = useState(0);
   const [modalOpened, setModalOpened] = useState(false);
   const [videoPath, setVideoPath] = useState("./v2.mp4");
+  const videoRef = useRef(null);
+
   useEffect(() => {
     if (containerRef.current === null) {
       return;
@@ -20,6 +22,30 @@ export const Hero = () => {
     const block = getComputedStyle(containerRef.current).marginLeft;
     setButtonPudding(block);
   }, []);
+  useEffect(() => {
+    if (typeof window === "undefined") {
+      return;
+    }
+    if (!videoRef.current) {
+      return;
+    }
+    const video = videoRef.current;
+    const onLoadStart = () => {
+      console.log("loading video");
+      addLoader();
+    };
+    const onVideoLoad = () => {
+      console.log("start video");
+      removeLoader();
+    };
+
+    video.addEventListener("loadstart", onLoadStart);
+    video.addEventListener("play", onVideoLoad);
+    return () => {
+      video.removeEventListener("loadstart", onLoadStart);
+      video.removeEventListener("play", onVideoLoad);
+    };
+  }, [addLoader, removeLoader]);
   return (
     <StyledHero id="hero" buttonPadding={buttonPading}>
       <div className="videoDiv">
@@ -30,6 +56,7 @@ export const Hero = () => {
           className="video"
           preload="auto"
           src={videoPath}
+          ref={videoRef}
         ></video>
       </div>
       <Lines></Lines>
@@ -52,6 +79,7 @@ export const Hero = () => {
           <button
             onClick={() => {
               setVideoPath("./v2.mp4");
+              addLoader();
             }}
             href="/"
           >
@@ -61,6 +89,7 @@ export const Hero = () => {
           <button
             onClick={() => {
               setVideoPath("./v4.mp4");
+              addLoader();
             }}
             href="/"
           >
@@ -70,6 +99,7 @@ export const Hero = () => {
           <button
             onClick={() => {
               setVideoPath("./v3.mp4");
+              addLoader();
             }}
             href="/"
           >

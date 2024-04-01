@@ -318,7 +318,7 @@ export const StyledCostCount = styled.section`
       margin-top: 64px;
       color: transparent;
       height: 12px;
-      width: 200px;
+      width: 230px;
       ${mediaScreen(1280)} {
         width: 350px;
         margin-top: 44px;

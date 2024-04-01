@@ -11,8 +11,9 @@ export const ImageCarousel = ({ onChage = () => {} }) => {
     fade: true,
     arrows: false,
     autoplay: true,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 4000,
     draggable: true,
+    pauseOnHover: false,
   };
 
   return (

@@ -13,13 +13,24 @@ import { InvestitionSum } from "@/components/InvistitionSum/InvestitionSum";
 import { StartPath } from "@/components/StartPath/StartPath";
 import { PresentationForm } from "@/components/PresentationForm/PresentationsForm";
 import { Footer } from "@/components/Footer/Footer";
+import { Loader } from "@/components/Loader/Loader";
+import { useState } from "react";
 
 export default function Home() {
+  const [load, setLoad] = useState(true);
   return (
     <>
+      {load && <Loader />}
       <Header />
       <main>
-        <Hero />
+        <Hero
+          addLoader={() => {
+            setLoad(true);
+          }}
+          removeLoader={() => {
+            setLoad(false);
+          }}
+        />
         <About />
         <Advantages />
         <Francgizing />
