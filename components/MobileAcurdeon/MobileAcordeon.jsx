@@ -28,6 +28,10 @@ const StyledAccodion = styled(Accordion)`
   & .MuiAccordionSummary-root {
     min-height: 0px !important;
   }
+  & .Mui-expanded {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+  }
 `;
 const StyledSummary = styled(AccordionSummary)`
   padding: 0px;
