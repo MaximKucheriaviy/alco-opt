@@ -20,18 +20,13 @@ const StyledAccodion = styled(Accordion)`
     display: none;
   }
   /* min-height: 0px; */
-  & .css-o4b71y-MuiAccordionSummary-content {
+  & .MuiAccordionSummary-content {
     margin: 0px;
     align-items: center;
   }
-  & .css-o4b71y-MuiAccordionSummary-content.Mui-expanded {
-    margin: 0px;
-  }
-  & .css-1yixl0h-MuiButtonBase-root-MuiAccordionSummary-root.Mui-expanded {
-    min-height: 0px;
-  }
-  & .css-4otr13-MuiButtonBase-root-MuiAccordionSummary-root.Mui-expanded {
-    min-height: 0px;
+
+  & .MuiAccordionSummary-root {
+    min-height: 0px !important;
   }
 `;
 const StyledSummary = styled(AccordionSummary)`
@@ -45,6 +40,8 @@ const StyledSummary = styled(AccordionSummary)`
   & .acordionContainer {
     padding-left: 16px;
     padding-right: 16px;
+    display: flex;
+    align-items: center;
   }
   & .numberBox {
     position: relative;
@@ -149,15 +146,16 @@ export const MobileAccordeon = ({
             {number}
             {line && <div className="divider"></div>}
           </div>
+
+          <p className="text">{summaryText}</p>
+          <Image
+            className="chevron"
+            src={"/chevronDown.svg"}
+            width={16}
+            height={6}
+            alt="chevron"
+          />
         </div>
-        <p className="text">{summaryText}</p>
-        <Image
-          className="chevron"
-          src={"/chevronDown.svg"}
-          width={16}
-          height={6}
-          alt="chevron"
-        />
       </StyledSummary>
       <StyledDetails>
         <Container>
