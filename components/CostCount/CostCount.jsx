@@ -1,4 +1,4 @@
-import { StyledCostCount } from "./StyledCostCount";
+import { StyledCostCount, StyledModal } from "./StyledCostCount";
 import { Container } from "../Container/Container";
 import Image from "next/image";
 import { Slider } from "@mui/material";
@@ -7,6 +7,7 @@ import Link from "next/link";
 import { NavigationControl } from "../NavigationControl/NavigationControl";
 import { Lines } from "../Lines/Lines";
 import { spaceTable } from "@/service/spaceTable";
+import { Portal } from "../Portal/Portal";
 
 export const CostCount = () => {
   const [space, setSpace] = useState(3);
@@ -153,6 +154,7 @@ export const CostCount = () => {
             className="need"
             onClick={() => {
               setModalOpen(true);
+              document.body.style.overflow = "hidden";
             }}
           >
             Які вимоги до приміщення?
@@ -182,65 +184,74 @@ export const CostCount = () => {
         </div>
         <NavigationControl active={5} black top={150} />
       </Container>
-      {modalOpen && (
-        <div className="overlay">
-          <div className="modal">
-            <div className="textDiv">
-              <ul>
-                <li className="text">
-                  <div className="blackPoint"></div>
-                  <div>Торгове приміщення знаходиться на першому поверсі;</div>
-                </li>
-                <li className="text">
-                  <div className="blackPoint"></div>
-                  <div>
-                    Присутні всі комунікації (електричні потужності 30-40 кВт, з
-                    можливістю збільшення потужностей до 70 кВт);
-                  </div>
-                </li>
-                <li className="text">
-                  <div className="blackPoint"></div>
-                  <div>Фасад з вітринними вікнами;</div>
-                </li>
-                <li className="text">
-                  <div className="blackPoint"></div>
-                  <div>Місце під літній майданчик (за бажанням);</div>
-                </li>
-                <li className="text">
-                  <div className="blackPoint"></div>
-                  <div>Розміщення в зонах активного трафіку;</div>
-                </li>
-                <li className="text">
-                  <div className="blackPoint"></div>
-                  <div>
-                    Обов’язковість встановлення рампи та наявність чорного
-                    входу.
-                  </div>
-                </li>
-              </ul>
+      <Portal>
+        {modalOpen ? (
+          <StyledModal>
+            <div className="modal">
+              <div className="textDiv">
+                <ul>
+                  <li className="text">
+                    <div className="blackPoint"></div>
+                    <div>
+                      Торгове приміщення знаходиться на першому поверсі;
+                    </div>
+                  </li>
+                  <li className="text">
+                    <div className="blackPoint"></div>
+                    <div>
+                      Присутні всі комунікації (електричні потужності 30-40 кВт,
+                      з можливістю збільшення потужностей до 70 кВт);
+                    </div>
+                  </li>
+                  <li className="text">
+                    <div className="blackPoint"></div>
+                    <div>Фасад з вітринними вікнами;</div>
+                  </li>
+                  <li className="text">
+                    <div className="blackPoint"></div>
+                    <div>Місце під літній майданчик (за бажанням);</div>
+                  </li>
+                  <li className="text">
+                    <div className="blackPoint"></div>
+                    <div>Розміщення в зонах активного трафіку;</div>
+                  </li>
+                  <li className="text">
+                    <div className="blackPoint"></div>
+                    <div>
+                      Обов’язковість встановлення рампи та наявність чорного
+                      входу.
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div className="modalImageThumb">
+                <Image
+                  src="/modalImage.png"
+                  alt="hall"
+                  width={618}
+                  height={533}
+                />
+              </div>
+              <button
+                className="crostButton"
+                onClick={() => {
+                  setModalOpen(false);
+                  document.body.style.overflow = "initial";
+                }}
+              >
+                <Image
+                  src="/crostButton.svg"
+                  alt="crost"
+                  width={46}
+                  height={46}
+                />
+              </button>
             </div>
-            <div className="modalImageThumb">
-              <Image
-                src="/modalImage.png"
-                alt="hall"
-                width={618}
-                height={533}
-              />
-            </div>
-            <button
-              className="crostButton"
-              onClick={() => [setModalOpen(false)]}
-            >
-              <Image
-                src="/crostButton.svg"
-                alt="crost"
-                width={46}
-                height={46}
-              />
-            </button>
-          </div>
-        </div>
-      )}
+          </StyledModal>
+        ) : (
+          <></>
+        )}
+      </Portal>
     </StyledCostCount>
   );
 };

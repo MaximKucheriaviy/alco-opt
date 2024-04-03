@@ -124,30 +124,6 @@ export const StyledAbout = styled.section`
     & .i4 {
       background-image: url("/carouselImages/4.jpg");
     }
-    & .logoText {
-      color: #fff;
-
-      font-family: "DIN Pro";
-      font-size: 32px;
-      font-style: normal;
-      font-weight: 700;
-      line-height: 32px; /* 100% */
-      text-transform: uppercase;
-      width: 180px;
-    }
-    & .image {
-      width: 100%;
-      height: auto;
-    }
-    & .logo {
-      position: absolute;
-      top: 0;
-      left: -25px;
-      top: -20px;
-      display: flex;
-      align-items: center;
-      gap: 24px;
-    }
   }
 
   .imageTumbMobile {
@@ -201,6 +177,7 @@ export const StyledAbout = styled.section`
       line-height: 32px; /* 100% */
       text-transform: uppercase;
       width: 180px;
+      position: relative;
     }
     & .image {
       width: 100%;
@@ -208,9 +185,9 @@ export const StyledAbout = styled.section`
     }
     & .logo {
       position: absolute;
-      top: 0;
-      left: -25px;
-      top: -20px;
+      top: 40px;
+      left: 400px;
+
       display: flex;
       align-items: center;
       gap: 24px;
@@ -218,6 +195,9 @@ export const StyledAbout = styled.section`
   }
   & .corouselDots {
     display: flex;
+    ${mediaScreen(1280)} {
+      display: none;
+    }
     margin-top: 29px;
     gap: 5px;
     justify-content: center;
@@ -252,6 +232,43 @@ export const StyledAbout = styled.section`
       display: block;
       top: 180px;
       left: 255px;
+    }
+  }
+  & .logo {
+    z-index: 3000;
+    position: absolute;
+    top: 630px;
+    left: -4px;
+    ${mediaScreen(1280)} {
+      left: 650px;
+      top: -40px;
+    }
+
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    & .logoText {
+      color: #fff;
+
+      font-family: "DIN Pro";
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 24px; /* 100% */
+      text-transform: uppercase;
+      width: 180px;
+      ${mediaScreen(1280)} {
+        font-size: 32px;
+        line-height: 32px; /* 100% */
+      }
+    }
+    & .image {
+      width: 64px;
+      height: 46px;
+      ${mediaScreen(1280)} {
+        width: 100%;
+        height: auto;
+      }
     }
   }
 `;

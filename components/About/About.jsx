@@ -5,6 +5,7 @@ import { NavigationControl } from "../NavigationControl/NavigationControl";
 import { Lines } from "../Lines/Lines";
 import { ImageCarousel } from "../ImageCaruosel/ImageCarousel";
 import { useState } from "react";
+import Image from "next/image";
 
 export const About = () => {
   const [activeDot, setActiveDot] = useState(0);
@@ -50,14 +51,20 @@ export const About = () => {
               тільки після цього вирішуйте, яку пляшку обрати.
             </div>
           </li>
+          <NavigationControl active={2} top={40} height={328} />
+          <div className="logo">
+            <Image
+              className="image"
+              src={"/logo.png"}
+              width={100}
+              height={74}
+              alt="logo"
+            />
+            <p className="logoText">Вистачить не всім</p>
+          </div>
         </ul>
-        <NavigationControl active={2} top={40} height={328} />
         <div className="imageTumbMobile">
           <ImageCarousel onChage={onChage} />
-          {/* <div className="logo">
-            <Image src={"/logo.png"} width={100} height={74} alt="logo" />
-            <p className="logoText">Вистачить не всім</p>
-          </div> */}
         </div>
         <div className="corouselDots">
           <div className={activeDot === 0 ? "active" : ""}></div>

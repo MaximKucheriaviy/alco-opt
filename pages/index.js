@@ -21,6 +21,7 @@ export default function Home() {
   return (
     <>
       {load && <Loader />}
+      <div id="portalDiv"></div>
       <Header />
       <main>
         <Hero

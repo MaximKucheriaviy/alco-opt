@@ -1,18 +1,26 @@
-import { StyledHeader } from "./StyledHeader";
+import { StyledHeader, Modal } from "./StyledHeader";
 import Link from "next/link";
 import Image from "next/image";
 import { Container } from "../Container/Container";
 import { Button } from "../Button/Button";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { Portal } from "../Portal/Portal";
 
 export const Header = () => {
   const [linkHidden, setLinkHidden] = useState(true);
+  const [burOpen, burOpenSet] = useState(false);
   const linkClose = () => {
-    if (window.innerWidth >= 1280) {
+    if (typeof window === undefined) {
       return;
     }
+    if (window.innerWidth >= 1280) {
+      burOpenSet(false);
+      return;
+    }
+
     setLinkHidden((prev) => !prev);
   };
+
   return (
     <StyledHeader>
       <Container className="headerContainer">
@@ -58,12 +66,19 @@ export const Header = () => {
             />
           </div>
           <nav className="mainNavigation">
-            <Link href={"/"}>Про нас</Link>
-            <Link href={"/"}>Програма лояльності</Link>
-            <Link href={"/"}>Контакти</Link>
+            <Link href={"https://alcoopt.com.ua/#about"}>Про нас</Link>
+            <Link href={"https://alcoopt.com.ua/#booster"}>
+              Програма лояльності
+            </Link>
+            <Link href={"https://alcoopt.com.ua/#contact"}>Контакти</Link>
           </nav>
           <Button className={"button"}>Франчайзинг</Button>
-          <button className="burgerButton">
+          <button
+            onClick={() => {
+              burOpenSet(true);
+            }}
+            className="burgerButton"
+          >
             <Image
               src={"/burgerButton.svg"}
               width={32}
@@ -73,6 +88,85 @@ export const Header = () => {
           </button>
         </div>
       </Container>
+      {burOpen && (
+        <Portal>
+          <Modal>
+            <div className="absoluteDiv">
+              <div className="logoThumb">
+                <Image
+                  src={"/logo.png"}
+                  className="imageThumbed"
+                  width={100}
+                  height={74}
+                  alt="logo"
+                />
+              </div>
+
+              <button
+                onClick={() => {
+                  burOpenSet(false);
+                }}
+                className="burgerButton"
+              >
+                <Image
+                  src={"/crostRed.svg"}
+                  width={32}
+                  height={32}
+                  alt="bugerButton"
+                />
+              </button>
+            </div>
+            <Container className="container">
+              <nav className="mainNavigation">
+                <Link href={"https://alcoopt.com.ua/#about"}>
+                  Про нас
+                  <div className="arrow">
+                    <Image
+                      src={"/Arrow9.svg"}
+                      width={11}
+                      height={11}
+                      alt="arrow"
+                    />
+                  </div>
+                </Link>
+                <Link href={"https://alcoopt.com.ua/#booster"}>
+                  Програма лояльності
+                  <div className="arrow">
+                    <Image
+                      src={"/Arrow9.svg"}
+                      width={11}
+                      height={11}
+                      alt="arrow"
+                    />
+                  </div>
+                </Link>
+                <Link href={"https://alcoopt.com.ua/#contact"}>
+                  Контакти{" "}
+                  <div className="arrow">
+                    <Image
+                      src={"/Arrow9.svg"}
+                      width={11}
+                      height={11}
+                      alt="arrow"
+                    />
+                  </div>
+                </Link>
+              </nav>
+              <Button className={"button"}>
+                Франчайзинг{" "}
+                <div className="arrow">
+                  <Image
+                    src={"/Arrow9.svg"}
+                    width={11}
+                    height={11}
+                    alt="arrow"
+                  />
+                </div>
+              </Button>
+            </Container>
+          </Modal>
+        </Portal>
+      )}
     </StyledHeader>
   );
 };
