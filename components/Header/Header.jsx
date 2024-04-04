@@ -25,7 +25,10 @@ export const Header = () => {
     <StyledHeader>
       <Container className="headerContainer">
         <div className="blackDiv">
-          <Link className="leftLink" href={"/"}>
+          <Link
+            className="leftLink"
+            href={"https://maps.app.goo.gl/stFAbqGuakX4AJLA8"}
+          >
             <Image src={"/pinSVG.svg"} width={13} height={16} alt="icon" />
             Київ, вул. О. Мишуги, 3А
           </Link>
@@ -33,7 +36,9 @@ export const Header = () => {
             <Image src={"/pinSVG.svg"} width={20} height={24} alt="icon" />
           </button>
           <div className={`hiddenMobileLink ${linkHidden && "visuallyHidden"}`}>
-            <Link href={"/"}>Київ, вул. О. Мишуги, 3А </Link>
+            <Link href={"https://maps.app.goo.gl/stFAbqGuakX4AJLA8"}>
+              Київ, вул. О. Мишуги, 3А{" "}
+            </Link>
             <button onClick={linkClose}>
               <Image
                 width={12}
@@ -44,15 +49,23 @@ export const Header = () => {
             </button>
           </div>
           <div className={`rightLinks ${linkHidden || "visuallyHidden"}`}>
-            <Image src={"/instagram.svg"} width={26} height={26} alt="icon" />
-            <Image src={"/facebook.svg"} width={26} height={26} alt="icon" />
-            <Image src={"/telegram.svg"} width={26} height={26} alt="icon" />
-            <Image
-              src={"/footerIcons/tiktok.svg"}
-              width={26}
-              height={26}
-              alt="icon"
-            />
+            <Link href="https://www.instagram.com/alcoopt_ua/">
+              <Image src={"/instagram.svg"} width={26} height={26} alt="icon" />
+            </Link>
+            <Link href="https://www.facebook.com/alcoopt">
+              <Image src={"/facebook.svg"} width={26} height={26} alt="icon" />
+            </Link>
+            <Link href="https://t.me/alcoopt_ua_bot">
+              <Image src={"/telegram.svg"} width={26} height={26} alt="icon" />
+            </Link>
+            <Link href="https://www.tiktok.com/@alcoopt_ua">
+              <Image
+                src={"/footerIcons/tiktok.svg"}
+                width={26}
+                height={26}
+                alt="icon"
+              />
+            </Link>
           </div>
         </div>
         <div className="absoluteDiv">

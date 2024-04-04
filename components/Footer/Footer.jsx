@@ -26,8 +26,8 @@ export const Footer = () => {
         </div>
         <div className="addresBlock">
           <p className="title">Номер телефону</p>
-          <Link className="item" href="tel:+380939334303">
-            +38 093 933 43 03
+          <Link className="item" href="tel:+380935324149">
+            +38 093 532 41 49
           </Link>
           <Link className="item" href="mailto:info@alcoopt.com.ua">
             info@alcoopt.com.ua
@@ -36,7 +36,7 @@ export const Footer = () => {
         <div className="links addresBlock">
           <p className="title">Соціальні мережі</p>
           <div className="socialLiks">
-            <Link href={"/"}>
+            <Link href={"https://t.me/alcoopt_ua_bot"}>
               <Image
                 src={"/footerIcons/telegram.svg"}
                 width={24}
@@ -44,7 +44,7 @@ export const Footer = () => {
                 alt="icon"
               />
             </Link>
-            <Link href={"/"}>
+            <Link href={"https://www.instagram.com/alcoopt_ua/"}>
               <Image
                 src={"/footerIcons/instagram.svg"}
                 width={24}
@@ -52,7 +52,7 @@ export const Footer = () => {
                 alt="icon"
               />
             </Link>
-            <Link href={"/"}>
+            <Link href={"https://www.facebook.com/alcoopt"}>
               <Image
                 src={"/footerIcons/facebook.svg"}
                 width={24}

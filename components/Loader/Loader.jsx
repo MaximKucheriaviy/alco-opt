@@ -21,10 +21,12 @@ export const Loader = () => {
         visible={true}
         height="80"
         width="80"
-        color="#4fa94d"
+        color="#ac2115"
+        secondaryColor="#da2919"
         ariaLabel="oval-loading"
         wrapperStyle={{}}
         wrapperClass=""
+        strokeWidth={4}
       />
     </LoaderStyled>
   );
