@@ -86,18 +86,29 @@ export const StyledAdvantages = styled.section`
   }
   & .numberAir {
     position: absolute;
-    font-size: 130px;
-    top: -100px;
-    left: 0px;
+    font-size: 80px;
+    top: -60px;
+    left: -5px;
+    ${mediaScreen(1280)} {
+      font-size: 130px;
+      top: -100px;
+      left: 0px;
+    }
   }
 
   & .opt {
     /* z-index: 1; */
     position: absolute;
     /* font-size: 130px; */
-    top: -20px;
-    left: 149px;
+    top: 150px;
+    left: -10px;
+    font-size: 110px;
     transform: rotateZ(-90deg);
+    ${mediaScreen(1280)} {
+      font-size: 110px;
+      left: 225px;
+      top: 185px;
+    }
   }
 
   & .mobieData {
