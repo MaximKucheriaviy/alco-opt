@@ -8,6 +8,9 @@ export const StyledHero = styled.section`
   padding-bottom: 34px;
   z-index: 900;
   padding-top: 99px;
+  ${mediaScreen(768)} {
+    padding-top: 254px;
+  }
   ${mediaScreen(1280)} {
     padding-top: 200px;
     padding-bottom: 71px;
@@ -40,6 +43,9 @@ export const StyledHero = styled.section`
     font-weight: 800;
     line-height: normal;
     font-size: 48px;
+    ${mediaScreen(768)} {
+      font-size: 80px;
+    }
     ${mediaScreen(1280)} {
       font-size: 80px;
     }
@@ -53,6 +59,9 @@ export const StyledHero = styled.section`
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    ${mediaScreen(768)} {
+      margin-top: 32px;
+    }
     ${mediaScreen(1280)} {
       font-size: 56px;
       margin-top: 24px;
@@ -69,6 +78,10 @@ export const StyledHero = styled.section`
     font-weight: 400;
     line-height: normal;
     width: 250px;
+    ${mediaScreen(768)} {
+      width: 552px;
+      font-size: 24px;
+    }
     ${mediaScreen(1280)} {
       width: 552px;
       font-size: 24px;
@@ -85,6 +98,10 @@ export const StyledHero = styled.section`
     font-weight: 700;
     line-height: normal;
     margin-top: 12px;
+    ${mediaScreen(768)} {
+      margin-top: 32px;
+      font-size: 24px;
+    }
     ${mediaScreen(1280)} {
       width: 552px;
       font-size: 26px;
@@ -99,6 +116,10 @@ export const StyledHero = styled.section`
     display: flex;
     margin-top: 24px;
     align-items: center;
+    ${mediaScreen(768)} {
+      height: 71px;
+      margin-top: 72px;
+    }
     ${mediaScreen(1280)} {
       height: 71px;
       margin-top: 48px;
@@ -125,6 +146,11 @@ export const StyledHero = styled.section`
       font-weight: 700;
       line-height: normal;
       text-decoration: none;
+      ${mediaScreen(768)} {
+        font-size: 24px;
+        margin-left: 32px;
+        margin-right: 32px;
+      }
       ${mediaScreen(1280)} {
         font-size: 24px;
         margin-left: 32px;
@@ -157,6 +183,11 @@ export const StyledHero = styled.section`
 
     gap: 32px;
     background-color: #da2919;
+    ${mediaScreen(768)} {
+      width: 336px;
+      height: 77px;
+      font-size: 24px;
+    }
     ${mediaScreen(1280)} {
       width: 336px;
       height: 77px;
