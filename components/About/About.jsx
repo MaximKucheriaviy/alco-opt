@@ -53,13 +53,15 @@ export const About = () => {
           </li>
           <NavigationControl active={2} top={40} height={328} />
           <div className="logo">
-            <Image
-              className="image"
-              src={"/logo.png"}
-              width={100}
-              height={74}
-              alt="logo"
-            />
+            <div className="logoThumb">
+              <Image
+                className="image"
+                src={"/logo.png"}
+                width={100}
+                height={74}
+                alt="logo"
+              />
+            </div>
             <p className="logoText">Вистачить не всім</p>
           </div>
         </ul>
