@@ -5,6 +5,10 @@ export const StyledFrancizng = styled.section`
   padding-top: 114px;
   padding-bottom: 64px;
   position: relative;
+  ${mediaScreen(768)} {
+    padding-top: 148px;
+    padding-bottom: 81px;
+  }
   ${mediaScreen(1280)} {
     padding-top: 147px;
   }
@@ -16,13 +20,16 @@ export const StyledFrancizng = styled.section`
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    ${mediaScreen(768)} {
+      font-size: 48px;
+    }
     ${mediaScreen(1280)} {
       font-size: 64px;
       padding-bottom: initial;
     }
   }
   & .container {
-    ${mediaScreen} {
+    ${mediaScreen(1280)} {
       padding-left: 95px;
     }
   }
@@ -37,7 +44,7 @@ export const StyledFrancizng = styled.section`
     line-height: normal;
     text-transform: uppercase;
 
-    ${mediaScreen(1280)} {
+    ${mediaScreen(768)} {
       margin-top: 40px;
       font-size: 24px;
     }
@@ -57,6 +64,12 @@ export const StyledFrancizng = styled.section`
     font-style: normal;
     font-weight: 700;
     line-height: 20px; /* 41.667% */
+    ${mediaScreen(768)} {
+      font-size: 46px;
+      margin-top: 32px;
+      padding: 40px 36px;
+      display: inline-block;
+    }
     ${mediaScreen(1280)} {
       font-size: 48px;
       margin-top: 32px;
@@ -71,7 +84,13 @@ export const StyledFrancizng = styled.section`
     grid-column-gap: 22px;
     grid-row-gap: 40px;
     grid-template-columns: repeat(2, 131px);
+    ${mediaScreen(768)} {
+      grid-column-gap: 41px;
+      grid-row-gap: 40px;
+      padding-bottom: 73px;
 
+      grid-template-columns: repeat(2, 230px);
+    }
     ${mediaScreen(1280)} {
       grid-column-gap: 56px;
       grid-row-gap: 40px;
@@ -95,7 +114,8 @@ export const StyledFrancizng = styled.section`
         height: 40px;
         flex-shrink: 0px;
       }
-      ${mediaScreen(1280)} {
+
+      ${mediaScreen(768)} {
         font-size: 16px;
         display: flex;
         gap: 32px;
@@ -106,13 +126,15 @@ export const StyledFrancizng = styled.section`
       }
 
       & p {
-        ${mediaScreen(1280)} {
+        ${mediaScreen(768)} {
+          flex-shrink: 0;
+
           width: 127px;
         }
       }
       & .big {
         flex-shrink: 0;
-        ${mediaScreen(1280)} {
+        ${mediaScreen(768)} {
           width: 180px;
         }
       }
@@ -122,26 +144,42 @@ export const StyledFrancizng = styled.section`
     display: none;
 
     position: absolute;
-    top: 20px;
-    right: 70px;
-    width: 469px;
-    height: 469px;
-    ${mediaScreen(1280)} {
+    right: 0;
+    top: -20px;
+    width: 343px;
+    height: 343px;
+    ${mediaScreen(768)} {
       display: block;
+    }
+    ${mediaScreen(1280)} {
+      width: 469px;
+      height: 469px;
+      top: 20px;
+      right: 70px;
     }
     & img {
       position: relative;
       z-index: 0;
+      width: 100%;
+      height: 100%;
     }
     /* background-color: green; */
     & .effect1 {
       position: absolute;
-      top: 200px;
-      left: 24px;
-      width: 415.528px;
-      height: 157.988px;
+      width: 303.894px;
+      height: 115.543px;
       transform: rotate(-5.137deg);
       flex-shrink: 0;
+      top: 146px;
+      left: 17px;
+      ${mediaScreen(1280)} {
+        top: 200px;
+        left: 24px;
+        width: 415.528px;
+        height: 157.988px;
+        transform: rotate(-5.137deg);
+        flex-shrink: 0;
+      }
 
       border-radius: 464.257px;
       background: #800a0a;
@@ -150,13 +188,21 @@ export const StyledFrancizng = styled.section`
     }
     & .effect2 {
       position: absolute;
-      top: 287px;
-      left: 55px;
-      width: 223.159px;
-      height: 96.609px;
+      width: 163.205px;
+      height: 70.655px;
       transform: rotate(6.54deg);
       flex-shrink: 0;
+      top: 210px;
+      left: 40px;
 
+      ${mediaScreen(1280)} {
+        top: 287px;
+        left: 55px;
+        width: 223.159px;
+        height: 96.609px;
+        transform: rotate(6.54deg);
+        flex-shrink: 0;
+      }
       border-radius: 464.257px;
       background: #800a0a;
 
@@ -164,13 +210,21 @@ export const StyledFrancizng = styled.section`
     }
     & .effect3 {
       position: absolute;
-      top: 272px;
-      left: 228px;
-      width: 212.204px;
-      height: 96.609px;
+
+      width: 155.194px;
+      height: 70.655px;
       transform: rotate(-4.76deg);
       flex-shrink: 0;
-
+      top: 198px;
+      left: 165px;
+      ${mediaScreen(1280)} {
+        top: 272px;
+        left: 228px;
+        width: 212.204px;
+        height: 96.609px;
+        transform: rotate(-4.76deg);
+        flex-shrink: 0;
+      }
       border-radius: 464.257px;
       fill: #ca0606;
 
@@ -229,7 +283,7 @@ export const StyledFrancizng = styled.section`
       background: #800a0a;
       filter: blur(150px);
     }
-    ${mediaScreen(1280)} {
+    ${mediaScreen(768)} {
       display: none;
     }
   }
@@ -238,6 +292,10 @@ export const StyledFrancizng = styled.section`
     font-size: 80px;
     top: -65px;
     left: -5px;
+    ${mediaScreen(768)} {
+      font-size: 120px;
+      top: -100px;
+    }
     ${mediaScreen(1280)} {
       font-size: 130px;
       top: -100px;
@@ -254,7 +312,9 @@ export const StyledFrancizng = styled.section`
     line-height: 24px; /* 100% */
     text-transform: uppercase;
     width: 150px;
-
+    ${mediaScreen(768)} {
+      font-size: 24px;
+    }
     ${mediaScreen(1280)} {
       font-size: 32px;
       width: 180px;
@@ -265,6 +325,10 @@ export const StyledFrancizng = styled.section`
   & .logoThumb {
     width: 62px;
     height: 46px;
+    ${mediaScreen(768)} {
+      width: 108px;
+      height: 80px;
+    }
     ${mediaScreen(1280)} {
       width: auto;
       height: auto;
@@ -286,9 +350,10 @@ export const StyledFrancizng = styled.section`
     display: flex;
     align-items: center;
     gap: 24px;
-    ${mediaScreen(1280)} {
+    ${mediaScreen(768)} {
       margin-top: 0;
       position: absolute;
+      right: 0px;
     }
     & .image {
       width: 100%;

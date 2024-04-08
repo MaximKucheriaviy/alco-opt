@@ -34,7 +34,7 @@ export default function Home() {
         />
         <About />
         <Advantages />
-        {/* <Francgizing /> */}
+        <Francgizing />
         {/* <CostCount /> */}
         {/* <InvestitionSum /> */}
         {/* <StartPath /> */}
