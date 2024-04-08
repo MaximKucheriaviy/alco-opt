@@ -12,6 +12,13 @@
 }
 
 @font-face {
+  font-family: "Proxima Nova";
+  src: url("/proximaNova/proximanova_extrabold.otf") format("opentype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
   font-family: "DIN Pro";
   src: url("/dinPro/dinpro_bold.otf") format(opentype);
   font-weight: bold;

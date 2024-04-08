@@ -1,32 +1,43 @@
 import Slider from "react-slick";
 import styled from "@emotion/styled";
+import { mediaScreen } from "@/service/mediaRules";
 
 const CarouselDiv = styled.div`
-  width: 492px;
-  height: 593px;
+  width: 366px;
+  height: 484px;
   background-color: #fff;
-  padding: 46px 40px;
+  padding: 24px;
   position: absolute;
   left: 0px;
   bottom: 0px;
-
+  ${mediaScreen(1280)} {
+    width: 492px;
+    height: 593px;
+    padding: 46px 40px;
+  }
   & h3 {
     color: #000;
     font-family: "Proxima Nova";
-    font-size: 32px;
+    font-size: 24px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
     text-transform: uppercase;
+    ${mediaScreen(1280)} {
+      font-size: 32px;
+    }
   }
   & p {
     margin-top: 24px;
     color: #000;
     font-family: "Proxima Nova";
-    font-size: 20px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 140%;
+    ${mediaScreen(1280)} {
+      font-size: 20px;
+    }
   }
   & br {
     margin-bottom: 10px;

@@ -9,6 +9,7 @@ export const StyledAdvantages = styled.section`
   overflow: hidden;
   ${mediaScreen(768)} {
     padding-top: 160px;
+    padding-bottom: 108px;
   }
   ${mediaScreen(1280)} {
     padding-top: 149px;
@@ -47,10 +48,13 @@ export const StyledAdvantages = styled.section`
     margin-top: 40px;
     display: none;
     flex-direction: column;
-    gap: 25px;
+    gap: 14px;
     position: relative;
     ${mediaScreen(768)} {
       display: flex;
+    }
+    ${mediaScreen(1280)} {
+      gap: 25px;
     }
     & .line {
       position: absolute;
@@ -80,13 +84,16 @@ export const StyledAdvantages = styled.section`
     position: absolute;
     & button {
       border: none;
-      padding: 32px 28px;
+      padding: 28px;
       background-color: #fff;
       opacity: 0.2;
       transition-duration: 500ms;
       transition-property: opacity;
       &:hover {
         opacity: 1;
+      }
+      ${mediaScreen(1280)} {
+        padding: 32px 28px;
       }
     }
   }
@@ -95,6 +102,11 @@ export const StyledAdvantages = styled.section`
     font-size: 80px;
     top: -60px;
     left: -5px;
+    ${mediaScreen(768)} {
+      font-size: 120px;
+      top: -100px;
+      left: -5px;
+    }
     ${mediaScreen(1280)} {
       font-size: 130px;
       top: -100px;
@@ -110,6 +122,11 @@ export const StyledAdvantages = styled.section`
     left: -10px;
     font-size: 110px;
     transform: rotateZ(-90deg);
+    ${mediaScreen(768)} {
+      top: 110px;
+      left: -10px;
+      font-size: 120px;
+    }
     ${mediaScreen(1280)} {
       font-size: 110px;
       left: 225px;
