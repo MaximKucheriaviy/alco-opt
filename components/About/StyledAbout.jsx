@@ -273,7 +273,7 @@ export const StyledAbout = styled.section`
       display: block;
       font-size: 130px;
       top: 180px;
-      left: 325px;
+      left: 300px;
       width: 100%;
     }
     ${mediaScreen(1280)} {

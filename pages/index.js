@@ -34,11 +34,11 @@ export default function Home() {
         />
         <About />
         <Advantages />
-        <Francgizing />
-        <CostCount />
-        <InvestitionSum />
-        <StartPath />
-        <PresentationForm />
+        {/* <Francgizing /> */}
+        {/* <CostCount /> */}
+        {/* <InvestitionSum /> */}
+        {/* <StartPath /> */}
+        {/* <PresentationForm /> */}
       </main>
       <Footer />
     </>

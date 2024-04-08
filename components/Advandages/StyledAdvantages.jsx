@@ -7,6 +7,9 @@ export const StyledAdvantages = styled.section`
   padding-bottom: 64px;
   position: relative;
   overflow: hidden;
+  ${mediaScreen(768)} {
+    padding-top: 160px;
+  }
   ${mediaScreen(1280)} {
     padding-top: 149px;
     height: 813px;
@@ -21,6 +24,9 @@ export const StyledAdvantages = styled.section`
     font-weight: 800;
     line-height: normal;
     text-transform: uppercase;
+    ${mediaScreen(768)} {
+      font-size: 40px;
+    }
     ${mediaScreen(1280)} {
       font-size: 48px;
     }
@@ -43,7 +49,7 @@ export const StyledAdvantages = styled.section`
     flex-direction: column;
     gap: 25px;
     position: relative;
-    ${mediaScreen(1280)} {
+    ${mediaScreen(768)} {
       display: flex;
     }
     & .line {
@@ -63,7 +69,7 @@ export const StyledAdvantages = styled.section`
     background-image: url("/imgeAdvantages.jpg");
     background-size: cover;
     display: none;
-    ${mediaScreen(1280)} {
+    ${mediaScreen(768)} {
       display: block;
     }
   }
@@ -112,7 +118,7 @@ export const StyledAdvantages = styled.section`
   }
 
   & .mobieData {
-    ${mediaScreen(1280)} {
+    ${mediaScreen(768)} {
       display: none;
     }
   }
