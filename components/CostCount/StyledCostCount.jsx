@@ -8,6 +8,9 @@ export const StyledCostCount = styled.section`
   background-position: center;
   overflow: hidden;
   padding-top: 116px;
+  ${mediaScreen(768)} {
+    padding-top: 160px;
+  }
   ${mediaScreen(1280)} {
     padding-top: 0;
   }
@@ -27,6 +30,9 @@ export const StyledCostCount = styled.section`
     left: 0;
     background-image: url("/imageCostCount.png");
     background-size: cover;
+    ${mediaScreen(768)} {
+      height: 615px;
+    }
     ${mediaScreen(1280)} {
       display: block;
       width: 50%;
@@ -40,6 +46,9 @@ export const StyledCostCount = styled.section`
     padding-bottom: 116px;
     /* width: 50%; */
     /* background-image: url("/imageCostCount.png"); */
+    ${mediaScreen(768)} {
+      padding-bottom: 80px;
+    }
     ${mediaScreen(1280)} {
       background-image: none;
       width: 50%;
@@ -69,6 +78,11 @@ export const StyledCostCount = styled.section`
       &:not(:first-child) {
         margin-top: 14px;
       }
+      ${mediaScreen(768)} {
+        &:not(:first-child) {
+          margin-top: 13px;
+        }
+      }
     }
 
     & .whiteBlock {
@@ -76,6 +90,9 @@ export const StyledCostCount = styled.section`
       padding: 40px 24px;
       margin-top: 42px;
       position: relative;
+      ${mediaScreen(768)} {
+        margin-top: 80px;
+      }
       ${mediaScreen(1280)} {
         padding: 48px 40px;
       }
@@ -116,6 +133,9 @@ export const StyledCostCount = styled.section`
         font-weight: 700;
         line-height: normal;
         text-transform: uppercase;
+        ${mediaScreen(768)} {
+          font-size: 32px;
+        }
         ${mediaScreen(1280)} {
           font-size: 28px;
         }
@@ -141,6 +161,9 @@ export const StyledCostCount = styled.section`
         line-height: normal;
         text-transform: uppercase;
         flex-shrink: 0;
+        ${mediaScreen(768)} {
+          font-size: 32px;
+        }
         ${mediaScreen(1280)} {
           font-size: 28px;
         }
@@ -156,6 +179,10 @@ export const StyledCostCount = styled.section`
         line-height: normal;
         text-transform: uppercase;
         text-align: right;
+        ${mediaScreen(768)} {
+          font-size: 16px;
+          margin-top: 10px;
+        }
         ${mediaScreen(1280)} {
           margin-top: 16px;
           font-size: 14px;
@@ -169,7 +196,11 @@ export const StyledCostCount = styled.section`
         font-style: normal;
         font-weight: 400;
         line-height: normal;
-
+        ${mediaScreen(768)} {
+          font-size: 32px;
+          font-weight: 700;
+          line-height: normal;
+        }
         ${mediaScreen(1280)} {
           font-weight: 700;
           font-size: 24px;
@@ -185,11 +216,14 @@ export const StyledCostCount = styled.section`
         font-weight: 300;
         line-height: normal;
         flex-shrink: 0;
+        ${mediaScreen(768)} {
+          font-size: 32px;
+        }
       }
     }
     & .link,
     & .linkMobile {
-      ${mediaScreen(1280)} {
+      ${mediaScreen(768)} {
         display: flex;
       }
       display: none;
@@ -214,7 +248,7 @@ export const StyledCostCount = styled.section`
       line-height: normal;
     }
     & .linkMobile {
-      ${mediaScreen(1280)} {
+      ${mediaScreen(768)} {
         display: none;
       }
       font-size: 16px;
@@ -224,6 +258,9 @@ export const StyledCostCount = styled.section`
   }
   & .rightContainer {
     padding-bottom: 64px;
+    ${mediaScreen(768)} {
+      padding-bottom: 80px;
+    }
     ${mediaScreen(1280)} {
       padding-top: 88px;
       padding-left: 70px;
@@ -233,6 +270,9 @@ export const StyledCostCount = styled.section`
 
     & h2 {
       display: block;
+      ${mediaScreen(768)} {
+        font-size: 48px;
+      }
       ${mediaScreen(1280)} {
         display: none;
       }
@@ -256,6 +296,9 @@ export const StyledCostCount = styled.section`
       line-height: 60px; /* 125% */
       text-transform: uppercase;
       margin-top: 56px;
+      ${mediaScreen(768)} {
+        font-size: 40px;
+      }
       ${mediaScreen(1280)} {
         font-size: 42px;
         margin-top: 0;
@@ -274,16 +317,23 @@ export const StyledCostCount = styled.section`
       transform: rotateZ(-90deg) translateY(-35px);
       width: 90px;
       height: 0px;
+      ${mediaScreen(768)} {
+        width: 90px;
+      }
       ${mediaScreen(1280)} {
         /* width: 421px; */
         transform: rotateZ(-90deg) translateY(-20px) translateX(20px);
-
         line-height: 20px;
       }
 
       li {
         &:not(:last-child) {
           margin-bottom: 30px;
+        }
+        ${mediaScreen(768)} {
+          &:not(:last-child) {
+            margin-bottom: 100px;
+          }
         }
         ${mediaScreen(1280)} {
           &:not(:last-child) {
@@ -319,6 +369,10 @@ export const StyledCostCount = styled.section`
       color: transparent;
       height: 12px;
       width: 230px;
+      ${mediaScreen(768)} {
+        width: 520px;
+        margin-top: 90px;
+      }
       ${mediaScreen(1280)} {
         width: 350px;
         margin-top: 44px;
@@ -351,22 +405,44 @@ export const StyledCostCount = styled.section`
       line-height: normal;
       text-decoration-line: underline;
 
+      ${mediaScreen(768)} {
+        font-size: 24px;
+        margin-top: 64px;
+      }
+
       ${mediaScreen(1280)} {
         font-size: 32px;
         margin-top: 80px;
       }
     }
+    & .iconTextThumb {
+      margin-top: 70px;
+
+      ${mediaScreen(768)} {
+        display: flex;
+        align-items: center;
+        margin-top: 72px;
+        gap: 46px;
+      }
+      ${mediaScreen(1280)} {
+        display: block;
+        margin-top: 70px;
+      }
+    }
     & .iconText {
       display: flex;
       align-items: center;
-      &:not(:last-child) {
-        margin-top: 70px;
-      }
+
       margin-top: 32px;
       gap: 16px;
 
       color: #000;
-
+      ${mediaScreen(768)} {
+        margin-top: 0px;
+      }
+      ${mediaScreen(1280)} {
+        margin-top: 70px;
+      }
       font-family: "Proxima Nova";
       font-size: 20px;
       font-style: normal;
@@ -389,7 +465,9 @@ export const StyledCostCount = styled.section`
     }
     & .first {
       width: 230px;
-
+      ${mediaScreen(768)} {
+        width: 340px;
+      }
       ${mediaScreen(1280)} {
         width: 380px;
       }
@@ -401,6 +479,11 @@ export const StyledCostCount = styled.section`
     font-size: 80px;
     top: -60px;
     left: -20px;
+    ${mediaScreen(768)} {
+      font-size: 120px;
+      top: -100px;
+      left: -10px;
+    }
     ${mediaScreen(1280)} {
       width: 380px;
       font-size: 130px;
@@ -414,6 +497,16 @@ export const StyledCostCount = styled.section`
     top: 300px;
     right: -350px;
     transform: rotateZ(-90deg);
+    ${mediaScreen(768)} {
+      font-size: 120px;
+      top: 130px;
+      right: -270px;
+    }
+    ${mediaScreen(1280)} {
+      font-size: 140px;
+      top: 300px;
+      right: -350px;
+    }
   }
 
   & .fromNumber {
@@ -436,7 +529,7 @@ export const StyledModal = styled.div`
   height: 100vh;
   overflow-y: scroll;
 
-  ${mediaScreen(1280)} {
+  ${mediaScreen(768)} {
     justify-content: center;
     align-items: center;
   }
@@ -446,17 +539,31 @@ export const StyledModal = styled.div`
     display: flex;
     background-color: #fff;
     flex-direction: column-reverse;
+    ${mediaScreen(768)} {
+      flex-direction: row;
+      height: 428px;
+    }
     ${mediaScreen(1280)} {
       flex-direction: row;
+      height: 553px;
     }
     /* width: 1200px; */
     & .textDiv {
+      ${mediaScreen(768)} {
+        width: 363px;
+      }
       ${mediaScreen(1280)} {
         width: 519px;
       }
     }
     & ul {
       padding: 40px 46px;
+      ${mediaScreen(768)} {
+        padding: 40px 11px;
+      }
+      ${mediaScreen(1280)} {
+        padding: 40px 46px;
+      }
     }
     & .text {
       margin-top: 24px;
@@ -467,7 +574,9 @@ export const StyledModal = styled.div`
       font-style: normal;
       font-weight: 400;
       line-height: 145%;
-
+      ${mediaScreen(768)} {
+        font-size: 16px;
+      }
       ${mediaScreen(1280)} {
         font-size: 20px;
       }
@@ -484,12 +593,18 @@ export const StyledModal = styled.div`
     }
     & .modalImageThumb {
       width: 100vw;
+      ${mediaScreen(768)} {
+        width: 363px;
+      }
       ${mediaScreen(1280)} {
         width: 618px;
       }
       & img {
         width: 100%;
         /* height: auto; */
+        ${mediaScreen(768)} {
+          height: 100%;
+        }
         ${mediaScreen(1280)} {
           /* height: inherit; */
         }
