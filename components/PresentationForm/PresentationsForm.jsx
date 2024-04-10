@@ -15,6 +15,7 @@ export const PresentationForm = () => {
         <div className="line"></div>
       </div>
       <Container className="container">
+        <div className="imageTablet"></div>
         <div className="imageThumbMobile"></div>
         <div className="imageThumb">
           <Image
