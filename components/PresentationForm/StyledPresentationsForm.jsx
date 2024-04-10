@@ -4,12 +4,16 @@ import styled from "@emotion/styled";
 export const StyledPresentationForm = styled.section`
   height: 743px;
   background: #e8e8e9;
-
+  position: relative;
   & .container {
     height: 100%;
     position: relative;
     padding-top: 196px;
     padding-bottom: 64px;
+    ${mediaScreen(768)} {
+      padding-top: 116px;
+      padding-bottom: 116px;
+    }
     ${mediaScreen(1280)} {
       padding-top: 0;
       padding-bottom: 0;
@@ -33,18 +37,41 @@ export const StyledPresentationForm = styled.section`
       left: -16px;
       background-repeat: no-repeat;
       position: absolute;
+      ${mediaScreen(768)} {
+        display: none;
+      }
+    }
+    & .imageTablet {
+      background-image: url("/bookTablet.png");
+      width: 100%;
+      height: 100%;
+
+      top: 0px;
+      left: 0px;
+      background-repeat: no-repeat;
+      position: absolute;
     }
     & form {
       position: static;
-      right: 91px;
-      top: 100px;
+      right: 56px;
+      top: 116px;
 
       height: 543px;
       padding: 24px 0px;
       background: rgba(255, 255, 255, 0.21);
 
       backdrop-filter: blur(10px);
+      ${mediaScreen(768)} {
+        position: static;
+        margin-left: auto;
+        margin-right: auto;
+        width: 656px;
+        height: 543px;
+        padding: 24px 56px;
+      }
       ${mediaScreen(1280)} {
+        right: 91px;
+        top: 100px;
         position: absolute;
         width: 841px;
         height: 543px;
@@ -64,7 +91,10 @@ export const StyledPresentationForm = styled.section`
         line-height: 120%;
 
         margin-bottom: 25px;
-
+        ${mediaScreen(768)} {
+          font-size: 32px;
+          width: 559px;
+        }
         ${mediaScreen(1280)} {
           width: 599px;
           font-size: 32px;
@@ -98,7 +128,7 @@ export const StyledPresentationForm = styled.section`
           font-style: normal;
           font-weight: 400;
           line-height: 150%; /* 24px */
-          ${mediaScreen(1280)} {
+          ${mediaScreen(768)} {
             font-size: 16px;
           }
         }

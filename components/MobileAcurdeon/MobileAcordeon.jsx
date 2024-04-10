@@ -23,6 +23,7 @@ const StyledAccodion = styled(Accordion)`
   & .MuiAccordionSummary-content {
     margin: 0px;
     align-items: center;
+    text-transform: uppercase;
   }
 
   & .MuiAccordionSummary-root {
@@ -106,7 +107,7 @@ const StyledSummary = styled(AccordionSummary)`
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin-left: 24px;
+    margin-left: 16px;
   }
 `;
 const StyledDetails = styled(AccordionDetails)`

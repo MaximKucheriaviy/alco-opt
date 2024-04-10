@@ -1,3 +1,4 @@
+import { mediaScreen } from "@/service/mediaRules";
 import styled from "@emotion/styled";
 
 export const StyledControlDots = styled.div`
@@ -13,14 +14,19 @@ export const StyledControlDots = styled.div`
     border: none;
     display: flex;
     align-items: center;
-    gap: 48px;
+    gap: 32px;
 
     color: #000;
     font-family: "Proxima Nova";
-    font-size: 32px;
+    font-size: 24px;
     font-style: normal;
     font-weight: ${({ active }) => (active === 1 ? "700" : "400")};
     line-height: normal;
+
+    ${mediaScreen(1280)} {
+      font-size: 32px;
+      gap: 48px;
+    }
 
     & .number {
       transition-duration: 500ms;

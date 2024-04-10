@@ -6,6 +6,11 @@ export const StyledHeader = styled.header`
     width: auto;
     padding-left: 16px;
     padding-right: 16px;
+    ${mediaScreen(768)} {
+      width: 720px;
+      padding-left: 0;
+      padding-right: 0;
+    }
     ${mediaScreen(1280)} {
       width: 1140px;
       padding: 0;
@@ -19,10 +24,14 @@ export const StyledHeader = styled.header`
   }
   .leftLink {
     display: none;
-    ${mediaScreen(1280)} {
+    ${mediaScreen(768)} {
       display: flex;
       align-items: center;
       gap: 6px;
+    }
+    ${mediaScreen(1280)} {
+      display: flex;
+      align-items: center;
     }
 
     color: #fff;
@@ -34,7 +43,7 @@ export const StyledHeader = styled.header`
     text-decoration: none;
   }
   .leftLinkMobile {
-    ${mediaScreen(1280)} {
+    ${mediaScreen(768)} {
       display: none;
     }
     border: none;
@@ -68,6 +77,11 @@ export const StyledHeader = styled.header`
     top: calc(100% + 10px);
     padding-left: 16px;
     padding-right: 16px;
+    ${mediaScreen(768)} {
+      top: calc(100% + 24px);
+      padding-left: 0;
+      padding-right: 0;
+    }
     ${mediaScreen(1280)} {
       top: calc(100% + 24px);
       padding: 0px;
@@ -82,6 +96,11 @@ export const StyledHeader = styled.header`
       width: 64px;
       height: 48px;
 
+      ${mediaScreen(768)} {
+        width: 100px;
+        height: 73px;
+      }
+
       ${mediaScreen(1280)} {
         width: auto;
         height: auto;
@@ -89,6 +108,11 @@ export const StyledHeader = styled.header`
     }
     & .mainNavigation {
       display: none;
+      ${mediaScreen(768)} {
+        display: flex;
+        margin-left: 49px;
+        gap: 20px;
+      }
       ${mediaScreen(1280)} {
         display: flex;
         margin-left: 288px;
@@ -98,26 +122,31 @@ export const StyledHeader = styled.header`
         color: #fff;
 
         font-family: "Proxima Nova";
-        font-size: 16px;
+        font-size: 14px;
         font-style: normal;
         font-weight: 700;
         line-height: normal;
         text-transform: uppercase;
         text-decoration: none;
+        ${mediaScreen(1280)} {
+          font-size: 16px;
+        }
       }
     }
     & .button {
       display: none;
-      ${mediaScreen(1280)} {
+      ${mediaScreen(768)} {
         margin-left: auto;
         display: block;
+        padding: 16px 46px;
+        font-size: 14px;
       }
     }
     & .burgerButton {
       background-color: transparent;
       border: none;
       margin-left: auto;
-      ${mediaScreen(1280)} {
+      ${mediaScreen(768)} {
         display: none;
       }
     }

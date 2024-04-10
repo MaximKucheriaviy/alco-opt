@@ -69,7 +69,7 @@ export const StartPath = () => {
             alt="arrow"
           />
           <Image
-            className="arrowBow6 noMobile"
+            className="arrowBow6 noMobile noTablet"
             src={"/arrowBow.svg"}
             width={146}
             height={18}
@@ -137,6 +137,7 @@ export const StartPath = () => {
         </div>
         <NavigationControl active={7} top={63} />
       </Container>
+      {/* <div className="opt airBackText">ФРАНШИЗА</div> */}
     </StyledStartPath>
   );
 };

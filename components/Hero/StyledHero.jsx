@@ -8,6 +8,10 @@ export const StyledHero = styled.section`
   padding-bottom: 34px;
   z-index: 900;
   padding-top: 99px;
+  ${mediaScreen(768)} {
+    padding-top: 254px;
+    padding-bottom: 70px;
+  }
   ${mediaScreen(1280)} {
     padding-top: 200px;
     padding-bottom: 71px;
@@ -40,6 +44,9 @@ export const StyledHero = styled.section`
     font-weight: 800;
     line-height: normal;
     font-size: 48px;
+    ${mediaScreen(768)} {
+      font-size: 80px;
+    }
     ${mediaScreen(1280)} {
       font-size: 80px;
     }
@@ -53,6 +60,9 @@ export const StyledHero = styled.section`
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    ${mediaScreen(768)} {
+      margin-top: 32px;
+    }
     ${mediaScreen(1280)} {
       font-size: 56px;
       margin-top: 24px;
@@ -69,6 +79,10 @@ export const StyledHero = styled.section`
     font-weight: 400;
     line-height: normal;
     width: 250px;
+    ${mediaScreen(768)} {
+      width: 552px;
+      font-size: 24px;
+    }
     ${mediaScreen(1280)} {
       width: 552px;
       font-size: 24px;
@@ -83,8 +97,13 @@ export const StyledHero = styled.section`
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
+
     line-height: normal;
     margin-top: 12px;
+    ${mediaScreen(768)} {
+      margin-top: 32px;
+      font-size: 26px;
+    }
     ${mediaScreen(1280)} {
       width: 552px;
       font-size: 26px;
@@ -99,6 +118,10 @@ export const StyledHero = styled.section`
     display: flex;
     margin-top: 24px;
     align-items: center;
+    ${mediaScreen(768)} {
+      height: 71px;
+      margin-top: 72px;
+    }
     ${mediaScreen(1280)} {
       height: 71px;
       margin-top: 48px;
@@ -125,6 +148,11 @@ export const StyledHero = styled.section`
       font-weight: 700;
       line-height: normal;
       text-decoration: none;
+      ${mediaScreen(768)} {
+        font-size: 24px;
+        margin-left: 32px;
+        margin-right: 32px;
+      }
       ${mediaScreen(1280)} {
         font-size: 24px;
         margin-left: 32px;
@@ -134,6 +162,14 @@ export const StyledHero = styled.section`
   }
   & .buttonDiv {
     display: flex;
+    gap: 50px;
+    ${mediaScreen(768)} {
+      flex-direction: column;
+    }
+    ${mediaScreen(1280)} {
+      flex-direction: row;
+      gap: 0px;
+    }
   }
   .gradientButton {
     display: inline-flex;
@@ -157,6 +193,11 @@ export const StyledHero = styled.section`
 
     gap: 32px;
     background-color: #da2919;
+    ${mediaScreen(768)} {
+      width: 336px;
+      height: 77px;
+      font-size: 24px;
+    }
     ${mediaScreen(1280)} {
       width: 336px;
       height: 77px;
@@ -167,21 +208,34 @@ export const StyledHero = styled.section`
   .tlephone {
     margin-top: 42px;
     margin-left: auto;
-    width: 85px;
-    height: 85px;
+    width: 80px;
+    height: 80px;
     padding: 0;
     display: none;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    ${mediaScreen(1280)} {
+    ${mediaScreen(768)} {
       display: flex;
+      padding: 18px;
+      & img {
+        width: 100%;
+      }
+    }
+    ${mediaScreen(1280)} {
+      width: 85px;
+      height: 85px;
     }
   }
   & .alcoopt {
     position: absolute;
-    top: -20px;
+    top: -30px;
     left: -3px;
+    ${mediaScreen(768)} {
+      font-size: 128px;
+      top: -80px;
+      left: -3px;
+    }
     ${mediaScreen(1280)} {
       top: -100px;
       left: 0;
@@ -192,12 +246,24 @@ export const StyledHero = styled.section`
     font-size: 130px;
     top: 240px;
     left: 447px;
+    display: none;
+    ${mediaScreen(768)} {
+      font-size: 140px;
+      display: block;
+      top: 240px;
+      left: 247px;
+    }
   }
   & .fran {
     position: absolute;
     /* font-size: 130px; */
     bottom: -53px;
     left: 0px;
+    ${mediaScreen(768)} {
+      font-size: 120px;
+      bottom: -100px;
+      left: 0px;
+    }
     ${mediaScreen(1280)} {
       bottom: -120px;
       left: 161px;
@@ -216,22 +282,30 @@ export const StyledHero = styled.section`
     align-items: center;
     backdrop-filter: blur(10px);
     & form {
-      padding: 24px 16px;
-      width: 841px;
+      padding: 29px 68px;
+      width: 668px;
       border-radius: 20px;
       background: rgba(255, 255, 255, 0.44);
 
       box-shadow: 3px 6px 10px 0px rgba(32, 32, 32, 0.11);
       backdrop-filter: blur(20px);
+
+      ${mediaScreen(1280)} {
+        width: 841px;
+        padding: 24px 16px;
+      }
       & .title {
         color: #000;
 
         text-align: center;
         font-family: "Proxima Nova";
-        font-size: 36px;
+        font-size: 32px;
         font-style: normal;
         font-weight: 700;
         line-height: 120%; /* 43.2px */
+        ${mediaScreen(1280)} {
+          font-size: 36px;
+        }
       }
       & .inputContainer {
         width: 551px;
@@ -266,6 +340,10 @@ export const StyledHero = styled.section`
         display: block;
         margin-left: auto;
         margin-right: auto;
+        padding: 16px 46px;
+        ${mediaScreen(1280)} {
+          padding: 0;
+        }
       }
     }
   }

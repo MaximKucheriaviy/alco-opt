@@ -24,7 +24,7 @@ export const InvestitionSum = () => {
     };
   }, []);
   useEffect(() => {
-    if (width < 1280) {
+    if (width < 768) {
       setHidden(true);
     } else {
       setHidden(false);

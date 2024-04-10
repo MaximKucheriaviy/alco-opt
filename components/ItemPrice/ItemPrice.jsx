@@ -1,3 +1,4 @@
+import { mediaScreen } from "@/service/mediaRules";
 import styled from "@emotion/styled";
 import Image from "next/image";
 
@@ -13,6 +14,12 @@ const StyledItem = styled.div`
     font-weight: 400;
     line-height: normal;
     width: 218px;
+    ${mediaScreen(768)} {
+      width: 260px;
+    }
+    ${mediaScreen(1280)} {
+      width: 218px;
+    }
   }
 `;
 

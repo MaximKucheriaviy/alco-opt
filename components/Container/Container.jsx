@@ -7,6 +7,10 @@ export const Container = styled.div`
   margin-right: auto;
   position: relative;
   width: 288px;
+  ${mediaScreen(768)} {
+    width: 720px;
+    /* width: 1200px; */
+  }
   ${mediaScreen(1280)} {
     width: 1140px;
     /* width: 1200px; */

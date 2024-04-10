@@ -6,6 +6,14 @@ export const StyledAbout = styled.section`
   padding-bottom: 64px;
   position: relative;
   z-index: 850;
+  ${mediaScreen(768)} {
+    padding-top: 160px;
+    padding-bottom: 80px;
+  }
+  ${mediaScreen(1280)} {
+    padding-top: 117px;
+    padding-bottom: 64px;
+  }
   h2 {
     position: relative;
     z-index: 1000;
@@ -15,6 +23,9 @@ export const StyledAbout = styled.section`
     font-style: normal;
     font-weight: 800;
     line-height: normal;
+    ${mediaScreen(768)} {
+      font-size: 48px;
+    }
     ${mediaScreen(1280)} {
       font-size: 64px;
     }
@@ -28,6 +39,9 @@ export const StyledAbout = styled.section`
     font-weight: 400;
     line-height: normal;
     text-transform: uppercase;
+    ${mediaScreen(768)} {
+      font-size: 40px;
+    }
     ${mediaScreen(1280)} {
       font-size: 36px;
     }
@@ -37,6 +51,9 @@ export const StyledAbout = styled.section`
   }
   & .textList {
     width: auto;
+    ${mediaScreen(768)} {
+      width: 595px;
+    }
     ${mediaScreen(1280)} {
       width: 552px;
     }
@@ -64,6 +81,9 @@ export const StyledAbout = styled.section`
     font-weight: 400;
     line-height: 145%;
 
+    ${mediaScreen(768)} {
+      font-size: 18px;
+    }
     ${mediaScreen(1280)} {
       font-size: 18px;
     }
@@ -77,7 +97,7 @@ export const StyledAbout = styled.section`
       height: 5px;
       border-radius: 50%;
       background-color: #da2919;
-      ${mediaScreen(1280)} {
+      ${mediaScreen(768)} {
         display: block;
       }
     }
@@ -135,6 +155,12 @@ export const StyledAbout = styled.section`
     bottom: 0px;
     right: 0px;
     display: block;
+    ${mediaScreen(768)} {
+      width: 630px;
+      height: 560px;
+      margin-left: auto;
+      margin-right: auto;
+    }
     ${mediaScreen(1280)} {
       display: none;
     }
@@ -153,6 +179,9 @@ export const StyledAbout = styled.section`
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
+        ${mediaScreen(768)} {
+          height: 650px;
+        }
       }
     }
     & .i1 {
@@ -195,17 +224,25 @@ export const StyledAbout = styled.section`
   }
   & .corouselDots {
     display: flex;
+    ${mediaScreen(768)} {
+      gap: 12px;
+    }
     ${mediaScreen(1280)} {
       display: none;
     }
     margin-top: 29px;
     gap: 5px;
     justify-content: center;
+
     & div {
       width: 9px;
       height: 9px;
       border-radius: 50%;
       background-color: #3c3131;
+      ${mediaScreen(768)} {
+        width: 14px;
+        height: 14px;
+      }
     }
     & .active {
       background-color: #da2919;
@@ -216,6 +253,10 @@ export const StyledAbout = styled.section`
     font-size: 80px;
     top: -60px;
     left: 0px;
+    ${mediaScreen(768)} {
+      font-size: 120px;
+      top: -100px;
+    }
     ${mediaScreen(1280)} {
       font-size: 130px;
       top: -110px;
@@ -228,10 +269,17 @@ export const StyledAbout = styled.section`
     /* font-size: 130px; */
     display: none;
     transform: rotateZ(-90deg);
+    ${mediaScreen(768)} {
+      display: block;
+      font-size: 130px;
+      top: 180px;
+      left: 300px;
+      width: 100%;
+    }
     ${mediaScreen(1280)} {
       display: block;
-      top: 180px;
-      left: 255px;
+      top: -30px;
+      left: 46px;
     }
   }
   & .logo {
@@ -239,6 +287,18 @@ export const StyledAbout = styled.section`
     position: absolute;
     top: 630px;
     left: -4px;
+    & .logoThumb {
+      width: 108px;
+      height: 80px;
+      & img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    ${mediaScreen(768)} {
+      top: 570px;
+      left: 0px;
+    }
     ${mediaScreen(1280)} {
       left: 650px;
       top: -40px;
@@ -257,9 +317,15 @@ export const StyledAbout = styled.section`
       line-height: 24px; /* 100% */
       text-transform: uppercase;
       width: 180px;
+      ${mediaScreen(768)} {
+        font-size: 24px;
+        line-height: 32px; /* 100% */
+        width: 130px;
+      }
       ${mediaScreen(1280)} {
         font-size: 32px;
         line-height: 32px; /* 100% */
+        width: 180px;
       }
     }
     & .image {

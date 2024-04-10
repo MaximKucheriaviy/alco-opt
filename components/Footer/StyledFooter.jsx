@@ -4,6 +4,9 @@ import styled from "@emotion/styled";
 export const StyledFooter = styled.footer`
   padding-top: 62px;
   padding-bottom: 32px;
+  ${mediaScreen(768)} {
+    padding-bottom: 40px;
+  }
   ${mediaScreen(1280)} {
     padding-bottom: 62px;
   }
@@ -24,6 +27,10 @@ export const StyledFooter = styled.footer`
     & .image {
       width: 62px;
       height: 46px;
+      ${mediaScreen(768)} {
+        width: 108px;
+        height: 80px;
+      }
       ${mediaScreen(1280)} {
         width: initial;
         height: initial;
@@ -45,8 +52,18 @@ export const StyledFooter = styled.footer`
     margin-left: 24px;
     margin-right: 142px;
 
+    ${mediaScreen(768)} {
+      font-size: 24px;
+      width: 170px;
+    }
     ${mediaScreen(1280)} {
       font-size: 32px;
+      width: 180px;
+    }
+  }
+  & .addresContainer {
+    ${mediaScreen(768)} {
+      display: flex;
     }
   }
   & .addresBlock {
@@ -87,7 +104,7 @@ export const StyledFooter = styled.footer`
       text-decoration: none;
     }
     & .addres {
-      width: 174px;
+      width: 180px;
     }
     & .socialLiks {
       display: flex;
@@ -115,6 +132,14 @@ export const StyledFooter = styled.footer`
     padding-top: 32px;
 
     border-top: 1px solid #f71b07;
+    margin-top: 32px;
+    ${mediaScreen(768)} {
+      font-size: 16px;
+      margin-top: 80px;
+      padding-top: 0px;
+      border: none;
+      font-weight: 300;
+    }
     ${mediaScreen(1280)} {
       display: none;
     }

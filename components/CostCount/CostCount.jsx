@@ -159,27 +159,29 @@ export const CostCount = () => {
           >
             Які вимоги до приміщення?
           </button>
-          <div className="iconText first">
-            <Image
-              src={"/iconInvest.svg"}
-              alt={"icon"}
-              width={50}
-              height={50}
-            />
-            <p>
-              повернення інвестицій від <span>18 місяців</span>
-            </p>
-          </div>
-          <div className="iconText">
-            <Image
-              src={"/iconIncome.svg"}
-              alt={"icon"}
-              width={61}
-              height={48}
-            />
-            <p>
-              дохід з першого місяця від - <span>{table.income}$</span>
-            </p>
+          <div className="iconTextThumb">
+            <div className="iconText first">
+              <Image
+                src={"/iconInvest.svg"}
+                alt={"icon"}
+                width={50}
+                height={50}
+              />
+              <p>
+                повернення інвестицій від - <span>18 місяців</span>
+              </p>
+            </div>
+            <div className="iconText">
+              <Image
+                src={"/iconIncome.svg"}
+                alt={"icon"}
+                width={61}
+                height={48}
+              />
+              <p>
+                дохід з першого місяця від - <span>{table.income}$</span>
+              </p>
+            </div>
           </div>
         </div>
         <NavigationControl active={5} black top={150} />
