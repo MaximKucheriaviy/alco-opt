@@ -119,7 +119,7 @@ export const StyledAdvantages = styled.section`
     position: absolute;
     /* font-size: 130px; */
     top: 150px;
-    left: -10px;
+    left: -20px;
     font-size: 110px;
     transform: rotateZ(-90deg);
     ${mediaScreen(768)} {

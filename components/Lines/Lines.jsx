@@ -9,8 +9,10 @@ const StyledLines = styled.div`
   height: 100%;
   display: flex;
   justify-content: center;
+
   ${mediaScreen(768)} {
     gap: 148px;
+    display: flex;
   }
   ${mediaScreen(1280)} {
     gap: 194px;

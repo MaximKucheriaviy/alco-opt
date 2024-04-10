@@ -278,8 +278,8 @@ export const StyledAbout = styled.section`
     }
     ${mediaScreen(1280)} {
       display: block;
-      top: 180px;
-      left: 255px;
+      top: -30px;
+      left: 46px;
     }
   }
   & .logo {

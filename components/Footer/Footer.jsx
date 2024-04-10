@@ -21,7 +21,7 @@ export const Footer = () => {
           <div className="addresBlock">
             <p className="title">Адреса</p>
             <Link className="item addres" href={"/"}>
-              Київ, вул. О Мишуги, 3А
+              Київ, вул. О. Мишуги, 3А
             </Link>
             <p className="item">Пн.-Нд. 11:00-23:00</p>
           </div>

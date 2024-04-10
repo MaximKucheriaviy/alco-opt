@@ -99,7 +99,7 @@ export const StyledCostCount = styled.section`
       & .dialog {
         position: absolute;
         top: -100px;
-        left: 35px;
+        left: 268px;
         ${mediaScreen(1280)} {
           top: -80px;
           left: 246px;
@@ -145,6 +145,10 @@ export const StyledCostCount = styled.section`
           position: absolute;
           top: -10px;
           left: 100px;
+          ${mediaScreen(768)} {
+            top: -10px;
+            left: 335px;
+          }
           ${mediaScreen(1280)} {
             top: -10px;
             left: 0px;

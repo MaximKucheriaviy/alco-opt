@@ -5,6 +5,7 @@ export const StyledStartPath = styled.section`
   background-color: #131313;
   padding-top: 172px;
   padding-bottom: 64px;
+  position: relative;
   ${mediaScreen(768)} {
     padding-top: 148px;
     padding-bottom: 80px;
@@ -101,6 +102,10 @@ export const StyledStartPath = styled.section`
     }
 
     & .name {
+      display: block;
+      ${mediaScreen(768)} {
+        display: inline;
+      }
       color: #f04031;
     }
   }
@@ -199,11 +204,17 @@ export const StyledStartPath = styled.section`
     }
   }
   & .opt {
+    line-height: 100%;
     position: absolute;
-    /* font-size: 140px; */
-    top: 100px;
-    right: -320px;
+    font-size: 110px;
+
+    top: 668px;
+    right: -160px;
     transform: rotateZ(-90deg);
+
+    ${mediaScreen(768)} {
+      display: none;
+    }
   }
   & .logoText {
     color: #fff;

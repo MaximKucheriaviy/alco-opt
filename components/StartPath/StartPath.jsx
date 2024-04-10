@@ -137,6 +137,7 @@ export const StartPath = () => {
         </div>
         <NavigationControl active={7} top={63} />
       </Container>
+      {/* <div className="opt airBackText">ФРАНШИЗА</div> */}
     </StyledStartPath>
   );
 };

@@ -104,7 +104,7 @@ export const StyledFooter = styled.footer`
       text-decoration: none;
     }
     & .addres {
-      width: 174px;
+      width: 180px;
     }
     & .socialLiks {
       display: flex;

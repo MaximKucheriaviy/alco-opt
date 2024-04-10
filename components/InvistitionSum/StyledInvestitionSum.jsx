@@ -107,7 +107,7 @@ export const StyledInvastition = styled.section`
   }
   & .numberAir {
     position: absolute;
-    font-size: 56px;
+    font-size: 80px;
     top: -65px;
     left: -5px;
 
@@ -128,10 +128,10 @@ export const StyledInvastition = styled.section`
     -webkit-text-stroke-color: #ffc0bc6e;
     line-height: 100%;
     position: absolute;
-    font-size: 56px;
+    font-size: 80px;
 
     top: 430px;
-    right: -140px;
+    right: -220px;
     transform: rotateZ(-90deg);
     ${mediaScreen(768)} {
       font-size: 120px;
@@ -150,7 +150,7 @@ export const StyledInvastition = styled.section`
   & .optAlco {
     top: initial;
     bottom: 200px;
-    right: -255px;
+    right: -190px;
     ${mediaScreen(768)} {
       display: none;
     }

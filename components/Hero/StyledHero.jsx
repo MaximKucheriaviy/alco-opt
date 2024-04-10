@@ -97,11 +97,12 @@ export const StyledHero = styled.section`
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
+
     line-height: normal;
     margin-top: 12px;
     ${mediaScreen(768)} {
       margin-top: 32px;
-      font-size: 24px;
+      font-size: 26px;
     }
     ${mediaScreen(1280)} {
       width: 552px;
