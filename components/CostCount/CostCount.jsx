@@ -168,7 +168,7 @@ export const CostCount = () => {
                 height={50}
               />
               <p>
-                повернення інвестицій від <span>18 місяців</span>
+                повернення інвестицій від - <span>18 місяців</span>
               </p>
             </div>
             <div className="iconText">

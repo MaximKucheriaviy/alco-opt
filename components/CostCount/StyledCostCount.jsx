@@ -456,13 +456,13 @@ export const StyledCostCount = styled.section`
       width: 280px;
 
       ${mediaScreen(1280)} {
-        font-size: 20px;
+        font-size: 24px;
         width: 380px;
       }
       & span {
         font-size: 20px;
         ${mediaScreen(1280)} {
-          font-size: 20px;
+          font-size: 24px;
         }
         font-weight: 700;
       }
@@ -589,10 +589,11 @@ export const StyledModal = styled.div`
         margin-right: 10px;
         display: block;
         height: 100%;
-        width: 5px;
-        height: 5px;
+        width: 7px;
+        height: 7px;
         border-radius: 50%;
         background-color: #000;
+        flex-shrink: 0;
       }
     }
     & .modalImageThumb {

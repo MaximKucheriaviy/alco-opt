@@ -7,7 +7,7 @@ const StyledLines = styled.div`
   background-color: transparent;
   width: 100%;
   height: 100%;
-  display: flex;
+  display: none;
   justify-content: center;
 
   ${mediaScreen(768)} {

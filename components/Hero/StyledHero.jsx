@@ -229,7 +229,7 @@ export const StyledHero = styled.section`
   }
   & .alcoopt {
     position: absolute;
-    top: -20px;
+    top: -30px;
     left: -3px;
     ${mediaScreen(768)} {
       font-size: 128px;

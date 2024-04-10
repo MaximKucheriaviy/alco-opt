@@ -12,7 +12,7 @@ export const Hero = ({ addLoader, removeLoader }) => {
   const containerRef = useRef(null);
   const [buttonPading, setButtonPudding] = useState(0);
   const [modalOpened, setModalOpened] = useState(false);
-  const [videoPath, setVideoPath] = useState("./v2.mp4");
+  const [videoPath, setVideoPath] = useState("./v3.mp4");
   const videoRef = useRef(null);
 
   useEffect(() => {
