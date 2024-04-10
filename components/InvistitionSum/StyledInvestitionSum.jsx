@@ -7,6 +7,10 @@ export const StyledInvastition = styled.section`
   padding-bottom: 82px;
   display: grid;
   overflow: hidden;
+  ${mediaScreen(768)} {
+    padding-top: 148px;
+    padding-bottom: 80px;
+  }
   ${mediaScreen(1280)} {
     padding-top: 152px;
   }
@@ -19,6 +23,9 @@ export const StyledInvastition = styled.section`
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    ${mediaScreen(768)} {
+      font-size: 48px;
+    }
     ${mediaScreen(1280)} {
       font-size: 52px;
     }
@@ -34,6 +41,10 @@ export const StyledInvastition = styled.section`
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    ${mediaScreen(768)} {
+      font-size: 40px;
+      margin-top: 64px;
+    }
     ${mediaScreen(1280)} {
       font-size: 40px;
       margin-top: 64px;
@@ -52,6 +63,9 @@ export const StyledInvastition = styled.section`
     column-gap: 40px;
     /* grid-template-columns: repeat(3, 282px); */
     row-gap: 24px;
+    ${mediaScreen(768)} {
+      grid-template-columns: repeat(2, 334px);
+    }
     ${mediaScreen(1280)} {
       margin-top: 56px;
       grid-template-columns: repeat(3, 282px);
@@ -74,7 +88,7 @@ export const StyledInvastition = styled.section`
     text-align: center;
     width: 100%;
     margin-top: 40px;
-    ${mediaScreen(1280)} {
+    ${mediaScreen(768)} {
       display: none;
     }
   }
@@ -98,6 +112,11 @@ export const StyledInvastition = styled.section`
     left: -5px;
 
     -webkit-text-stroke-color: #ffc0bc71;
+    ${mediaScreen(768)} {
+      font-size: 120px;
+      top: -90px;
+      left: -5px;
+    }
     ${mediaScreen(1280)} {
       font-size: 130px;
       top: -100px;
@@ -114,6 +133,12 @@ export const StyledInvastition = styled.section`
     top: 430px;
     right: -140px;
     transform: rotateZ(-90deg);
+    ${mediaScreen(768)} {
+      font-size: 120px;
+      transform: none;
+      top: 90px;
+      left: 10px;
+    }
     ${mediaScreen(1280)} {
       top: 121px;
       left: 200px;
@@ -126,7 +151,7 @@ export const StyledInvastition = styled.section`
     top: initial;
     bottom: 200px;
     right: -255px;
-    ${mediaScreen(1280)} {
+    ${mediaScreen(768)} {
       display: none;
     }
   }
@@ -150,6 +175,10 @@ export const StyledInvastition = styled.section`
     width: 63px;
     height: 46px;
     /* flex-shrink: 0; */
+    ${mediaScreen(768)} {
+      width: 100px;
+      height: 80px;
+    }
     ${mediaScreen(1280)} {
       width: auto;
       height: auto;
@@ -163,6 +192,10 @@ export const StyledInvastition = styled.section`
     display: flex;
     align-items: center;
     gap: 24px;
+    ${mediaScreen(768)} {
+      right: 0px;
+      top: -100px;
+    }
     ${mediaScreen(1280)} {
       right: 0px;
       top: -90px;

@@ -36,7 +36,7 @@ export default function Home() {
         <Advantages />
         <Francgizing />
         <CostCount />
-        {/* <InvestitionSum /> */}
+        <InvestitionSum />
         {/* <StartPath /> */}
         {/* <PresentationForm /> */}
       </main>
