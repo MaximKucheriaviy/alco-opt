@@ -69,7 +69,7 @@ export const StartPath = () => {
             alt="arrow"
           />
           <Image
-            className="arrowBow6 noMobile"
+            className="arrowBow6 noMobile noTablet"
             src={"/arrowBow.svg"}
             width={146}
             height={18}
