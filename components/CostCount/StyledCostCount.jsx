@@ -547,7 +547,7 @@ export const StyledModal = styled.div`
     position: relative;
     display: flex;
     background-color: #fff;
-    flex-direction: column-reverse;
+    flex-direction: column;
     ${mediaScreen(768)} {
       flex-direction: row;
       height: 428px;
@@ -603,7 +603,9 @@ export const StyledModal = styled.div`
     }
     & .modalImageThumb {
       width: 100vw;
+      display: none;
       ${mediaScreen(768)} {
+        display: block;
         width: 363px;
       }
       ${mediaScreen(1280)} {
