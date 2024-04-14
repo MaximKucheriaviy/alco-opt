@@ -97,7 +97,7 @@ export const InvestitionSum = () => {
             className={hidden ? "visuallyHidden" : ""}
             path={"/Icons/Icon13.svg"}
           >
-            Учать власників в освітніх заходах
+            Участь власників в освітніх заходах
           </ItemPrice>
           <ItemPrice
             className={hidden ? "visuallyHidden" : ""}
