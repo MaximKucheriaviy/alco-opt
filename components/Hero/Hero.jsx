@@ -12,7 +12,7 @@ export const Hero = ({ addLoader, removeLoader }) => {
   const containerRef = useRef(null);
   const [buttonPading, setButtonPudding] = useState(0);
   const [modalOpened, setModalOpened] = useState(false);
-  const [videoPath, setVideoPath] = useState("./v3.mp4");
+  const [videoPath, setVideoPath] = useState("./v2.mp4");
   const videoRef = useRef(null);
 
   useEffect(() => {
@@ -58,6 +58,7 @@ export const Hero = ({ addLoader, removeLoader }) => {
         <video
           loop
           autoPlay
+          data-keepplaying
           muted
           className="video"
           preload="auto"
@@ -78,8 +79,9 @@ export const Hero = ({ addLoader, removeLoader }) => {
           Нова революційна концепція алкогольного магазину з найнижчими цінами
           та найвищим сервісом в Україні!
         </p>
-        <p className="slogan"> Станьте магазином алкоголю №1 у своєму місті!</p>
-
+        <p className="slogan">
+          Станьте власником магазину алкоголю №1 у своєму місті!
+        </p>
         <div className="buttons">
           <div className="line"></div>
           <button

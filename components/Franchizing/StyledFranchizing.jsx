@@ -51,30 +51,34 @@ export const StyledFrancizng = styled.section`
   }
   & .price {
     margin-top: 24px;
-    padding: 40px 24px;
+    padding: 22px 16px;
     border: 1px solid #fff;
     display: flex;
 
-    justify-content: center;
+    justify-content: left;
+    flex-direction: column;
+    gap: 16px;
 
     color: #f04031;
 
     font-family: "Proxima Nova";
-    font-size: 36px;
+    font-size: 26px;
     font-style: normal;
     font-weight: 700;
     line-height: 20px; /* 41.667% */
     ${mediaScreen(768)} {
-      font-size: 46px;
+      font-size: 26px;
       margin-top: 32px;
-      padding: 40px 36px;
-      display: inline-block;
+      //padding: 40px 36px;
+      display: inline-flex;
     }
     ${mediaScreen(1280)} {
-      font-size: 48px;
+      font-size: 32px;
       margin-top: 32px;
-      padding: 40px 32px;
-      display: inline-block;
+      padding: 32px 18px;
+      display: inline-flex;
+      padding-right: 80px;
+      gap: 32px;
     }
   }
   & ul {

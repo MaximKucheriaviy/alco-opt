@@ -118,6 +118,7 @@ export const StyledHero = styled.section`
     display: flex;
     margin-top: 24px;
     align-items: center;
+
     ${mediaScreen(768)} {
       height: 71px;
       margin-top: 72px;
@@ -148,6 +149,10 @@ export const StyledHero = styled.section`
       font-weight: 700;
       line-height: normal;
       text-decoration: none;
+
+      &:hover {
+        color: #bb1f11;
+      }
       ${mediaScreen(768)} {
         font-size: 24px;
         margin-left: 32px;
@@ -193,6 +198,9 @@ export const StyledHero = styled.section`
 
     gap: 32px;
     background-color: #da2919;
+    &:hover {
+      background-color: #f04031;
+    }
     ${mediaScreen(768)} {
       width: 336px;
       height: 77px;

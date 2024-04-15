@@ -9,11 +9,14 @@ export const Francgizing = () => {
         <p className="airBackText numberAir">№4</p>
         <h2>ФРАНЧАЙЗИНГ</h2>
         <p className="sub">Орієнтовні інвестиції</p>
-        <p className="price">ВІД 48 000$</p>
+        <p className="price">
+          <span>ТОВАР ВІД 26 000$</span>
+          <span>ІНШЕ ВІД 22 000$</span>
+        </p>
         <ul>
           <li>
             <Image src="/calendar.svg" width={50} height={49} alt="calender" />
-            <p>реалізація проєкту через 2-3 місяці</p>
+            <p>реалізація проєкту через 2 місяці</p>
           </li>
           <li>
             <Image src="/Royalty.svg" width={61} height={49} alt="calender" />

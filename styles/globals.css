@@ -123,3 +123,7 @@ li {
   left: 0;
   z-index: 8000;
 }
+
+video::-webkit-media-controls {
+  display: none !important;
+}
