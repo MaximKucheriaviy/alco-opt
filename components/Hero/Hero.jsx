@@ -12,7 +12,9 @@ export const Hero = ({ addLoader, removeLoader }) => {
   const containerRef = useRef(null);
   const [buttonPading, setButtonPudding] = useState(0);
   const [modalOpened, setModalOpened] = useState(false);
-  const [videoPath, setVideoPath] = useState("./v2.mp4");
+  const [videoPath, setVideoPath] = useState(
+    "https://res.cloudinary.com/dfjnw7uur/video/upload/v1713214824/v2_i5vddy.mp4"
+  );
   const videoRef = useRef(null);
 
   useEffect(() => {
@@ -43,7 +45,7 @@ export const Hero = ({ addLoader, removeLoader }) => {
       if (!video.paused) {
         removeLoader();
       }
-    }, 3000);
+    }, 1000);
 
     video.addEventListener("loadstart", onLoadStart);
     video.addEventListener("play", onVideoLoad);
@@ -86,7 +88,9 @@ export const Hero = ({ addLoader, removeLoader }) => {
           <div className="line"></div>
           <button
             onClick={() => {
-              setVideoPath("./v2.mp4");
+              setVideoPath(
+                "https://asset.cloudinary.com/dfjnw7uur/ef16d3e41f7fe33a893541c91ee0fcb0https://res.cloudinary.com/dfjnw7uur/video/upload/v1713214824/v2_i5vddy.mp4"
+              );
               addLoader();
             }}
             href="/"
@@ -96,7 +100,9 @@ export const Hero = ({ addLoader, removeLoader }) => {
           <div className="line"></div>
           <button
             onClick={() => {
-              setVideoPath("./v4.mp4");
+              setVideoPath(
+                "https://res.cloudinary.com/dfjnw7uur/video/upload/v1713215073/v4_swebxf.mp4"
+              );
               addLoader();
             }}
             href="/"
@@ -106,7 +112,9 @@ export const Hero = ({ addLoader, removeLoader }) => {
           <div className="line"></div>
           <button
             onClick={() => {
-              setVideoPath("./v3.mp4");
+              setVideoPath(
+                "https://res.cloudinary.com/dfjnw7uur/video/upload/v1713214876/v3_nwhlg8.mp4"
+              );
               addLoader();
             }}
             href="/"
