@@ -228,7 +228,7 @@ export const CostCount = () => {
               </div>
               <div className="modalImageThumb">
                 <Image
-                  src="/modalImage.png"
+                  src="/modalImage.jpg"
                   alt="hall"
                   width={618}
                   height={533}

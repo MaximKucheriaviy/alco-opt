@@ -28,7 +28,7 @@ export const StyledCostCount = styled.section`
     position: absolute;
     bottom: 0px;
     left: 0;
-    background-image: url("/imageCostCount.png");
+    background-image: url("/imageCostCount.jpg");
     background-size: cover;
     ${mediaScreen(768)} {
       height: 615px;

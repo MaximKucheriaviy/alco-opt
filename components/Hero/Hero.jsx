@@ -89,7 +89,7 @@ export const Hero = ({ addLoader, removeLoader }) => {
           <button
             onClick={() => {
               setVideoPath(
-                "https://asset.cloudinary.com/dfjnw7uur/ef16d3e41f7fe33a893541c91ee0fcb0https://res.cloudinary.com/dfjnw7uur/video/upload/v1713214824/v2_i5vddy.mp4"
+                "https://res.cloudinary.com/dfjnw7uur/video/upload/v1713214824/v2_i5vddy.mp4"
               );
               addLoader();
             }}
