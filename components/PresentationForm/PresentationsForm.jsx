@@ -3,9 +3,33 @@ import Image from "next/image";
 import { Container } from "../Container/Container";
 import { Button } from "../Button/Button";
 import { NavigationControl } from "../NavigationControl/NavigationControl";
-import axios from "axios";
+import { useRouter } from "next/router";
 
 export const PresentationForm = () => {
+  const router = useRouter();
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    const formDataToSend = new FormData(event.target);
+    try {
+      const response = await fetch(
+        "https://franchise.alcoopt.com.ua/send_message.php",
+        {
+          method: "POST",
+          body: formDataToSend,
+        }
+      );
+      console.log(response);
+      router.push({
+        pathname: "https://franchise.alcoopt.com.ua/send.html",
+      });
+    } catch (error) {
+      console.log(error);
+      console.error("Ошибка при отправке формы:", error);
+      router.push({
+        pathname: "https://franchise.alcoopt.com.ua/send.html",
+      });
+    }
+  };
   return (
     <StyledPresentationForm id="presentation_form">
       <div className="lines">
@@ -28,22 +52,22 @@ export const PresentationForm = () => {
           />
         </div>
 
-        <form>
+        <form onSubmit={onSubmit}>
           <h2>
             Отримайте інформацію франшизи з детальним розрахунком вартості і
             окупності вкалдень
           </h2>
           <div className="inputContainer">
             <label htmlFor="nameInput">Ім’я</label>
-            <input type="text" id="nameInput" />
+            <input name="nameInput" type="text" id="nameInput" />
           </div>
           <div className="inputContainer">
             <label htmlFor="phoneInput">Номер телефону</label>
-            <input type="text" id="phoneInput" />
+            <input name="phoneInput" type="text" id="phoneInput" />
           </div>
           <div className="inputContainer">
             <label htmlFor="phoneInput">E-mail</label>
-            <input type="text" id="phoneInput" />
+            <input name="emailInput" type="text" id="phoneInput" />
           </div>
           <Button className={"submitButton"}>отримати розрахунок</Button>
         </form>
