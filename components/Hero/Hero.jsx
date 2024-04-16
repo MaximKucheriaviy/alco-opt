@@ -62,6 +62,7 @@ export const Hero = ({ addLoader, removeLoader }) => {
           autoPlay
           data-keepplaying
           muted
+          playsInline
           className="video"
           preload="auto"
           src={videoPath}
