@@ -21,7 +21,7 @@ export const Francgizing = () => {
           <li>
             <Image src="/Royalty.svg" width={61} height={49} alt="calender" />
             <p className="big">
-              роялті: <br /> ФОРМАТ МІНІ - 2%;
+              роялті: <br /> ФОРМАТ МІНІ - 2%
               <br /> ІНШИЙ <span className="noMobile">ФОРМАТ</span> - 3%
             </p>
           </li>

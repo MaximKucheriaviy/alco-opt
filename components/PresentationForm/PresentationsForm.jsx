@@ -21,6 +21,7 @@ export const PresentationForm = () => {
       console.log(response);
     } catch (error) {
       console.log(error);
+      alert("Дякую за заявку Наші менеджери зяʼжуться з вами найближчим часом");
       console.error("Ошибка при отправке формы:", error);
     }
   };
@@ -49,7 +50,7 @@ export const PresentationForm = () => {
         <form onSubmit={onSubmit}>
           <h2>
             Отримайте інформацію франшизи з детальним розрахунком вартості і
-            окупності вкалдень
+            окупності вкаладень
           </h2>
           <div className="inputContainer">
             <label htmlFor="nameInput">Ім’я</label>
