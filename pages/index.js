@@ -20,7 +20,6 @@ export default function Home() {
   const [load, setLoad] = useState(true);
   return (
     <>
-      {load && <Loader />}
       <div id="portalDiv"></div>
       <Header />
       <main>

@@ -350,7 +350,7 @@ export const StyledHero = styled.section`
         margin-right: auto;
         padding: 16px 46px;
         ${mediaScreen(1280)} {
-          padding: 0;
+          //padding: 0;
         }
       }
     }
