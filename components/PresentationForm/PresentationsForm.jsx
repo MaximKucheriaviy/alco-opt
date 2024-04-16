@@ -19,15 +19,9 @@ export const PresentationForm = () => {
         }
       );
       console.log(response);
-      router.push({
-        pathname: "https://franchise.alcoopt.com.ua/send.html",
-      });
     } catch (error) {
       console.log(error);
       console.error("Ошибка при отправке формы:", error);
-      router.push({
-        pathname: "https://franchise.alcoopt.com.ua/send.html",
-      });
     }
   };
   return (
