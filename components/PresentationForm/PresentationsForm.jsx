@@ -49,7 +49,7 @@ export const PresentationForm = () => {
 
         <form onSubmit={onSubmit}>
           <h2>
-            Отримайте інформацію франшизи з детальним розрахунком вартості і
+            Отримайте інформацію по франшизі з детальним розрахунком вартості і
             окупності вкладень
           </h2>
           <div className="inputContainer">
