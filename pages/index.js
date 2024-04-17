@@ -38,7 +38,14 @@ export default function Home() {
         <CostCount />
         <InvestitionSum />
         <StartPath />
-        <PresentationForm />
+        <PresentationForm
+          addLoader={() => {
+            setLoad(true);
+          }}
+          removeLoader={() => {
+            setLoad(false);
+          }}
+        />
       </main>
       <Footer />
     </>
