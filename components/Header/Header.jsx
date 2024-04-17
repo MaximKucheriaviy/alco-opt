@@ -85,7 +85,7 @@ export const Header = () => {
             </Link>
             <Link href={"https://alcoopt.com.ua/#contact"}>Контакти</Link>
           </nav>
-          <Button className={"button"}>Франчайзинг</Button>
+
           <button
             onClick={() => {
               burOpenSet(true);

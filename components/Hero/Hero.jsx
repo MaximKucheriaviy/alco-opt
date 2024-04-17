@@ -16,7 +16,7 @@ export const Hero = ({ addLoader, removeLoader }) => {
   const [videoPath, setVideoPath] = useState(
     "https://res.cloudinary.com/dfjnw7uur/video/upload/v1713214824/v2_i5vddy.mp4"
   );
-  const [responseOpen, setResponseOpen] = useState(true);
+  const [responseOpen, setResponseOpen] = useState(false);
   const videoRef = useRef(null);
 
   const onSubmitForm = async (event) => {
