@@ -165,17 +165,6 @@ export const Header = () => {
                   </div>
                 </Link>
               </nav>
-              <Button className={"button"}>
-                Франчайзинг{" "}
-                <div className="arrow">
-                  <Image
-                    src={"/Arrow9.svg"}
-                    width={11}
-                    height={11}
-                    alt="arrow"
-                  />
-                </div>
-              </Button>
             </Container>
           </Modal>
         </Portal>
