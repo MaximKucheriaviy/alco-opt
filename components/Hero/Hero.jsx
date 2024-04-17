@@ -7,6 +7,7 @@ import Image from "next/image";
 import { Button } from "../Button/Button";
 import { NavigationControl } from "../NavigationControl/NavigationControl";
 import { Lines } from "../Lines/Lines";
+import { callback } from "@/service/api";
 
 export const Hero = ({ addLoader, removeLoader }) => {
   const containerRef = useRef(null);
@@ -54,6 +55,13 @@ export const Hero = ({ addLoader, removeLoader }) => {
       video.removeEventListener("play", onVideoLoad);
     };
   }, [addLoader, removeLoader]);
+
+  const onSubmitForm = async (event) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+    await callback(formData);
+    setModalOpened(false);
+  };
   return (
     <StyledHero id="hero" buttonPadding={buttonPading}>
       <div className="videoDiv">
@@ -160,24 +168,18 @@ export const Hero = ({ addLoader, removeLoader }) => {
           }}
           className="modal"
         >
-          <form>
+          <form onSubmit={onSubmitForm}>
             <p className="title">
               Залишіть свій номер телефону і ми зв’яжемось з Вами
             </p>
             <div className="inputContainer">
               <label htmlFor="nameInput">Ім’я</label>
-              <input type="text" id="nameInput" />
+              <input name="callbackName" type="text" id="nameInput" />
             </div>
             <div className="inputContainer">
               <label htmlFor="phoneInput">Номер телефону</label>
-              <input type="text" id="phoneInput" />
-              <Button
-                onClick={(event) => {
-                  event.preventDefault();
-                  setModalOpened(false);
-                }}
-                className="submitButton"
-              >
+              <input name="callbackPhone" type="text" id="phoneInput" />
+              <Button className="submitButton" type="submit">
                 ЗАМОВИТИ ВИКЛИК
               </Button>
             </div>

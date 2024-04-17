@@ -15,10 +15,10 @@ const checkColor = (type) => {
 };
 
 const StyledButton = styled.button`
-  background-color: ${({ type }) => checkColor(type)};
+  background-color: ${({ typeButton }) => checkColor(typeButton)};
   &:hover {
-    background-color: ${({ type }) =>
-      type === "disabled" ? checkColor("disabled") : checkColor("hover")};
+    background-color: ${({ typeButton }) =>
+      typeButton === "disabled" ? checkColor("disabled") : checkColor("hover")};
   }
   border: none;
 
@@ -38,13 +38,19 @@ const StyledButton = styled.button`
 `;
 
 export const Button = ({
-  type = "default",
+  typeButton = "default",
   children,
   className,
+  type = "button",
   onClick = () => {},
 }) => {
   return (
-    <StyledButton onClick={onClick} className={className} type={type}>
+    <StyledButton
+      onClick={onClick}
+      className={className}
+      typeButton={typeButton}
+      type={type}
+    >
       {children}
     </StyledButton>
   );
