@@ -17,9 +17,10 @@ import { Loader } from "@/components/Loader/Loader";
 import { useState } from "react";
 
 export default function Home() {
-  const [load, setLoad] = useState(true);
+  const [load, setLoad] = useState(false);
   return (
     <>
+      {load && <Loader />}
       <div id="portalDiv"></div>
       <Header />
       <main>

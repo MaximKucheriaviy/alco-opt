@@ -1,7 +1,7 @@
 import { StyledHero } from "./StyledHero";
 import { Container } from "../Container/Container";
 import { Line } from "../Line/Line";
-import { useRef, useEffect, useState } from "react";
+import { useRef, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Button } from "../Button/Button";
@@ -16,51 +16,17 @@ export const Hero = ({ addLoader, removeLoader }) => {
   const [videoPath, setVideoPath] = useState(
     "https://res.cloudinary.com/dfjnw7uur/video/upload/v1713214824/v2_i5vddy.mp4"
   );
+  const [responseOpen, setResponseOpen] = useState(true);
   const videoRef = useRef(null);
-
-  useEffect(() => {
-    if (containerRef.current === null) {
-      return;
-    }
-    const block = getComputedStyle(containerRef.current).marginLeft;
-    setButtonPudding(block);
-  }, []);
-  useEffect(() => {
-    if (typeof window === "undefined") {
-      return;
-    }
-    if (!videoRef.current) {
-      return;
-    }
-    const video = videoRef.current;
-    const onLoadStart = () => {
-      console.log("loading video");
-      addLoader();
-    };
-    const onVideoLoad = () => {
-      console.log("start video");
-      removeLoader();
-    };
-
-    setTimeout(() => {
-      if (!video.paused) {
-        removeLoader();
-      }
-    }, 1000);
-
-    video.addEventListener("loadstart", onLoadStart);
-    video.addEventListener("play", onVideoLoad);
-    return () => {
-      video.removeEventListener("loadstart", onLoadStart);
-      video.removeEventListener("play", onVideoLoad);
-    };
-  }, [addLoader, removeLoader]);
 
   const onSubmitForm = async (event) => {
     event.preventDefault();
     const formData = new FormData(event.target);
+    addLoader();
     await callback(formData);
     setModalOpened(false);
+    removeLoader();
+    setResponseOpen(true);
   };
   return (
     <StyledHero id="hero" buttonPadding={buttonPading}>
@@ -100,7 +66,6 @@ export const Hero = ({ addLoader, removeLoader }) => {
               setVideoPath(
                 "https://res.cloudinary.com/dfjnw7uur/video/upload/v1713214824/v2_i5vddy.mp4"
               );
-              addLoader();
             }}
             href="/"
           >
@@ -112,7 +77,6 @@ export const Hero = ({ addLoader, removeLoader }) => {
               setVideoPath(
                 "https://res.cloudinary.com/dfjnw7uur/video/upload/v1713215073/v4_swebxf.mp4"
               );
-              addLoader();
             }}
             href="/"
           >
@@ -124,7 +88,6 @@ export const Hero = ({ addLoader, removeLoader }) => {
               setVideoPath(
                 "https://res.cloudinary.com/dfjnw7uur/video/upload/v1713214876/v3_nwhlg8.mp4"
               );
-              addLoader();
             }}
             href="/"
           >
@@ -184,6 +147,36 @@ export const Hero = ({ addLoader, removeLoader }) => {
               </Button>
             </div>
           </form>
+        </div>
+      )}
+
+      {responseOpen && (
+        <div
+          onClick={(event) => {
+            if (!event.target.classList.contains("modal")) {
+              return;
+            }
+            setModalOpened(false);
+          }}
+          className="modal"
+        >
+          <div className="responseDiv">
+            <p>ДЯКУЄМО ЗА ЗАЯВКУ!</p>
+            <p>НАШІ МЕНЕДЖЕРИ ЗВʼЯЖУТЬСЯ З ВАМИ НАЙБЛИЖЧИМ ЧАСОМ</p>
+            <button
+              className="crossButton"
+              onClick={() => {
+                setResponseOpen(false);
+              }}
+            >
+              <Image
+                src="/crostButton.svg"
+                alt="crost"
+                width={46}
+                height={46}
+              />
+            </button>
+          </div>
         </div>
       )}
     </StyledHero>

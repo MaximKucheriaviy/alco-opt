@@ -289,6 +289,58 @@ export const StyledHero = styled.section`
     justify-content: center;
     align-items: center;
     backdrop-filter: blur(10px);
+
+    & .responseDiv {
+      width: 668px;
+      border-radius: 20px;
+      background: rgba(255, 255, 255, 0.38);
+
+      box-shadow: 3px 6px 10px 0px rgba(32, 32, 32, 0.11);
+      backdrop-filter: blur(10px);
+      padding: 54px 100px;
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+      ${mediaScreen(1280)} {
+        padding: 42px 121px;
+        width: 841px;
+      }
+      & p {
+        color: #000;
+
+        text-align: center;
+        font-family: "Proxima Nova";
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 120%; /* 33.6px */
+        position: relative;
+        ${mediaScreen(1280)} {
+          font-size: 36px;
+        }
+      }
+      & .crossButton {
+        position: absolute;
+        display: block;
+        width: 46px;
+        height: 46px;
+        background-color: transparent;
+        padding: 0px;
+        border: none;
+        top: 15px;
+        right: 28px;
+        & img {
+          width: 100%;
+          height: 100%;
+        }
+        ${mediaScreen(1280)} {
+          top: 25px;
+          right: 43px;
+          width: 36px;
+          height: 36px;
+        }
+      }
+    }
     & form {
       padding: 29px 68px;
       width: 668px;

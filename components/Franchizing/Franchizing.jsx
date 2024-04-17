@@ -11,7 +11,7 @@ export const Francgizing = () => {
         <p className="sub">Орієнтовні інвестиції</p>
         <p className="price">
           <span>ТОВАР ВІД 26 000$</span>
-          <span>ІНШЕ ВІД 22 000$</span>
+          <span className="bottomText">ІНШІ ІНВЕСТИЦІЇ ВІД 22 000$</span>
         </p>
         <ul>
           <li>
@@ -34,7 +34,7 @@ export const Francgizing = () => {
             <p>повернення інвестицій від 18 місяців</p>
           </li>
         </ul>
-        <NavigationControl active={4} top={-20} />
+        <NavigationControl active={4} top={20} />
         <div className="image">
           <div className="effect1"></div>
           <div className="effect2"></div>

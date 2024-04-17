@@ -51,7 +51,7 @@ export const StyledFrancizng = styled.section`
   }
   & .price {
     margin-top: 24px;
-    padding: 22px 16px;
+    padding: 12px 16px;
     border: 1px solid #fff;
     display: flex;
 
@@ -62,23 +62,29 @@ export const StyledFrancizng = styled.section`
     color: #f04031;
 
     font-family: "Proxima Nova";
-    font-size: 26px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 700;
     line-height: 20px; /* 41.667% */
+    & .bottomText {
+      width: 167px;
+    }
     ${mediaScreen(768)} {
-      font-size: 26px;
+      font-size: 24px;
       margin-top: 32px;
-      //padding: 40px 36px;
+      padding: 16px 24px;
       display: inline-flex;
+      & .bottomText {
+        width: auto;
+      }
     }
     ${mediaScreen(1280)} {
       font-size: 32px;
       margin-top: 32px;
-      padding: 32px 18px;
+      padding: 18px 32px;
       display: inline-flex;
-      padding-right: 80px;
-      gap: 32px;
+      /* padding-right: 80px; */
+      gap: 24px;
     }
   }
   & ul {
