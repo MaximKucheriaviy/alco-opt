@@ -64,7 +64,9 @@ export const PresentationForm = () => {
             <label htmlFor="phoneInput">E-mail</label>
             <input name="emailInput" type="text" id="phoneInput" />
           </div>
-          <Button className={"submitButton"}>отримати розрахунок</Button>
+          <Button type="submit" className={"submitButton"}>
+            отримати розрахунок
+          </Button>
         </form>
         <NavigationControl
           black
