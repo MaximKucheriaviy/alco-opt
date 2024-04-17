@@ -50,7 +50,7 @@ export const PresentationForm = () => {
         <form onSubmit={onSubmit}>
           <h2>
             Отримайте інформацію франшизи з детальним розрахунком вартості і
-            окупності вкаладень
+            окупності вкладень
           </h2>
           <div className="inputContainer">
             <label htmlFor="nameInput">Ім’я</label>
