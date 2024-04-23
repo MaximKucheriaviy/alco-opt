@@ -97,23 +97,25 @@ export const StyledCostCount = styled.section`
         padding: 48px 40px;
       }
       & .dialog {
+        padding: 14px;
+        border-radius: 10px;
         position: absolute;
-        top: -100px;
-        left: 35px;
+        background-color: #d3d3d3;
+        box-shadow: 0px 5px 5px gray;
+        top: -70px;
+        left: 50px;
         ${mediaScreen(768)} {
-          top: -100px;
-          left: 268px;
+          top: -80px;
+          left: 278px;
         }
 
         ${mediaScreen(1280)} {
           top: -80px;
-          left: 246px;
+          left: 256px;
         }
-        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
-          drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-        fill: rgba(255, 255, 255, 0.28);
+
         & .text {
-          position: absolute;
+          /* position: absolute; */
           color: #000;
 
           text-align: center;
@@ -123,10 +125,6 @@ export const StyledCostCount = styled.section`
           font-style: normal;
           font-weight: 700;
           line-height: normal;
-
-          left: 50%;
-          top: 50%;
-          transform: translateX(-50%) translateY(-60%);
         }
       }
       & .priceBig {

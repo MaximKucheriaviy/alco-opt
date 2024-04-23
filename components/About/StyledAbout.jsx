@@ -147,14 +147,25 @@ export const StyledAbout = styled.section`
   }
 
   .imageTumbMobile {
+    padding-left: 16px;
+    padding-right: 16px;
     margin-top: 86px;
-    height: ${() => (601 * 100) / 718}%;
+    /* height: ${() => (288 * 100) / 341}%; */
     overflow: hidden;
     width: 100%;
 
     bottom: 0px;
     right: 0px;
     display: block;
+
+    & .item {
+      width: 100%;
+      height: ${() => (341 * 100) / 288}vw;
+
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
     ${mediaScreen(768)} {
       width: 630px;
       height: 560px;
@@ -175,7 +186,7 @@ export const StyledAbout = styled.section`
 
       & .item {
         width: 100%;
-        height: 341px;
+        /* height: 341px; */
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;

@@ -65,22 +65,18 @@ export const About = () => {
             <p className="logoText">Вистачить не всім</p>
           </div>
         </ul>
-        <div className="imageTumbMobile">
-          <ImageCarousel onChage={onChage} />
-        </div>
-        <div className="corouselDots">
-          <div className={activeDot === 0 ? "active" : ""}></div>
-          <div className={activeDot === 1 ? "active" : ""}></div>
-          <div className={activeDot === 2 ? "active" : ""}></div>
-          <div className={activeDot === 3 ? "active" : ""}></div>
-        </div>
       </Container>
+      <div className="imageTumbMobile">
+        <ImageCarousel onChage={onChage} />
+      </div>
       <div className="imageTumb">
         <ImageCarousel />
-        {/* <div className="logo">
-          <Image src={"/logo.png"} width={100} height={74} alt="logo" />
-          <p className="logoText">Вистачить не всім</p>
-        </div> */}
+      </div>
+      <div className="corouselDots">
+        <div className={activeDot === 0 ? "active" : ""}></div>
+        <div className={activeDot === 1 ? "active" : ""}></div>
+        <div className={activeDot === 2 ? "active" : ""}></div>
+        <div className={activeDot === 3 ? "active" : ""}></div>
       </div>
     </StyledAbout>
   );

@@ -56,13 +56,6 @@ export const CostCount = () => {
             </div>
             {dialog && (
               <div className="dialog">
-                <Image
-                  className="image"
-                  src={"dialogSVG.svg"}
-                  width={207}
-                  height={131}
-                  alt="dialog"
-                />
                 <p className="text">
                   Розраховується індивідуально для кожного магазину
                 </p>
