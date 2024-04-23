@@ -296,10 +296,12 @@ export const StyledAbout = styled.section`
       }
     }
     ${mediaScreen(768)} {
+      display: none;
       top: 570px;
       left: 0px;
     }
     ${mediaScreen(1280)} {
+      display: flex;
       left: 650px;
       top: -40px;
     }

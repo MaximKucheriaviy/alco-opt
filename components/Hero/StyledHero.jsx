@@ -105,7 +105,7 @@ export const StyledHero = styled.section`
       font-size: 26px;
     }
     ${mediaScreen(1280)} {
-      width: 552px;
+      /* width: 552px; */
       font-size: 26px;
       margin-top: 16px;
     }
