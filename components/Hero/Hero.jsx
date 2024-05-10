@@ -14,7 +14,7 @@ export const Hero = ({ addLoader, removeLoader }) => {
   const [buttonPading, setButtonPudding] = useState(0);
   const [modalOpened, setModalOpened] = useState(false);
   const [videoPath, setVideoPath] = useState(
-    "https://res.cloudinary.com/dfjnw7uur/video/upload/v1713214824/v2_i5vddy.mp4"
+    "https://franchise.alcoopt.com.ua/v2.mp4"
   );
   const [responseOpen, setResponseOpen] = useState(false);
   const videoRef = useRef(null);
@@ -63,9 +63,7 @@ export const Hero = ({ addLoader, removeLoader }) => {
           <div className="line"></div>
           <button
             onClick={() => {
-              setVideoPath(
-                "https://res.cloudinary.com/dfjnw7uur/video/upload/v1713214824/v2_i5vddy.mp4"
-              );
+              setVideoPath("https://franchise.alcoopt.com.ua/v2.mp4");
             }}
             href="/"
           >
@@ -74,9 +72,7 @@ export const Hero = ({ addLoader, removeLoader }) => {
           <div className="line"></div>
           <button
             onClick={() => {
-              setVideoPath(
-                "https://res.cloudinary.com/dfjnw7uur/video/upload/v1713215073/v4_swebxf.mp4"
-              );
+              setVideoPath("https://franchise.alcoopt.com.ua/v4.mp4");
             }}
             href="/"
           >
@@ -85,9 +81,7 @@ export const Hero = ({ addLoader, removeLoader }) => {
           <div className="line"></div>
           <button
             onClick={() => {
-              setVideoPath(
-                "https://res.cloudinary.com/dfjnw7uur/video/upload/v1713214876/v3_nwhlg8.mp4"
-              );
+              setVideoPath("https://franchise.alcoopt.com.ua/v3.mp4");
             }}
             href="/"
           >
